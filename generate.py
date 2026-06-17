@@ -189,11 +189,26 @@ def fold(line):
     return "\r\n ".join(chunks)
 
 
-def uk_quality(uk):
-    """Return (short_tag, long_detail) for a UK broadcaster."""
-    if uk == "BBC":
-        return "4K", "BBC One / iPlayer — live in 4K UHD"
-    return "HD", "ITV1 / ITVX — HD only (STV in Scotland)"
+HOME_NATIONS = {"england", "scotland"}   # home nations present at WC2026
+
+
+def uk_detail(uk):
+    return {
+        "BBC": "BBC One / iPlayer — live in 4K UHD",
+        "ITV": "ITV1 / ITVX — HD only (STV in Scotland)",
+        "BBC/ITV": "BBC One + ITV1 — shown on both channels",
+    }.get(uk, "TBC")
+
+
+def knockout_uk(m):
+    """UK routing knowable before teams are drawn: the final is shared on both;
+    England's/Scotland's games are BBC (R32/R16/SF) or ITV (QF). Fires only once
+    a real team name is present, so neutral/undrawn slots stay None (TBC)."""
+    if m["label"] == "Final":
+        return "BBC/ITV"
+    if {norm(m["home"]), norm(m["away"])} & HOME_NATIONS:
+        return "ITV" if m["label"] == "Quarter-final" else "BBC"
+    return None
 
 
 def summary_for(m, variant, bc):
@@ -220,7 +235,7 @@ def description_for(m, variant, bc, location):
         parts.append("Broadcasters: TBC (depends on who qualifies)")
     else:
         if variant in ("uk", "hybrid"):
-            parts.append("UK: " + (uk_quality(uk)[1] if uk else "TBC"))
+            parts.append("UK: " + (uk_detail(uk) if uk else "TBC"))
         if variant in ("jp", "hybrid"):
             if jp == "BS4K":
                 parts.append("Japan: NHK BS Premium 4K only (free, needs BS4K tuner) / DAZN")
@@ -281,7 +296,13 @@ def main():
             if m["stage"] == "group":
                 bc = group_bc.get(pair_key(m["home"], m["away"]), {})
             else:
-                bc = ko_bc.get(m["num"], {})
+                ex = ko_bc.get(m["num"], {})          # explicit entry overrides the rule
+                bc = {}
+                uk = ex.get("uk") or knockout_uk(m)
+                if uk:
+                    bc["uk"] = uk
+                if ex.get("jp"):
+                    bc["jp"] = ex["jp"]
             location = f'{stadiums.get(m["venue"], "")}, {m["venue"]}'.lstrip(", ")
             events.append(build_event(m, variant, bc, location))
         lines = [l for _, ls in sorted(events, key=lambda x: x[0]) for l in ls]
@@ -294,7 +315,7 @@ def main():
     missing_uk = [f'{m["home"]} v {m["away"]}' for m in grp
                   if not group_bc.get(pair_key(m["home"], m["away"]), {}).get("uk")]
     with_jp = sum(1 for m in grp if group_bc.get(pair_key(m["home"], m["away"]), {}).get("jp"))
-    ko_labelled = sum(1 for m in ko if ko_bc.get(m["num"]))
+    ko_labelled = sum(1 for m in ko if ko_bc.get(m["num"], {}).get("uk") or knockout_uk(m))
     missing_venue = sorted({m["venue"] for m in matches if m["venue"] not in stadiums})
     print(f"\ngroups={len(grp)} (exp 72)  knockout={len(ko)} (exp 32)  total={len(matches)}")
     print(f"missing UK label: {len(missing_uk)} {missing_uk}")

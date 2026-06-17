@@ -27,7 +27,7 @@ Kickoffs are stored in **UTC**, so every client shows them in *your* local time 
 - `BBC` = iPlayer, **live in 4K UHD** · `ITV` = ITVX, **HD only** (STV in Scotland) — the channel name alone tells you 4K vs HD, so titles aren't tagged.
 - 🇯🇵 `NHK` (NHK総合), `NTV` (日本テレビ), `Fuji` (フジテレビ) = terrestrial free-to-air · `BS4K` = NHK BS Premium 4K only.
 - **No Japanese channel** = DAZN-only (paid). Only DAZN carries all 104 live. In the hybrid feed: 🇯🇵 = free-to-air, `🇯🇵 BS` = BS4K only, nothing = DAZN.
-- **Knockouts** show bracket slots (`1A v 3C/E/F/H/I`, `W74 v W77`) and broadcasters are **TBC** — they depend on qualification.
+- **Knockouts**: the final is on **BBC + ITV**; England's & Scotland's games auto-label **BBC** (R32/R16/SF) / **ITV** (QF) once their opponent resolves (published home-nation routing). Neutral ties show bracket slots (`1A v 3C/E/F/H/I`, `W74 v W77`) until confirmed.
 
 ## How it's built
 
@@ -54,9 +54,11 @@ channel, and that every venue resolves — it exits non-zero if anything is off.
 and commit **only if something changed** (output is deterministic). So knockout team
 slots resolve to real teams and scores appear **automatically** — subscribers just refresh.
 
-**Knockout broadcasters** are the one manual bit (announced per fixture). Add them to
+**Knockout broadcasters**: the final (both channels) and England's/Scotland's games
+(BBC for R32/R16/SF, ITV for QF) are applied automatically by rule in `generate.py` as
+teams resolve. Neutral-match picks are the only manual bit — add them to
 `data/broadcasters.json` under `knockouts`, keyed by match number (R32 73–88, R16 89–96,
-QF 97–100, SF 101–102, third place 103, final 104):
+QF 97–100, SF 101–102, third place 103, final 104); an entry also overrides the rule:
 
 ```json
 "knockouts": { "104": { "uk": "BBC", "jp": "NHK" } }
