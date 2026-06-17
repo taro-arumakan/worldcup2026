@@ -4,7 +4,7 @@ Subscribable `.ics` calendars of **all 104** 2026 FIFA World Cup matches, with t
 broadcaster written into every event title. Three flavours from the same data.
 
 Hosted free on GitHub Pages. No server, no tracking.
-**Landing page:** https://taro-arumakan.github.io/worldcup-2026-calendar/
+**Landing page:** https://yadot.sniarti.fi/worldcup2026/
 
 ## Three feeds
 
@@ -14,7 +14,7 @@ Hosted free on GitHub Pages. No server, no tracking.
 | 2 | `japan.ics` | Japanese friends | `Mexico v South Africa — NHK` · `England v Croatia` (blank = DAZN only) |
 | 3 | `hybrid.ics` | UK channel + JP free-to-air | `Netherlands v Japan — ITV · 🇯🇵` · `Brazil v Morocco — BBC · 🇯🇵 BS` |
 
-`https://taro-arumakan.github.io/worldcup-2026-calendar/<feed>` — or `webcal://…/<feed>` to
+`https://yadot.sniarti.fi/worldcup2026/<feed>` — or `webcal://…/<feed>` to
 open Apple Calendar directly.
 
 **Subscribe:** iPhone/Mac → open the `webcal://` link → Add. Google Calendar → Other
