@@ -42,11 +42,27 @@ docs/index.html                                    # landing page
 Regenerate after editing data:
 
 ```sh
-python3 generate.py          # validates counts, rewrites docs/worldcup.ics
+python3 generate.py          # validates counts, rewrites docs/*.ics
 ```
 
 The script asserts 72 group + 32 knockout events, that every group match has a UK
 channel, and that every venue resolves — it exits non-zero if anything is off.
+
+## Staying current
+
+`.github/workflows/update.yml` runs every 6 hours: re-pull openfootball, regenerate,
+and commit **only if something changed** (output is deterministic). So knockout team
+slots resolve to real teams and scores appear **automatically** — subscribers just refresh.
+
+**Knockout broadcasters** are the one manual bit (announced per fixture). Add them to
+`data/broadcasters.json` under `knockouts`, keyed by match number (R32 73–88, R16 89–96,
+QF 97–100, SF 101–102, third place 103, final 104):
+
+```json
+"knockouts": { "104": { "uk": "BBC", "jp": "NHK" } }
+```
+
+The next scheduled run (or a local `python3 generate.py`) picks it up.
 
 ## Data sources & caveats
 
