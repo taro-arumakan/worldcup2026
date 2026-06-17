@@ -1,0 +1,51 @@
+name: Update calendars
+
+# Refresh fixtures/scores/knockout teams from openfootball and regenerate the
+# .ics feeds. Output is deterministic, so a commit happens only when something
+# actually changed. Knockout broadcaster picks are added by hand in
+# data/broadcasters.json and get picked up on the next run.
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # every 6 hours (offset off the hour)
+  workflow_dispatch:           # allow manual runs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-calendars
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Refresh openfootball fixture data
+        run: |
+          base="https://raw.githubusercontent.com/openfootball/world-cup/master/2026--usa"
+          for f in cup.txt cup_finals.txt cup_stadiums.csv; do
+            curl -fsSL "$base/$f" -o "data/$f"
+          done
+
+      - name: Regenerate calendars
+        run: python3 generate.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- docs data; then
+            echo "No changes — feeds already current."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs data
+          git commit -m "Auto-update: refresh fixtures, scores & resolved knockout teams"
+          git push
+          echo "Published updated feeds."

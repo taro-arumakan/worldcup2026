@@ -10,8 +10,13 @@ Three calendars are produced from the same data:
   docs/japan.ics   Japan only   — NHK/NTV/Fuji/BS4K; no label = DAZN only
   docs/hybrid.ics  UK + Japan   — UK BBC/ITV + 🇯🇵 flag (FTA) / 🇯🇵 BS (BS4K only)
 
-Every event is emitted in UTC (…Z), so calendar apps display each kickoff in
-the subscriber's own local time zone automatically.
+Group broadcasters are keyed by team pair; knockout broadcasters by match
+number (73-104) so they can be filled in as picks are announced. Knockout team
+slots (2A, W74, …) resolve automatically when openfootball updates upstream.
+
+Output is deterministic (DTSTAMP = DTSTART) so re-running with unchanged input
+produces byte-identical files — the update workflow only commits real changes.
+Events are emitted in UTC (…Z); calendar apps show each kickoff in local time.
 """
 import csv
 import io
@@ -148,12 +153,15 @@ def load_stadiums():
 
 
 def load_broadcasters():
+    """Return (group_map keyed by team-pair, ko_map keyed by int match number)."""
     doc = json.loads((DATA / "broadcasters.json").read_text(encoding="utf-8"))
-    out = {}
+    group = {}
     for e in doc["matches"]:
         a, b = re.split(r"\s+v\s+", e["match"], maxsplit=1)
-        out[pair_key(a, b)] = {k: e[k] for k in ("uk", "jp") if e.get(k)}
-    return out
+        group[pair_key(a, b)] = {k: e[k] for k in ("uk", "jp") if e.get(k)}
+    ko = {int(num): {k: v.get(k) for k in ("uk", "jp") if v.get(k)}
+          for num, v in doc.get("knockouts", {}).items()}
+    return group, ko
 
 
 def to_utc(m):
@@ -190,51 +198,54 @@ def uk_quality(uk):
 
 def summary_for(m, variant, bc):
     fixture = f'{m["home"]} v {m["away"]}'
-    if m["stage"] != "group":
-        return f'{m["label"]}: {fixture}'
+    title = fixture if m["stage"] == "group" else f'{m["label"]}: {fixture}'
     uk, jp = bc.get("uk"), bc.get("jp")
     if variant == "uk":
-        return f'{fixture} — {uk}'
+        return f"{title} — {uk}" if uk else title
     if variant == "jp":
-        return f'{fixture} — {jp}' if jp else fixture
-    s = f'{fixture} — {uk}'        # hybrid: BBC/ITV already implies UK + (BBC=4K, ITV=HD)
-    if jp == "BS4K":
-        s += " · 🇯🇵 BS"
-    elif jp:
-        s += " · 🇯🇵"
+        return f"{title} — {jp}" if jp else title
+    # hybrid: UK channel (BBC/ITV implies the 4K/HD split) + a Japan flag
+    s = f"{title} — {uk}" if uk else title
+    if jp:
+        sep = " · " if uk else " — "
+        s += sep + ("🇯🇵 BS" if jp == "BS4K" else "🇯🇵")
     return s
 
 
 def description_for(m, variant, bc, location):
     parts = [m["label"], f"Venue: {location}"]
-    if m["stage"] == "group":
-        uk, jp = bc.get("uk"), bc.get("jp")
+    uk, jp = bc.get("uk"), bc.get("jp")
+    grp = m["stage"] == "group"
+    if not uk and not jp and not grp:
+        parts.append("Broadcasters: TBC (depends on who qualifies)")
+    else:
         if variant in ("uk", "hybrid"):
-            parts.append("UK: " + uk_quality(uk)[1])
+            parts.append("UK: " + (uk_quality(uk)[1] if uk else "TBC"))
         if variant in ("jp", "hybrid"):
             if jp == "BS4K":
                 parts.append("Japan: NHK BS Premium 4K only (free, needs BS4K tuner) / DAZN")
             elif jp:
                 parts.append(f"Japan: {JP_FULL[jp]} (free-to-air) / DAZN")
-            else:
+            elif grp:
                 parts.append("Japan: DAZN only (no free-to-air)")
-    else:
-        parts.append("Broadcasters: TBC (depends on who qualifies)")
+            else:
+                parts.append("Japan: TBC")
     if m["score"]:
         parts.append(f'Result: {m["home"]} {m["score"]} {m["away"]}')
     parts.append("Kickoff shown in your device's local time zone.")
     return " · ".join(parts)
 
 
-def build_event(m, variant, bc, location, dtstamp):
+def build_event(m, variant, bc, location):
     dt = to_utc(m)
+    stamp = dt.strftime("%Y%m%dT%H%M%SZ")
     dur = timedelta(hours=2) if m["stage"] == "group" else timedelta(hours=2, minutes=30)
     key = pair_key(m["home"], m["away"]).replace("|", "-") if m["stage"] == "group" else f'ko-{m["num"]}'
     return dt, [
         "BEGIN:VEVENT",
         f"UID:wc2026-{variant}-{key}@worldcup-2026-calendar",
-        f"DTSTAMP:{dtstamp}",
-        f'DTSTART:{dt.strftime("%Y%m%dT%H%M%SZ")}',
+        f"DTSTAMP:{stamp}",
+        f"DTSTART:{stamp}",
         f'DTEND:{(dt + dur).strftime("%Y%m%dT%H%M%SZ")}',
         f"SUMMARY:{esc(summary_for(m, variant, bc))}",
         f"LOCATION:{esc(location)}",
@@ -259,18 +270,20 @@ def write_calendar(path, name, desc, event_lines):
 
 def main():
     stadiums = load_stadiums()
-    broad = load_broadcasters()
+    group_bc, ko_bc = load_broadcasters()
     matches = parse_groups((DATA / "cup.txt").read_text(encoding="utf-8"))
     matches += parse_finals((DATA / "cup_finals.txt").read_text(encoding="utf-8"))
-    dtstamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
     DOCS.mkdir(parents=True, exist_ok=True)
     for variant, (fname, name, desc) in VARIANTS.items():
         events = []
         for m in matches:
-            bc = broad.get(pair_key(m["home"], m["away"]), {}) if m["stage"] == "group" else {}
+            if m["stage"] == "group":
+                bc = group_bc.get(pair_key(m["home"], m["away"]), {})
+            else:
+                bc = ko_bc.get(m["num"], {})
             location = f'{stadiums.get(m["venue"], "")}, {m["venue"]}'.lstrip(", ")
-            events.append(build_event(m, variant, bc, location, dtstamp))
+            events.append(build_event(m, variant, bc, location))
         lines = [l for _, ls in sorted(events, key=lambda x: x[0]) for l in ls]
         write_calendar(DOCS / fname, name, desc, lines)
         print(f"{fname:14s} {len(events)} events  ({(DOCS / fname).stat().st_size} bytes)")
@@ -279,12 +292,14 @@ def main():
     grp = [m for m in matches if m["stage"] == "group"]
     ko = [m for m in matches if m["stage"] == "ko"]
     missing_uk = [f'{m["home"]} v {m["away"]}' for m in grp
-                  if not broad.get(pair_key(m["home"], m["away"]), {}).get("uk")]
-    with_jp = sum(1 for m in grp if broad.get(pair_key(m["home"], m["away"]), {}).get("jp"))
+                  if not group_bc.get(pair_key(m["home"], m["away"]), {}).get("uk")]
+    with_jp = sum(1 for m in grp if group_bc.get(pair_key(m["home"], m["away"]), {}).get("jp"))
+    ko_labelled = sum(1 for m in ko if ko_bc.get(m["num"]))
     missing_venue = sorted({m["venue"] for m in matches if m["venue"] not in stadiums})
     print(f"\ngroups={len(grp)} (exp 72)  knockout={len(ko)} (exp 32)  total={len(matches)}")
     print(f"missing UK label: {len(missing_uk)} {missing_uk}")
-    print(f"JP FTA labels: {with_jp} (exp 32)   venues unmapped: {missing_venue or 'none'}")
+    print(f"JP FTA labels: {with_jp} (exp 32)   knockout broadcasters set: {ko_labelled}")
+    print(f"venues unmapped: {missing_venue or 'none'}")
     if len(grp) != 72 or len(ko) != 32 or missing_uk or missing_venue:
         print("!! VALIDATION FAILED", file=sys.stderr)
         sys.exit(1)
