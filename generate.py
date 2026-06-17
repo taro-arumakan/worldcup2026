@@ -6,16 +6,16 @@ bracket come from the vendored openfootball data in data/. Broadcaster labels
 (UK BBC/ITV + Japan free-to-air) come from data/broadcasters.json.
 
 Three calendars are produced from the same data:
-  docs/uk.ics      UK only      — BBC/ITV (BBC = iPlayer 4K, ITV = ITVX HD)
-  docs/japan.ics   Japan only   — NHK/NTV/Fuji/BS4K; no label = DAZN only
-  docs/hybrid.ics  UK + Japan   — UK BBC/ITV + 🇯🇵 flag (FTA) / 🇯🇵 BS (BS4K only)
+  docs/uk.ics      UK only      - BBC/ITV (BBC = iPlayer 4K, ITV = ITVX HD)
+  docs/japan.ics   Japan only   - NHK/NTV/Fuji/BS4K; no label = DAZN only
+  docs/hybrid.ics  UK + Japan   - UK BBC/ITV + 🇯🇵 flag (FTA) / 🇯🇵 BS (BS4K only)
 
 Group broadcasters are keyed by team pair; knockout broadcasters by match
 number (73-104) so they can be filled in as picks are announced. Knockout team
 slots (2A, W74, …) resolve automatically when openfootball updates upstream.
 
 Output is deterministic (DTSTAMP = DTSTART) so re-running with unchanged input
-produces byte-identical files — the update workflow only commits real changes.
+produces byte-identical files - the update workflow only commits real changes.
 Events are emitted in UTC (…Z); calendar apps show each kickoff in local time.
 """
 import csv
@@ -194,9 +194,9 @@ HOME_NATIONS = {"england", "scotland"}   # home nations present at WC2026
 
 def uk_detail(uk):
     return {
-        "BBC": "BBC One / iPlayer — live in 4K UHD",
-        "ITV": "ITV1 / ITVX — HD only (STV in Scotland)",
-        "BBC/ITV": "BBC One + ITV1 — shown on both channels",
+        "BBC": "BBC One / iPlayer - live in 4K UHD",
+        "ITV": "ITV1 / ITVX - HD only (STV in Scotland)",
+        "BBC/ITV": "BBC One + ITV1 - shown on both channels",
     }.get(uk, "TBC")
 
 
@@ -216,13 +216,13 @@ def summary_for(m, variant, bc):
     title = fixture if m["stage"] == "group" else f'{m["label"]}: {fixture}'
     uk, jp = bc.get("uk"), bc.get("jp")
     if variant == "uk":
-        return f"{title} — {uk}" if uk else title
+        return f"{title} - {uk}" if uk else title
     if variant == "jp":
-        return f"{title} — {jp}" if jp else title
+        return f"{title} - {jp}" if jp else title
     # hybrid: UK channel (BBC/ITV implies the 4K/HD split) + a Japan flag
-    s = f"{title} — {uk}" if uk else title
+    s = f"{title} - {uk}" if uk else title
     if jp:
-        sep = " · " if uk else " — "
+        sep = " | " if uk else " - "
         s += sep + ("🇯🇵 BS" if jp == "BS4K" else "🇯🇵")
     return s
 
@@ -248,7 +248,7 @@ def description_for(m, variant, bc, location):
     if m["score"]:
         parts.append(f'Result: {m["home"]} {m["score"]} {m["away"]}')
     parts.append("Kickoff shown in your device's local time zone.")
-    return " · ".join(parts)
+    return " | ".join(parts)
 
 
 def build_event(m, variant, bc, location):

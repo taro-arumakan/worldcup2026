@@ -16,11 +16,11 @@ UID:wc2026-jp-mexico-southafrica@worldcup-2026-calendar
 DTSTAMP:20260611T190000Z
 DTSTART:20260611T190000Z
 DTEND:20260611T210000Z
-SUMMARY:Mexico v South Africa — NHK
+SUMMARY:Mexico v South Africa - NHK
 LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Group A · Venue: Estadio Azteca\, Mexico City · Japan: NHK
- 総合 (free-to-air) / DAZN · Result: Mexico 2-0 South Africa · Kickof
- f shown in your device's local time zone.
+DESCRIPTION:Group A | Venue: Estadio Azteca\, Mexico City | Japan: NHK総
+ 合 (free-to-air) / DAZN | Result: Mexico 2-0 South Africa | Kickoff sho
+ wn in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -32,9 +32,9 @@ DTSTART:20260612T020000Z
 DTEND:20260612T040000Z
 SUMMARY:South Korea v Czech Republic
 LOCATION:Estadio Akron\, Guadalajara (Zapopan)
-DESCRIPTION:Group A · Venue: Estadio Akron\, Guadalajara (Zapopan) · Ja
- pan: DAZN only (no free-to-air) · Result: South Korea 2-1 Czech Republi
- c · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group A | Venue: Estadio Akron\, Guadalajara (Zapopan) | Japa
+ n: DAZN only (no free-to-air) | Result: South Korea 2-1 Czech Republic |
+  Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -44,11 +44,11 @@ UID:wc2026-jp-bosnia-canada@worldcup-2026-calendar
 DTSTAMP:20260612T190000Z
 DTSTART:20260612T190000Z
 DTEND:20260612T210000Z
-SUMMARY:Canada v Bosnia & Herzegovina — NHK
+SUMMARY:Canada v Bosnia & Herzegovina - NHK
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group B · Venue: BMO Field\, Toronto · Japan: NHK総合 (fr
- ee-to-air) / DAZN · Result: Canada 1-1 Bosnia & Herzegovina · Kickoff 
- shown in your device's local time zone.
+DESCRIPTION:Group B | Venue: BMO Field\, Toronto | Japan: NHK総合 (free
+ -to-air) / DAZN | Result: Canada 1-1 Bosnia & Herzegovina | Kickoff show
+ n in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -60,9 +60,9 @@ DTSTART:20260613T010000Z
 DTEND:20260613T030000Z
 SUMMARY:USA v Paraguay
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group D · Venue: SoFi Stadium\, Los Angeles (Inglewood) · J
- apan: DAZN only (no free-to-air) · Result: USA 4-1 Paraguay · Kickoff 
- shown in your device's local time zone.
+DESCRIPTION:Group D | Venue: SoFi Stadium\, Los Angeles (Inglewood) | Jap
+ an: DAZN only (no free-to-air) | Result: USA 4-1 Paraguay | Kickoff show
+ n in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -74,9 +74,9 @@ DTSTART:20260613T190000Z
 DTEND:20260613T210000Z
 SUMMARY:Qatar v Switzerland
 LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group B · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · Japan: DAZN only (no free-to-air) · Result: Qatar 1-1 Swi
- tzerland · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group B | Venue: Levi's Stadium\, San Francisco Bay Area (San
+ ta Clara) | Japan: DAZN only (no free-to-air) | Result: Qatar 1-1 Switze
+ rland | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -86,12 +86,12 @@ UID:wc2026-jp-brazil-morocco@worldcup-2026-calendar
 DTSTAMP:20260613T220000Z
 DTSTART:20260613T220000Z
 DTEND:20260614T000000Z
-SUMMARY:Brazil v Morocco — BS4K
+SUMMARY:Brazil v Morocco - BS4K
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group C · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · Japan: NHK BS Premium 4K only (free\, needs BS4K tuner) 
- / DAZN · Result: Brazil 1-1 Morocco · Kickoff shown in your device's l
- ocal time zone.
+DESCRIPTION:Group C | Venue: MetLife Stadium\, New York/New Jersey (East 
+ Rutherford) | Japan: NHK BS Premium 4K only (free\, needs BS4K tuner) / 
+ DAZN | Result: Brazil 1-1 Morocco | Kickoff shown in your device's local
+  time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -101,11 +101,11 @@ UID:wc2026-jp-haiti-scotland@worldcup-2026-calendar
 DTSTAMP:20260614T010000Z
 DTSTART:20260614T010000Z
 DTEND:20260614T030000Z
-SUMMARY:Haiti v Scotland — NHK
+SUMMARY:Haiti v Scotland - NHK
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group C · Venue: Gillette Stadium\, Boston (Foxborough) · J
- apan: NHK総合 (free-to-air) / DAZN · Result: Haiti 0-1 Scotland · Ki
- ckoff shown in your device's local time zone.
+DESCRIPTION:Group C | Venue: Gillette Stadium\, Boston (Foxborough) | Jap
+ an: NHK総合 (free-to-air) / DAZN | Result: Haiti 0-1 Scotland | Kickof
+ f shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -115,11 +115,11 @@ UID:wc2026-jp-australia-turkey@worldcup-2026-calendar
 DTSTAMP:20260614T040000Z
 DTSTART:20260614T040000Z
 DTEND:20260614T060000Z
-SUMMARY:Australia v Turkey — NTV
+SUMMARY:Australia v Turkey - NTV
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group D · Venue: BC Place\, Vancouver · Japan: 日本テレ
- ビ (free-to-air) / DAZN · Result: Australia 2-0 Turkey · Kickoff show
- n in your device's local time zone.
+DESCRIPTION:Group D | Venue: BC Place\, Vancouver | Japan: 日本テレ
+ ビ (free-to-air) / DAZN | Result: Australia 2-0 Turkey | Kickoff shown 
+ in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -131,9 +131,9 @@ DTSTART:20260614T170000Z
 DTEND:20260614T190000Z
 SUMMARY:Germany v Curaçao
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group E · Venue: NRG Stadium\, Houston · Japan: DAZN only (
- no free-to-air) · Result: Germany 7-1 Curaçao · Kickoff shown in your
-  device's local time zone.
+DESCRIPTION:Group E | Venue: NRG Stadium\, Houston | Japan: DAZN only (no
+  free-to-air) | Result: Germany 7-1 Curaçao | Kickoff shown in your dev
+ ice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -143,11 +143,11 @@ UID:wc2026-jp-japan-netherlands@worldcup-2026-calendar
 DTSTAMP:20260614T200000Z
 DTSTART:20260614T200000Z
 DTEND:20260614T220000Z
-SUMMARY:Netherlands v Japan — NHK
+SUMMARY:Netherlands v Japan - NHK
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group F · Venue: AT&T Stadium\, Dallas (Arlington) · Japan:
-  NHK総合 (free-to-air) / DAZN · Result: Netherlands 2-2 Japan · Kick
- off shown in your device's local time zone.
+DESCRIPTION:Group F | Venue: AT&T Stadium\, Dallas (Arlington) | Japan: N
+ HK総合 (free-to-air) / DAZN | Result: Netherlands 2-2 Japan | Kickoff 
+ shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -159,9 +159,9 @@ DTSTART:20260614T230000Z
 DTEND:20260615T010000Z
 SUMMARY:Ivory Coast v Ecuador
 LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group E · Venue: Lincoln Financial Field\, Philadelphia · J
- apan: DAZN only (no free-to-air) · Result: Ivory Coast 1-0 Ecuador · K
- ickoff shown in your device's local time zone.
+DESCRIPTION:Group E | Venue: Lincoln Financial Field\, Philadelphia | Jap
+ an: DAZN only (no free-to-air) | Result: Ivory Coast 1-0 Ecuador | Kicko
+ ff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -171,11 +171,11 @@ UID:wc2026-jp-sweden-tunisia@worldcup-2026-calendar
 DTSTAMP:20260615T020000Z
 DTSTART:20260615T020000Z
 DTEND:20260615T040000Z
-SUMMARY:Sweden v Tunisia — NTV
+SUMMARY:Sweden v Tunisia - NTV
 LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
-DESCRIPTION:Group F · Venue: Estadio BBVA\, Monterrey (Guadalupe) · Jap
- an: 日本テレビ (free-to-air) / DAZN · Result: Sweden 5-1 Tunisia 
- · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group F | Venue: Estadio BBVA\, Monterrey (Guadalupe) | Japan
+ : 日本テレビ (free-to-air) / DAZN | Result: Sweden 5-1 Tunisia | Ki
+ ckoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -185,11 +185,11 @@ UID:wc2026-jp-capeverde-spain@worldcup-2026-calendar
 DTSTAMP:20260615T160000Z
 DTSTART:20260615T160000Z
 DTEND:20260615T180000Z
-SUMMARY:Spain v Cape Verde — NHK
+SUMMARY:Spain v Cape Verde - NHK
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group H · Venue: Mercedes-Benz Stadium\, Atlanta · Japan: N
- HK総合 (free-to-air) / DAZN · Result: Spain 0-0 Cape Verde · Kickoff
-  shown in your device's local time zone.
+DESCRIPTION:Group H | Venue: Mercedes-Benz Stadium\, Atlanta | Japan: NHK
+ 総合 (free-to-air) / DAZN | Result: Spain 0-0 Cape Verde | Kickoff sho
+ wn in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -199,11 +199,11 @@ UID:wc2026-jp-belgium-egypt@worldcup-2026-calendar
 DTSTAMP:20260615T190000Z
 DTSTART:20260615T190000Z
 DTEND:20260615T210000Z
-SUMMARY:Belgium v Egypt — NHK
+SUMMARY:Belgium v Egypt - NHK
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group G · Venue: Lumen Field\, Seattle · Japan: NHK総合 (
- free-to-air) / DAZN · Result: Belgium 1-1 Egypt · Kickoff shown in you
- r device's local time zone.
+DESCRIPTION:Group G | Venue: Lumen Field\, Seattle | Japan: NHK総合 (fr
+ ee-to-air) / DAZN | Result: Belgium 1-1 Egypt | Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -215,9 +215,9 @@ DTSTART:20260615T220000Z
 DTEND:20260616T000000Z
 SUMMARY:Saudi Arabia v Uruguay
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Group H · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
- · Japan: DAZN only (no free-to-air) · Result: Saudi Arabia 1-1 Uruguay
-  · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group H | Venue: Hard Rock Stadium\, Miami (Miami Gardens) | 
+ Japan: DAZN only (no free-to-air) | Result: Saudi Arabia 1-1 Uruguay | K
+ ickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -229,9 +229,9 @@ DTSTART:20260616T010000Z
 DTEND:20260616T030000Z
 SUMMARY:Iran v New Zealand
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group G · Venue: SoFi Stadium\, Los Angeles (Inglewood) · J
- apan: DAZN only (no free-to-air) · Result: Iran 2-2 New Zealand · Kick
- off shown in your device's local time zone.
+DESCRIPTION:Group G | Venue: SoFi Stadium\, Los Angeles (Inglewood) | Jap
+ an: DAZN only (no free-to-air) | Result: Iran 2-2 New Zealand | Kickoff 
+ shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -241,11 +241,11 @@ UID:wc2026-jp-france-senegal@worldcup-2026-calendar
 DTSTAMP:20260616T190000Z
 DTSTART:20260616T190000Z
 DTEND:20260616T210000Z
-SUMMARY:France v Senegal — Fuji
+SUMMARY:France v Senegal - Fuji
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group I · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · Japan: フジテレビ (free-to-air) / DAZN · Result: F
- rance 3-1 Senegal · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group I | Venue: MetLife Stadium\, New York/New Jersey (East 
+ Rutherford) | Japan: フジテレビ (free-to-air) / DAZN | Result: Fran
+ ce 3-1 Senegal | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -257,9 +257,9 @@ DTSTART:20260616T220000Z
 DTEND:20260617T000000Z
 SUMMARY:Iraq v Norway
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group I · Venue: Gillette Stadium\, Boston (Foxborough) · J
- apan: DAZN only (no free-to-air) · Result: Iraq 1-4 Norway · Kickoff s
- hown in your device's local time zone.
+DESCRIPTION:Group I | Venue: Gillette Stadium\, Boston (Foxborough) | Jap
+ an: DAZN only (no free-to-air) | Result: Iraq 1-4 Norway | Kickoff shown
+  in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -269,11 +269,11 @@ UID:wc2026-jp-algeria-argentina@worldcup-2026-calendar
 DTSTAMP:20260617T010000Z
 DTSTART:20260617T010000Z
 DTEND:20260617T030000Z
-SUMMARY:Argentina v Algeria — NHK
+SUMMARY:Argentina v Algeria - NHK
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group J · Venue: Arrowhead Stadium\, Kansas City · Japan: N
- HK総合 (free-to-air) / DAZN · Result: Argentina 3-0 Algeria · Kickof
- f shown in your device's local time zone.
+DESCRIPTION:Group J | Venue: Arrowhead Stadium\, Kansas City | Japan: NHK
+ 総合 (free-to-air) / DAZN | Result: Argentina 3-0 Algeria | Kickoff sh
+ own in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -285,9 +285,9 @@ DTSTART:20260617T040000Z
 DTEND:20260617T060000Z
 SUMMARY:Austria v Jordan
 LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group J · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · Japan: DAZN only (no free-to-air) · Result: Austria 3-1 J
- ordan · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group J | Venue: Levi's Stadium\, San Francisco Bay Area (San
+ ta Clara) | Japan: DAZN only (no free-to-air) | Result: Austria 3-1 Jord
+ an | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -299,8 +299,8 @@ DTSTART:20260617T170000Z
 DTEND:20260617T190000Z
 SUMMARY:Portugal v DR Congo
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group K · Venue: NRG Stadium\, Houston · Japan: DAZN only (
- no free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group K | Venue: NRG Stadium\, Houston | Japan: DAZN only (no
+  free-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -312,9 +312,9 @@ DTSTART:20260617T200000Z
 DTEND:20260617T220000Z
 SUMMARY:England v Croatia
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group L · Venue: AT&T Stadium\, Dallas (Arlington) · Japan:
-  DAZN only (no free-to-air) · Kickoff shown in your device's local time
-  zone.
+DESCRIPTION:Group L | Venue: AT&T Stadium\, Dallas (Arlington) | Japan: D
+ AZN only (no free-to-air) | Kickoff shown in your device's local time zo
+ ne.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -326,8 +326,8 @@ DTSTART:20260617T230000Z
 DTEND:20260618T010000Z
 SUMMARY:Ghana v Panama
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group L · Venue: BMO Field\, Toronto · Japan: DAZN only (no
-  free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group L | Venue: BMO Field\, Toronto | Japan: DAZN only (no f
+ ree-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -339,9 +339,8 @@ DTSTART:20260618T020000Z
 DTEND:20260618T040000Z
 SUMMARY:Uzbekistan v Colombia
 LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Group K · Venue: Estadio Azteca\, Mexico City · Japan: DAZN
-  only (no free-to-air) · Kickoff shown in your device's local time zone
- .
+DESCRIPTION:Group K | Venue: Estadio Azteca\, Mexico City | Japan: DAZN o
+ nly (no free-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -351,11 +350,11 @@ UID:wc2026-jp-czech-southafrica@worldcup-2026-calendar
 DTSTAMP:20260618T160000Z
 DTSTART:20260618T160000Z
 DTEND:20260618T180000Z
-SUMMARY:Czech Republic v South Africa — NTV
+SUMMARY:Czech Republic v South Africa - NTV
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group A · Venue: Mercedes-Benz Stadium\, Atlanta · Japan: 
- 日本テレビ (free-to-air) / DAZN · Kickoff shown in your device's l
- ocal time zone.
+DESCRIPTION:Group A | Venue: Mercedes-Benz Stadium\, Atlanta | Japan: 日
+ 本テレビ (free-to-air) / DAZN | Kickoff shown in your device's local
+  time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -367,9 +366,9 @@ DTSTART:20260618T190000Z
 DTEND:20260618T210000Z
 SUMMARY:Switzerland v Bosnia & Herzegovina
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group B · Venue: SoFi Stadium\, Los Angeles (Inglewood) · J
- apan: DAZN only (no free-to-air) · Kickoff shown in your device's local
-  time zone.
+DESCRIPTION:Group B | Venue: SoFi Stadium\, Los Angeles (Inglewood) | Jap
+ an: DAZN only (no free-to-air) | Kickoff shown in your device's local ti
+ me zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -381,8 +380,8 @@ DTSTART:20260618T220000Z
 DTEND:20260619T000000Z
 SUMMARY:Canada v Qatar
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group B · Venue: BC Place\, Vancouver · Japan: DAZN only (n
- o free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group B | Venue: BC Place\, Vancouver | Japan: DAZN only (no 
+ free-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -392,11 +391,11 @@ UID:wc2026-jp-mexico-southkorea@worldcup-2026-calendar
 DTSTAMP:20260619T010000Z
 DTSTART:20260619T010000Z
 DTEND:20260619T030000Z
-SUMMARY:Mexico v South Korea — NHK
+SUMMARY:Mexico v South Korea - NHK
 LOCATION:Estadio Akron\, Guadalajara (Zapopan)
-DESCRIPTION:Group A · Venue: Estadio Akron\, Guadalajara (Zapopan) · Ja
- pan: NHK総合 (free-to-air) / DAZN · Kickoff shown in your device's lo
- cal time zone.
+DESCRIPTION:Group A | Venue: Estadio Akron\, Guadalajara (Zapopan) | Japa
+ n: NHK総合 (free-to-air) / DAZN | Kickoff shown in your device's local
+  time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -406,10 +405,10 @@ UID:wc2026-jp-australia-usa@worldcup-2026-calendar
 DTSTAMP:20260619T190000Z
 DTSTART:20260619T190000Z
 DTEND:20260619T210000Z
-SUMMARY:USA v Australia — NHK
+SUMMARY:USA v Australia - NHK
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group D · Venue: Lumen Field\, Seattle · Japan: NHK総合 (
- free-to-air) / DAZN · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group D | Venue: Lumen Field\, Seattle | Japan: NHK総合 (fr
+ ee-to-air) / DAZN | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -419,11 +418,11 @@ UID:wc2026-jp-morocco-scotland@worldcup-2026-calendar
 DTSTAMP:20260619T220000Z
 DTSTART:20260619T220000Z
 DTEND:20260620T000000Z
-SUMMARY:Scotland v Morocco — Fuji
+SUMMARY:Scotland v Morocco - Fuji
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group C · Venue: Gillette Stadium\, Boston (Foxborough) · J
- apan: フジテレビ (free-to-air) / DAZN · Kickoff shown in your devi
- ce's local time zone.
+DESCRIPTION:Group C | Venue: Gillette Stadium\, Boston (Foxborough) | Jap
+ an: フジテレビ (free-to-air) / DAZN | Kickoff shown in your device'
+ s local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -433,11 +432,11 @@ UID:wc2026-jp-brazil-haiti@worldcup-2026-calendar
 DTSTAMP:20260620T003000Z
 DTSTART:20260620T003000Z
 DTEND:20260620T023000Z
-SUMMARY:Brazil v Haiti — NHK
+SUMMARY:Brazil v Haiti - NHK
 LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group C · Venue: Lincoln Financial Field\, Philadelphia · J
- apan: NHK総合 (free-to-air) / DAZN · Kickoff shown in your device's l
- ocal time zone.
+DESCRIPTION:Group C | Venue: Lincoln Financial Field\, Philadelphia | Jap
+ an: NHK総合 (free-to-air) / DAZN | Kickoff shown in your device's loca
+ l time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -449,9 +448,9 @@ DTSTART:20260620T030000Z
 DTEND:20260620T050000Z
 SUMMARY:Turkey v Paraguay
 LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group D · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · Japan: DAZN only (no free-to-air) · Kickoff shown in your
-  device's local time zone.
+DESCRIPTION:Group D | Venue: Levi's Stadium\, San Francisco Bay Area (San
+ ta Clara) | Japan: DAZN only (no free-to-air) | Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -461,10 +460,10 @@ UID:wc2026-jp-netherlands-sweden@worldcup-2026-calendar
 DTSTAMP:20260620T170000Z
 DTSTART:20260620T170000Z
 DTEND:20260620T190000Z
-SUMMARY:Netherlands v Sweden — NHK
+SUMMARY:Netherlands v Sweden - NHK
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group F · Venue: NRG Stadium\, Houston · Japan: NHK総合 (
- free-to-air) / DAZN · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group F | Venue: NRG Stadium\, Houston | Japan: NHK総合 (fr
+ ee-to-air) / DAZN | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -474,11 +473,10 @@ UID:wc2026-jp-germany-ivorycoast@worldcup-2026-calendar
 DTSTAMP:20260620T200000Z
 DTSTART:20260620T200000Z
 DTEND:20260620T220000Z
-SUMMARY:Germany v Ivory Coast — NTV
+SUMMARY:Germany v Ivory Coast - NTV
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group E · Venue: BMO Field\, Toronto · Japan: 日本テレ
- ビ (free-to-air) / DAZN · Kickoff shown in your device's local time zo
- ne.
+DESCRIPTION:Group E | Venue: BMO Field\, Toronto | Japan: 日本テレビ
+  (free-to-air) / DAZN | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -490,9 +488,9 @@ DTSTART:20260621T000000Z
 DTEND:20260621T020000Z
 SUMMARY:Ecuador v Curaçao
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group E · Venue: Arrowhead Stadium\, Kansas City · Japan: D
- AZN only (no free-to-air) · Kickoff shown in your device's local time z
- one.
+DESCRIPTION:Group E | Venue: Arrowhead Stadium\, Kansas City | Japan: DAZ
+ N only (no free-to-air) | Kickoff shown in your device's local time zone
+ .
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -502,11 +500,11 @@ UID:wc2026-jp-japan-tunisia@worldcup-2026-calendar
 DTSTAMP:20260621T040000Z
 DTSTART:20260621T040000Z
 DTEND:20260621T060000Z
-SUMMARY:Tunisia v Japan — NTV
+SUMMARY:Tunisia v Japan - NTV
 LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
-DESCRIPTION:Group F · Venue: Estadio BBVA\, Monterrey (Guadalupe) · Jap
- an: 日本テレビ (free-to-air) / DAZN · Kickoff shown in your device
- 's local time zone.
+DESCRIPTION:Group F | Venue: Estadio BBVA\, Monterrey (Guadalupe) | Japan
+ : 日本テレビ (free-to-air) / DAZN | Kickoff shown in your device's 
+ local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -516,11 +514,11 @@ UID:wc2026-jp-saudiarabia-spain@worldcup-2026-calendar
 DTSTAMP:20260621T160000Z
 DTSTART:20260621T160000Z
 DTEND:20260621T180000Z
-SUMMARY:Spain v Saudi Arabia — NHK
+SUMMARY:Spain v Saudi Arabia - NHK
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group H · Venue: Mercedes-Benz Stadium\, Atlanta · Japan: N
- HK総合 (free-to-air) / DAZN · Kickoff shown in your device's local ti
- me zone.
+DESCRIPTION:Group H | Venue: Mercedes-Benz Stadium\, Atlanta | Japan: NHK
+ 総合 (free-to-air) / DAZN | Kickoff shown in your device's local time 
+ zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -532,9 +530,9 @@ DTSTART:20260621T190000Z
 DTEND:20260621T210000Z
 SUMMARY:Belgium v Iran
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group G · Venue: SoFi Stadium\, Los Angeles (Inglewood) · J
- apan: DAZN only (no free-to-air) · Kickoff shown in your device's local
-  time zone.
+DESCRIPTION:Group G | Venue: SoFi Stadium\, Los Angeles (Inglewood) | Jap
+ an: DAZN only (no free-to-air) | Kickoff shown in your device's local ti
+ me zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -546,9 +544,9 @@ DTSTART:20260621T220000Z
 DTEND:20260622T000000Z
 SUMMARY:Uruguay v Cape Verde
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Group H · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
- · Japan: DAZN only (no free-to-air) · Kickoff shown in your device's l
- ocal time zone.
+DESCRIPTION:Group H | Venue: Hard Rock Stadium\, Miami (Miami Gardens) | 
+ Japan: DAZN only (no free-to-air) | Kickoff shown in your device's local
+  time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -560,8 +558,8 @@ DTSTART:20260622T010000Z
 DTEND:20260622T030000Z
 SUMMARY:New Zealand v Egypt
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group G · Venue: BC Place\, Vancouver · Japan: DAZN only (n
- o free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group G | Venue: BC Place\, Vancouver | Japan: DAZN only (no 
+ free-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -573,9 +571,9 @@ DTSTART:20260622T170000Z
 DTEND:20260622T190000Z
 SUMMARY:Argentina v Austria
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group J · Venue: AT&T Stadium\, Dallas (Arlington) · Japan:
-  DAZN only (no free-to-air) · Kickoff shown in your device's local time
-  zone.
+DESCRIPTION:Group J | Venue: AT&T Stadium\, Dallas (Arlington) | Japan: D
+ AZN only (no free-to-air) | Kickoff shown in your device's local time zo
+ ne.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -587,9 +585,9 @@ DTSTART:20260622T210000Z
 DTEND:20260622T230000Z
 SUMMARY:France v Iraq
 LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group I · Venue: Lincoln Financial Field\, Philadelphia · J
- apan: DAZN only (no free-to-air) · Kickoff shown in your device's local
-  time zone.
+DESCRIPTION:Group I | Venue: Lincoln Financial Field\, Philadelphia | Jap
+ an: DAZN only (no free-to-air) | Kickoff shown in your device's local ti
+ me zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -599,11 +597,11 @@ UID:wc2026-jp-norway-senegal@worldcup-2026-calendar
 DTSTAMP:20260623T000000Z
 DTSTART:20260623T000000Z
 DTEND:20260623T020000Z
-SUMMARY:Norway v Senegal — NHK
+SUMMARY:Norway v Senegal - NHK
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group I · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · Japan: NHK総合 (free-to-air) / DAZN · Kickoff shown i
- n your device's local time zone.
+DESCRIPTION:Group I | Venue: MetLife Stadium\, New York/New Jersey (East 
+ Rutherford) | Japan: NHK総合 (free-to-air) / DAZN | Kickoff shown in y
+ our device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -615,9 +613,9 @@ DTSTART:20260623T030000Z
 DTEND:20260623T050000Z
 SUMMARY:Jordan v Algeria
 LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group J · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · Japan: DAZN only (no free-to-air) · Kickoff shown in your
-  device's local time zone.
+DESCRIPTION:Group J | Venue: Levi's Stadium\, San Francisco Bay Area (San
+ ta Clara) | Japan: DAZN only (no free-to-air) | Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -627,10 +625,10 @@ UID:wc2026-jp-portugal-uzbekistan@worldcup-2026-calendar
 DTSTAMP:20260623T170000Z
 DTSTART:20260623T170000Z
 DTEND:20260623T190000Z
-SUMMARY:Portugal v Uzbekistan — NHK
+SUMMARY:Portugal v Uzbekistan - NHK
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group K · Venue: NRG Stadium\, Houston · Japan: NHK総合 (
- free-to-air) / DAZN · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group K | Venue: NRG Stadium\, Houston | Japan: NHK総合 (fr
+ ee-to-air) / DAZN | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -642,9 +640,9 @@ DTSTART:20260623T200000Z
 DTEND:20260623T220000Z
 SUMMARY:England v Ghana
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group L · Venue: Gillette Stadium\, Boston (Foxborough) · J
- apan: DAZN only (no free-to-air) · Kickoff shown in your device's local
-  time zone.
+DESCRIPTION:Group L | Venue: Gillette Stadium\, Boston (Foxborough) | Jap
+ an: DAZN only (no free-to-air) | Kickoff shown in your device's local ti
+ me zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -654,11 +652,10 @@ UID:wc2026-jp-croatia-panama@worldcup-2026-calendar
 DTSTAMP:20260623T230000Z
 DTSTART:20260623T230000Z
 DTEND:20260624T010000Z
-SUMMARY:Panama v Croatia — Fuji
+SUMMARY:Panama v Croatia - Fuji
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group L · Venue: BMO Field\, Toronto · Japan: フジテレ
- ビ (free-to-air) / DAZN · Kickoff shown in your device's local time zo
- ne.
+DESCRIPTION:Group L | Venue: BMO Field\, Toronto | Japan: フジテレビ
+  (free-to-air) / DAZN | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -668,11 +665,11 @@ UID:wc2026-jp-colombia-drcongo@worldcup-2026-calendar
 DTSTAMP:20260624T020000Z
 DTSTART:20260624T020000Z
 DTEND:20260624T040000Z
-SUMMARY:Colombia v DR Congo — NTV
+SUMMARY:Colombia v DR Congo - NTV
 LOCATION:Estadio Akron\, Guadalajara (Zapopan)
-DESCRIPTION:Group K · Venue: Estadio Akron\, Guadalajara (Zapopan) · Ja
- pan: 日本テレビ (free-to-air) / DAZN · Kickoff shown in your devic
- e's local time zone.
+DESCRIPTION:Group K | Venue: Estadio Akron\, Guadalajara (Zapopan) | Japa
+ n: 日本テレビ (free-to-air) / DAZN | Kickoff shown in your device's
+  local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -684,8 +681,8 @@ DTSTART:20260624T190000Z
 DTEND:20260624T210000Z
 SUMMARY:Switzerland v Canada
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group B · Venue: BC Place\, Vancouver · Japan: DAZN only (n
- o free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group B | Venue: BC Place\, Vancouver | Japan: DAZN only (no 
+ free-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -697,8 +694,8 @@ DTSTART:20260624T190000Z
 DTEND:20260624T210000Z
 SUMMARY:Bosnia & Herzegovina v Qatar
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group B · Venue: Lumen Field\, Seattle · Japan: DAZN only (
- no free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group B | Venue: Lumen Field\, Seattle | Japan: DAZN only (no
+  free-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -710,9 +707,9 @@ DTSTART:20260624T220000Z
 DTEND:20260625T000000Z
 SUMMARY:Scotland v Brazil
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Group C · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
- · Japan: DAZN only (no free-to-air) · Kickoff shown in your device's l
- ocal time zone.
+DESCRIPTION:Group C | Venue: Hard Rock Stadium\, Miami (Miami Gardens) | 
+ Japan: DAZN only (no free-to-air) | Kickoff shown in your device's local
+  time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -724,9 +721,9 @@ DTSTART:20260624T220000Z
 DTEND:20260625T000000Z
 SUMMARY:Morocco v Haiti
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group C · Venue: Mercedes-Benz Stadium\, Atlanta · Japan: D
- AZN only (no free-to-air) · Kickoff shown in your device's local time z
- one.
+DESCRIPTION:Group C | Venue: Mercedes-Benz Stadium\, Atlanta | Japan: DAZ
+ N only (no free-to-air) | Kickoff shown in your device's local time zone
+ .
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -736,11 +733,11 @@ UID:wc2026-jp-czech-mexico@worldcup-2026-calendar
 DTSTAMP:20260625T010000Z
 DTSTART:20260625T010000Z
 DTEND:20260625T030000Z
-SUMMARY:Czech Republic v Mexico — NHK
+SUMMARY:Czech Republic v Mexico - NHK
 LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Group A · Venue: Estadio Azteca\, Mexico City · Japan: NHK
- 総合 (free-to-air) / DAZN · Kickoff shown in your device's local time
-  zone.
+DESCRIPTION:Group A | Venue: Estadio Azteca\, Mexico City | Japan: NHK総
+ 合 (free-to-air) / DAZN | Kickoff shown in your device's local time zon
+ e.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -752,9 +749,9 @@ DTSTART:20260625T010000Z
 DTEND:20260625T030000Z
 SUMMARY:South Africa v South Korea
 LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
-DESCRIPTION:Group A · Venue: Estadio BBVA\, Monterrey (Guadalupe) · Jap
- an: DAZN only (no free-to-air) · Kickoff shown in your device's local t
- ime zone.
+DESCRIPTION:Group A | Venue: Estadio BBVA\, Monterrey (Guadalupe) | Japan
+ : DAZN only (no free-to-air) | Kickoff shown in your device's local time
+  zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -766,9 +763,9 @@ DTSTART:20260625T200000Z
 DTEND:20260625T220000Z
 SUMMARY:Curaçao v Ivory Coast
 LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group E · Venue: Lincoln Financial Field\, Philadelphia · J
- apan: DAZN only (no free-to-air) · Kickoff shown in your device's local
-  time zone.
+DESCRIPTION:Group E | Venue: Lincoln Financial Field\, Philadelphia | Jap
+ an: DAZN only (no free-to-air) | Kickoff shown in your device's local ti
+ me zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -780,9 +777,9 @@ DTSTART:20260625T200000Z
 DTEND:20260625T220000Z
 SUMMARY:Ecuador v Germany
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group E · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · Japan: DAZN only (no free-to-air) · Kickoff shown in yo
- ur device's local time zone.
+DESCRIPTION:Group E | Venue: MetLife Stadium\, New York/New Jersey (East 
+ Rutherford) | Japan: DAZN only (no free-to-air) | Kickoff shown in your 
+ device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -792,11 +789,11 @@ UID:wc2026-jp-japan-sweden@worldcup-2026-calendar
 DTSTAMP:20260625T230000Z
 DTSTART:20260625T230000Z
 DTEND:20260626T010000Z
-SUMMARY:Japan v Sweden — NHK
+SUMMARY:Japan v Sweden - NHK
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group F · Venue: AT&T Stadium\, Dallas (Arlington) · Japan:
-  NHK総合 (free-to-air) / DAZN · Kickoff shown in your device's local 
- time zone.
+DESCRIPTION:Group F | Venue: AT&T Stadium\, Dallas (Arlington) | Japan: N
+ HK総合 (free-to-air) / DAZN | Kickoff shown in your device's local tim
+ e zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -808,9 +805,9 @@ DTSTART:20260625T230000Z
 DTEND:20260626T010000Z
 SUMMARY:Tunisia v Netherlands
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group F · Venue: Arrowhead Stadium\, Kansas City · Japan: D
- AZN only (no free-to-air) · Kickoff shown in your device's local time z
- one.
+DESCRIPTION:Group F | Venue: Arrowhead Stadium\, Kansas City | Japan: DAZ
+ N only (no free-to-air) | Kickoff shown in your device's local time zone
+ .
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -820,11 +817,11 @@ UID:wc2026-jp-turkey-usa@worldcup-2026-calendar
 DTSTAMP:20260626T020000Z
 DTSTART:20260626T020000Z
 DTEND:20260626T040000Z
-SUMMARY:Turkey v USA — NTV
+SUMMARY:Turkey v USA - NTV
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group D · Venue: SoFi Stadium\, Los Angeles (Inglewood) · J
- apan: 日本テレビ (free-to-air) / DAZN · Kickoff shown in your devi
- ce's local time zone.
+DESCRIPTION:Group D | Venue: SoFi Stadium\, Los Angeles (Inglewood) | Jap
+ an: 日本テレビ (free-to-air) / DAZN | Kickoff shown in your device'
+ s local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -836,9 +833,9 @@ DTSTART:20260626T020000Z
 DTEND:20260626T040000Z
 SUMMARY:Paraguay v Australia
 LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group D · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · Japan: DAZN only (no free-to-air) · Kickoff shown in your
-  device's local time zone.
+DESCRIPTION:Group D | Venue: Levi's Stadium\, San Francisco Bay Area (San
+ ta Clara) | Japan: DAZN only (no free-to-air) | Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -848,11 +845,11 @@ UID:wc2026-jp-france-norway@worldcup-2026-calendar
 DTSTAMP:20260626T190000Z
 DTSTART:20260626T190000Z
 DTEND:20260626T210000Z
-SUMMARY:Norway v France — NHK
+SUMMARY:Norway v France - NHK
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group I · Venue: Gillette Stadium\, Boston (Foxborough) · J
- apan: NHK総合 (free-to-air) / DAZN · Kickoff shown in your device's l
- ocal time zone.
+DESCRIPTION:Group I | Venue: Gillette Stadium\, Boston (Foxborough) | Jap
+ an: NHK総合 (free-to-air) / DAZN | Kickoff shown in your device's loca
+ l time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -864,8 +861,8 @@ DTSTART:20260626T190000Z
 DTEND:20260626T210000Z
 SUMMARY:Senegal v Iraq
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group I · Venue: BMO Field\, Toronto · Japan: DAZN only (no
-  free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group I | Venue: BMO Field\, Toronto | Japan: DAZN only (no f
+ ree-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -877,8 +874,8 @@ DTSTART:20260627T000000Z
 DTEND:20260627T020000Z
 SUMMARY:Cape Verde v Saudi Arabia
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group H · Venue: NRG Stadium\, Houston · Japan: DAZN only (
- no free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group H | Venue: NRG Stadium\, Houston | Japan: DAZN only (no
+  free-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -888,11 +885,11 @@ UID:wc2026-jp-spain-uruguay@worldcup-2026-calendar
 DTSTAMP:20260627T000000Z
 DTSTART:20260627T000000Z
 DTEND:20260627T020000Z
-SUMMARY:Uruguay v Spain — NTV
+SUMMARY:Uruguay v Spain - NTV
 LOCATION:Estadio Akron\, Guadalajara (Zapopan)
-DESCRIPTION:Group H · Venue: Estadio Akron\, Guadalajara (Zapopan) · Ja
- pan: 日本テレビ (free-to-air) / DAZN · Kickoff shown in your devic
- e's local time zone.
+DESCRIPTION:Group H | Venue: Estadio Akron\, Guadalajara (Zapopan) | Japa
+ n: 日本テレビ (free-to-air) / DAZN | Kickoff shown in your device's
+  local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -904,8 +901,8 @@ DTSTART:20260627T030000Z
 DTEND:20260627T050000Z
 SUMMARY:Egypt v Iran
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group G · Venue: Lumen Field\, Seattle · Japan: DAZN only (
- no free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group G | Venue: Lumen Field\, Seattle | Japan: DAZN only (no
+  free-to-air) | Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -915,11 +912,11 @@ UID:wc2026-jp-belgium-newzealand@worldcup-2026-calendar
 DTSTAMP:20260627T030000Z
 DTSTART:20260627T030000Z
 DTEND:20260627T050000Z
-SUMMARY:New Zealand v Belgium — NTV
+SUMMARY:New Zealand v Belgium - NTV
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group G · Venue: BC Place\, Vancouver · Japan: 日本テレ
- ビ (free-to-air) / DAZN · Kickoff shown in your device's local time zo
- ne.
+DESCRIPTION:Group G | Venue: BC Place\, Vancouver | Japan: 日本テレ
+ ビ (free-to-air) / DAZN | Kickoff shown in your device's local time zon
+ e.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -931,9 +928,9 @@ DTSTART:20260627T210000Z
 DTEND:20260627T230000Z
 SUMMARY:Panama v England
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group L · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · Japan: DAZN only (no free-to-air) · Kickoff shown in yo
- ur device's local time zone.
+DESCRIPTION:Group L | Venue: MetLife Stadium\, New York/New Jersey (East 
+ Rutherford) | Japan: DAZN only (no free-to-air) | Kickoff shown in your 
+ device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -945,9 +942,9 @@ DTSTART:20260627T210000Z
 DTEND:20260627T230000Z
 SUMMARY:Croatia v Ghana
 LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group L · Venue: Lincoln Financial Field\, Philadelphia · J
- apan: DAZN only (no free-to-air) · Kickoff shown in your device's local
-  time zone.
+DESCRIPTION:Group L | Venue: Lincoln Financial Field\, Philadelphia | Jap
+ an: DAZN only (no free-to-air) | Kickoff shown in your device's local ti
+ me zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -957,11 +954,11 @@ UID:wc2026-jp-colombia-portugal@worldcup-2026-calendar
 DTSTAMP:20260627T233000Z
 DTSTART:20260627T233000Z
 DTEND:20260628T013000Z
-SUMMARY:Colombia v Portugal — Fuji
+SUMMARY:Colombia v Portugal - Fuji
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Group K · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
- · Japan: フジテレビ (free-to-air) / DAZN · Kickoff shown in your 
- device's local time zone.
+DESCRIPTION:Group K | Venue: Hard Rock Stadium\, Miami (Miami Gardens) | 
+ Japan: フジテレビ (free-to-air) / DAZN | Kickoff shown in your devi
+ ce's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -973,9 +970,9 @@ DTSTART:20260627T233000Z
 DTEND:20260628T013000Z
 SUMMARY:DR Congo v Uzbekistan
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group K · Venue: Mercedes-Benz Stadium\, Atlanta · Japan: D
- AZN only (no free-to-air) · Kickoff shown in your device's local time z
- one.
+DESCRIPTION:Group K | Venue: Mercedes-Benz Stadium\, Atlanta | Japan: DAZ
+ N only (no free-to-air) | Kickoff shown in your device's local time zone
+ .
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -987,9 +984,9 @@ DTSTART:20260628T020000Z
 DTEND:20260628T040000Z
 SUMMARY:Algeria v Austria
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group J · Venue: Arrowhead Stadium\, Kansas City · Japan: D
- AZN only (no free-to-air) · Kickoff shown in your device's local time z
- one.
+DESCRIPTION:Group J | Venue: Arrowhead Stadium\, Kansas City | Japan: DAZ
+ N only (no free-to-air) | Kickoff shown in your device's local time zone
+ .
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -999,11 +996,11 @@ UID:wc2026-jp-argentina-jordan@worldcup-2026-calendar
 DTSTAMP:20260628T020000Z
 DTSTART:20260628T020000Z
 DTEND:20260628T040000Z
-SUMMARY:Jordan v Argentina — NHK
+SUMMARY:Jordan v Argentina - NHK
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group J · Venue: AT&T Stadium\, Dallas (Arlington) · Japan:
-  NHK総合 (free-to-air) / DAZN · Kickoff shown in your device's local 
- time zone.
+DESCRIPTION:Group J | Venue: AT&T Stadium\, Dallas (Arlington) | Japan: N
+ HK総合 (free-to-air) / DAZN | Kickoff shown in your device's local tim
+ e zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1015,9 +1012,9 @@ DTSTART:20260628T190000Z
 DTEND:20260628T213000Z
 SUMMARY:Round of 32: 2A v 2B
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Round of 32 · Venue: SoFi Stadium\, Los Angeles (Inglewood) 
- · Broadcasters: TBC (depends on who qualifies) · Kickoff shown in your
-  device's local time zone.
+DESCRIPTION:Round of 32 | Venue: SoFi Stadium\, Los Angeles (Inglewood) |
+  Broadcasters: TBC (depends on who qualifies) | Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1029,9 +1026,9 @@ DTSTART:20260629T170000Z
 DTEND:20260629T193000Z
 SUMMARY:Round of 32: 1C v 2F
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Round of 32 · Venue: NRG Stadium\, Houston · Broadcasters: 
- TBC (depends on who qualifies) · Kickoff shown in your device's local t
- ime zone.
+DESCRIPTION:Round of 32 | Venue: NRG Stadium\, Houston | Broadcasters: TB
+ C (depends on who qualifies) | Kickoff shown in your device's local time
+  zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1043,9 +1040,9 @@ DTSTART:20260629T203000Z
 DTEND:20260629T230000Z
 SUMMARY:Round of 32: 1E v 3A/B/C/D/F
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Round of 32 · Venue: Gillette Stadium\, Boston (Foxborough) 
- · Broadcasters: TBC (depends on who qualifies) · Kickoff shown in your
-  device's local time zone.
+DESCRIPTION:Round of 32 | Venue: Gillette Stadium\, Boston (Foxborough) |
+  Broadcasters: TBC (depends on who qualifies) | Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1057,9 +1054,9 @@ DTSTART:20260630T010000Z
 DTEND:20260630T033000Z
 SUMMARY:Round of 32: 1F v 2C
 LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
-DESCRIPTION:Round of 32 · Venue: Estadio BBVA\, Monterrey (Guadalupe) ·
-  Broadcasters: TBC (depends on who qualifies) · Kickoff shown in your d
- evice's local time zone.
+DESCRIPTION:Round of 32 | Venue: Estadio BBVA\, Monterrey (Guadalupe) | B
+ roadcasters: TBC (depends on who qualifies) | Kickoff shown in your devi
+ ce's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1071,9 +1068,9 @@ DTSTART:20260630T170000Z
 DTEND:20260630T193000Z
 SUMMARY:Round of 32: 2E v 2I
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Round of 32 · Venue: AT&T Stadium\, Dallas (Arlington) · Br
- oadcasters: TBC (depends on who qualifies) · Kickoff shown in your devi
- ce's local time zone.
+DESCRIPTION:Round of 32 | Venue: AT&T Stadium\, Dallas (Arlington) | Broa
+ dcasters: TBC (depends on who qualifies) | Kickoff shown in your device'
+ s local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1085,9 +1082,9 @@ DTSTART:20260630T210000Z
 DTEND:20260630T233000Z
 SUMMARY:Round of 32: 1I v 3C/D/F/G/H
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Round of 32 · Venue: MetLife Stadium\, New York/New Jersey (
- East Rutherford) · Broadcasters: TBC (depends on who qualifies) · Kick
- off shown in your device's local time zone.
+DESCRIPTION:Round of 32 | Venue: MetLife Stadium\, New York/New Jersey (E
+ ast Rutherford) | Broadcasters: TBC (depends on who qualifies) | Kickoff
+  shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1099,9 +1096,9 @@ DTSTART:20260701T010000Z
 DTEND:20260701T033000Z
 SUMMARY:Round of 32: 1A v 3C/E/F/H/I
 LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Round of 32 · Venue: Estadio Azteca\, Mexico City · Broadca
- sters: TBC (depends on who qualifies) · Kickoff shown in your device's 
- local time zone.
+DESCRIPTION:Round of 32 | Venue: Estadio Azteca\, Mexico City | Broadcast
+ ers: TBC (depends on who qualifies) | Kickoff shown in your device's loc
+ al time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1113,9 +1110,9 @@ DTSTART:20260701T160000Z
 DTEND:20260701T183000Z
 SUMMARY:Round of 32: 1L v 3E/H/I/J/K
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Round of 32 · Venue: Mercedes-Benz Stadium\, Atlanta · Broa
- dcasters: TBC (depends on who qualifies) · Kickoff shown in your device
- 's local time zone.
+DESCRIPTION:Round of 32 | Venue: Mercedes-Benz Stadium\, Atlanta | Broadc
+ asters: TBC (depends on who qualifies) | Kickoff shown in your device's 
+ local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1127,9 +1124,9 @@ DTSTART:20260701T200000Z
 DTEND:20260701T223000Z
 SUMMARY:Round of 32: 1G v 3A/E/H/I/J
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Round of 32 · Venue: Lumen Field\, Seattle · Broadcasters: 
- TBC (depends on who qualifies) · Kickoff shown in your device's local t
- ime zone.
+DESCRIPTION:Round of 32 | Venue: Lumen Field\, Seattle | Broadcasters: TB
+ C (depends on who qualifies) | Kickoff shown in your device's local time
+  zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1141,9 +1138,9 @@ DTSTART:20260702T000000Z
 DTEND:20260702T023000Z
 SUMMARY:Round of 32: 1D v 3B/E/F/I/J
 LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Round of 32 · Venue: Levi's Stadium\, San Francisco Bay Area
-  (Santa Clara) · Broadcasters: TBC (depends on who qualifies) · Kickof
- f shown in your device's local time zone.
+DESCRIPTION:Round of 32 | Venue: Levi's Stadium\, San Francisco Bay Area 
+ (Santa Clara) | Broadcasters: TBC (depends on who qualifies) | Kickoff s
+ hown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1155,9 +1152,9 @@ DTSTART:20260702T190000Z
 DTEND:20260702T213000Z
 SUMMARY:Round of 32: 1H v 2J
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Round of 32 · Venue: SoFi Stadium\, Los Angeles (Inglewood) 
- · Broadcasters: TBC (depends on who qualifies) · Kickoff shown in your
-  device's local time zone.
+DESCRIPTION:Round of 32 | Venue: SoFi Stadium\, Los Angeles (Inglewood) |
+  Broadcasters: TBC (depends on who qualifies) | Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1169,9 +1166,9 @@ DTSTART:20260702T230000Z
 DTEND:20260703T013000Z
 SUMMARY:Round of 32: 2K v 2L
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Round of 32 · Venue: BMO Field\, Toronto · Broadcasters: TB
- C (depends on who qualifies) · Kickoff shown in your device's local tim
- e zone.
+DESCRIPTION:Round of 32 | Venue: BMO Field\, Toronto | Broadcasters: TBC 
+ (depends on who qualifies) | Kickoff shown in your device's local time z
+ one.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1183,9 +1180,9 @@ DTSTART:20260703T030000Z
 DTEND:20260703T053000Z
 SUMMARY:Round of 32: 1B v 3E/F/G/I/J
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Round of 32 · Venue: BC Place\, Vancouver · Broadcasters: T
- BC (depends on who qualifies) · Kickoff shown in your device's local ti
- me zone.
+DESCRIPTION:Round of 32 | Venue: BC Place\, Vancouver | Broadcasters: TBC
+  (depends on who qualifies) | Kickoff shown in your device's local time 
+ zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1197,9 +1194,9 @@ DTSTART:20260703T180000Z
 DTEND:20260703T203000Z
 SUMMARY:Round of 32: 2D v 2G
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Round of 32 · Venue: AT&T Stadium\, Dallas (Arlington) · Br
- oadcasters: TBC (depends on who qualifies) · Kickoff shown in your devi
- ce's local time zone.
+DESCRIPTION:Round of 32 | Venue: AT&T Stadium\, Dallas (Arlington) | Broa
+ dcasters: TBC (depends on who qualifies) | Kickoff shown in your device'
+ s local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1211,9 +1208,9 @@ DTSTART:20260703T220000Z
 DTEND:20260704T003000Z
 SUMMARY:Round of 32: 1J v 2H
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Round of 32 · Venue: Hard Rock Stadium\, Miami (Miami Garden
- s) · Broadcasters: TBC (depends on who qualifies) · Kickoff shown in y
- our device's local time zone.
+DESCRIPTION:Round of 32 | Venue: Hard Rock Stadium\, Miami (Miami Gardens
+ ) | Broadcasters: TBC (depends on who qualifies) | Kickoff shown in your
+  device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1225,9 +1222,9 @@ DTSTART:20260704T013000Z
 DTEND:20260704T040000Z
 SUMMARY:Round of 32: 1K v 3D/E/I/J/L
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Round of 32 · Venue: Arrowhead Stadium\, Kansas City · Broa
- dcasters: TBC (depends on who qualifies) · Kickoff shown in your device
- 's local time zone.
+DESCRIPTION:Round of 32 | Venue: Arrowhead Stadium\, Kansas City | Broadc
+ asters: TBC (depends on who qualifies) | Kickoff shown in your device's 
+ local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1239,9 +1236,9 @@ DTSTART:20260704T170000Z
 DTEND:20260704T193000Z
 SUMMARY:Round of 16: W73 v W75
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Round of 16 · Venue: NRG Stadium\, Houston · Broadcasters: 
- TBC (depends on who qualifies) · Kickoff shown in your device's local t
- ime zone.
+DESCRIPTION:Round of 16 | Venue: NRG Stadium\, Houston | Broadcasters: TB
+ C (depends on who qualifies) | Kickoff shown in your device's local time
+  zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1253,9 +1250,9 @@ DTSTART:20260704T210000Z
 DTEND:20260704T233000Z
 SUMMARY:Round of 16: W74 v W77
 LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Round of 16 · Venue: Lincoln Financial Field\, Philadelphia 
- · Broadcasters: TBC (depends on who qualifies) · Kickoff shown in your
-  device's local time zone.
+DESCRIPTION:Round of 16 | Venue: Lincoln Financial Field\, Philadelphia |
+  Broadcasters: TBC (depends on who qualifies) | Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1267,9 +1264,9 @@ DTSTART:20260705T200000Z
 DTEND:20260705T223000Z
 SUMMARY:Round of 16: W76 v W78
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Round of 16 · Venue: MetLife Stadium\, New York/New Jersey (
- East Rutherford) · Broadcasters: TBC (depends on who qualifies) · Kick
- off shown in your device's local time zone.
+DESCRIPTION:Round of 16 | Venue: MetLife Stadium\, New York/New Jersey (E
+ ast Rutherford) | Broadcasters: TBC (depends on who qualifies) | Kickoff
+  shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1281,9 +1278,9 @@ DTSTART:20260706T000000Z
 DTEND:20260706T023000Z
 SUMMARY:Round of 16: W79 v W80
 LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Round of 16 · Venue: Estadio Azteca\, Mexico City · Broadca
- sters: TBC (depends on who qualifies) · Kickoff shown in your device's 
- local time zone.
+DESCRIPTION:Round of 16 | Venue: Estadio Azteca\, Mexico City | Broadcast
+ ers: TBC (depends on who qualifies) | Kickoff shown in your device's loc
+ al time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1295,9 +1292,9 @@ DTSTART:20260706T190000Z
 DTEND:20260706T213000Z
 SUMMARY:Round of 16: W83 v W84
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Round of 16 · Venue: AT&T Stadium\, Dallas (Arlington) · Br
- oadcasters: TBC (depends on who qualifies) · Kickoff shown in your devi
- ce's local time zone.
+DESCRIPTION:Round of 16 | Venue: AT&T Stadium\, Dallas (Arlington) | Broa
+ dcasters: TBC (depends on who qualifies) | Kickoff shown in your device'
+ s local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1309,9 +1306,9 @@ DTSTART:20260707T000000Z
 DTEND:20260707T023000Z
 SUMMARY:Round of 16: W81 v W82
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Round of 16 · Venue: Lumen Field\, Seattle · Broadcasters: 
- TBC (depends on who qualifies) · Kickoff shown in your device's local t
- ime zone.
+DESCRIPTION:Round of 16 | Venue: Lumen Field\, Seattle | Broadcasters: TB
+ C (depends on who qualifies) | Kickoff shown in your device's local time
+  zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1323,9 +1320,9 @@ DTSTART:20260707T160000Z
 DTEND:20260707T183000Z
 SUMMARY:Round of 16: W86 v W88
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Round of 16 · Venue: Mercedes-Benz Stadium\, Atlanta · Broa
- dcasters: TBC (depends on who qualifies) · Kickoff shown in your device
- 's local time zone.
+DESCRIPTION:Round of 16 | Venue: Mercedes-Benz Stadium\, Atlanta | Broadc
+ asters: TBC (depends on who qualifies) | Kickoff shown in your device's 
+ local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1337,9 +1334,9 @@ DTSTART:20260707T200000Z
 DTEND:20260707T223000Z
 SUMMARY:Round of 16: W85 v W87
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Round of 16 · Venue: BC Place\, Vancouver · Broadcasters: T
- BC (depends on who qualifies) · Kickoff shown in your device's local ti
- me zone.
+DESCRIPTION:Round of 16 | Venue: BC Place\, Vancouver | Broadcasters: TBC
+  (depends on who qualifies) | Kickoff shown in your device's local time 
+ zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1351,9 +1348,9 @@ DTSTART:20260709T200000Z
 DTEND:20260709T223000Z
 SUMMARY:Quarter-final: W89 v W90
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Quarter-final · Venue: Gillette Stadium\, Boston (Foxborough
- ) · Broadcasters: TBC (depends on who qualifies) · Kickoff shown in yo
- ur device's local time zone.
+DESCRIPTION:Quarter-final | Venue: Gillette Stadium\, Boston (Foxborough)
+  | Broadcasters: TBC (depends on who qualifies) | Kickoff shown in your 
+ device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1365,9 +1362,9 @@ DTSTART:20260710T190000Z
 DTEND:20260710T213000Z
 SUMMARY:Quarter-final: W93 v W94
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Quarter-final · Venue: SoFi Stadium\, Los Angeles (Inglewood
- ) · Broadcasters: TBC (depends on who qualifies) · Kickoff shown in yo
- ur device's local time zone.
+DESCRIPTION:Quarter-final | Venue: SoFi Stadium\, Los Angeles (Inglewood)
+  | Broadcasters: TBC (depends on who qualifies) | Kickoff shown in your 
+ device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1379,9 +1376,9 @@ DTSTART:20260711T210000Z
 DTEND:20260711T233000Z
 SUMMARY:Quarter-final: W91 v W92
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Quarter-final · Venue: Hard Rock Stadium\, Miami (Miami Gard
- ens) · Broadcasters: TBC (depends on who qualifies) · Kickoff shown in
-  your device's local time zone.
+DESCRIPTION:Quarter-final | Venue: Hard Rock Stadium\, Miami (Miami Garde
+ ns) | Broadcasters: TBC (depends on who qualifies) | Kickoff shown in yo
+ ur device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1393,9 +1390,9 @@ DTSTART:20260712T010000Z
 DTEND:20260712T033000Z
 SUMMARY:Quarter-final: W95 v W96
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Quarter-final · Venue: Arrowhead Stadium\, Kansas City · Br
- oadcasters: TBC (depends on who qualifies) · Kickoff shown in your devi
- ce's local time zone.
+DESCRIPTION:Quarter-final | Venue: Arrowhead Stadium\, Kansas City | Broa
+ dcasters: TBC (depends on who qualifies) | Kickoff shown in your device'
+ s local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1407,9 +1404,9 @@ DTSTART:20260714T190000Z
 DTEND:20260714T213000Z
 SUMMARY:Semi-final: W97 v W98
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Semi-final · Venue: AT&T Stadium\, Dallas (Arlington) · Bro
- adcasters: TBC (depends on who qualifies) · Kickoff shown in your devic
- e's local time zone.
+DESCRIPTION:Semi-final | Venue: AT&T Stadium\, Dallas (Arlington) | Broad
+ casters: TBC (depends on who qualifies) | Kickoff shown in your device's
+  local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1421,9 +1418,9 @@ DTSTART:20260715T190000Z
 DTEND:20260715T213000Z
 SUMMARY:Semi-final: W99 v W100
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Semi-final · Venue: Mercedes-Benz Stadium\, Atlanta · Broad
- casters: TBC (depends on who qualifies) · Kickoff shown in your device'
- s local time zone.
+DESCRIPTION:Semi-final | Venue: Mercedes-Benz Stadium\, Atlanta | Broadca
+ sters: TBC (depends on who qualifies) | Kickoff shown in your device's l
+ ocal time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1435,9 +1432,9 @@ DTSTART:20260718T210000Z
 DTEND:20260718T233000Z
 SUMMARY:Third-place play-off: L101 v L102
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Third-place play-off · Venue: Hard Rock Stadium\, Miami (Mia
- mi Gardens) · Broadcasters: TBC (depends on who qualifies) · Kickoff s
- hown in your device's local time zone.
+DESCRIPTION:Third-place play-off | Venue: Hard Rock Stadium\, Miami (Miam
+ i Gardens) | Broadcasters: TBC (depends on who qualifies) | Kickoff show
+ n in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1447,11 +1444,11 @@ UID:wc2026-jp-ko-104@worldcup-2026-calendar
 DTSTAMP:20260719T190000Z
 DTSTART:20260719T190000Z
 DTEND:20260719T213000Z
-SUMMARY:Final: W101 v W102 — NHK
+SUMMARY:Final: W101 v W102 - NHK
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Final · Venue: MetLife Stadium\, New York/New Jersey (East R
- utherford) · Japan: NHK総合 (free-to-air) / DAZN · Kickoff shown in 
- your device's local time zone.
+DESCRIPTION:Final | Venue: MetLife Stadium\, New York/New Jersey (East Ru
+ therford) | Japan: NHK総合 (free-to-air) / DAZN | Kickoff shown in you
+ r device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
