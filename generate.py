@@ -228,27 +228,27 @@ def summary_for(m, variant, bc):
 
 
 def description_for(m, variant, bc, location):
-    parts = [m["label"], f"Venue: {location}"]
+    # Line 1: game (group/stage + venue) · then broadcaster(s) · then result.
+    lines = [f'{m["label"]} / {location}']
     uk, jp = bc.get("uk"), bc.get("jp")
     grp = m["stage"] == "group"
     if not uk and not jp and not grp:
-        parts.append("Broadcasters: TBC (depends on who qualifies)")
+        lines.append("Broadcasters: TBC")
     else:
         if variant in ("uk", "hybrid"):
-            parts.append("UK: " + (uk_detail(uk) if uk else "TBC"))
+            lines.append("UK: " + (uk_detail(uk) if uk else "TBC"))
         if variant in ("jp", "hybrid"):
             if jp == "BS4K":
-                parts.append("Japan: NHK BS Premium 4K only (free, needs BS4K tuner) / DAZN")
+                lines.append("Japan: NHK BS Premium 4K / DAZN")
             elif jp:
-                parts.append(f"Japan: {JP_FULL[jp]} (free-to-air) / DAZN")
+                lines.append(f"Japan: {JP_FULL[jp]} / DAZN")
             elif grp:
-                parts.append("Japan: DAZN only (no free-to-air)")
+                lines.append("Japan: DAZN only")
             else:
-                parts.append("Japan: TBC")
+                lines.append("Japan: TBC")
     if m["score"]:
-        parts.append(f'Result: {m["home"]} {m["score"]} {m["away"]}')
-    parts.append("Kickoff shown in your device's local time zone.")
-    return " | ".join(parts)
+        lines.append(f'Result: {m["home"]} {m["score"]} {m["away"]}')
+    return "\n".join(lines)
 
 
 def build_event(m, variant, bc, location):
