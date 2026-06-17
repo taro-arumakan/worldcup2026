@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
-"""Generate docs/worldcup.ics for the 2026 FIFA World Cup.
+"""Generate the World Cup 2026 calendars (UK, Japan, hybrid) as .ics files.
 
 Fixtures, kickoff times (venue-local + UTC offset), venues and the knockout
 bracket come from the vendored openfootball data in data/. Broadcaster labels
 (UK BBC/ITV + Japan free-to-air) come from data/broadcasters.json.
+
+Three calendars are produced from the same data:
+  docs/uk.ics      UK only      — BBC/ITV with 4K/HD tag (BBC=iPlayer 4K, ITV=ITVX HD)
+  docs/japan.ics   Japan only   — NHK/NTV/Fuji/BS4K; no label = DAZN only
+  docs/hybrid.ics  UK + Japan   — UK BBC/ITV (4K/HD) + 🇯🇵 flag (FTA) / 🇯🇵 BS (BS4K only)
+  docs/worldcup.ics  alias of the hybrid feed (kept for older subscriptions)
 
 Every event is emitted in UTC (…Z), so calendar apps display each kickoff in
 the subscriber's own local time zone automatically.
@@ -19,20 +25,31 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-OUT = ROOT / "docs" / "worldcup.ics"
+DOCS = ROOT / "docs"
 
-PRODID = "-//taro-arumakan//WorldCup2026 UK+JP TV//EN"
-CAL_NAME = "World Cup 2026 — UK & Japan TV"
-CAL_DESC = ("FIFA World Cup 2026 fixtures with UK (BBC/ITV) and Japan free-to-air "
-            "(NHK/NTV/Fuji) broadcasters. Kickoffs auto-convert to your local time. "
-            "Knockout broadcasters TBC.")
+PRODID = "-//taro-arumakan//WorldCup2026 TV//EN"
+
+# variant -> (filename, X-WR-CALNAME, X-WR-CALDESC)
+VARIANTS = {
+    "uk": ("uk.ics", "World Cup 2026 ⚽ UK TV (BBC/ITV)",
+           "FIFA World Cup 2026, all 104 matches, UK broadcaster in the title. "
+           "BBC = iPlayer (live in 4K UHD); ITV = ITVX (HD only). Knockouts TBC. "
+           "Kickoffs auto-convert to your local time."),
+    "jp": ("japan.ics", "World Cup 2026 ⚽ 日本の放送 (NHK/民放/BS4K)",
+           "FIFAワールドカップ2026 全104試合。地上波(NHK/日テレ/フジ)・BS4Kを表示。"
+           "表示のない試合はDAZNのみ。ノックアウトは未定。時刻は端末のタイムゾーンで表示。"),
+    "hybrid": ("hybrid.ics", "World Cup 2026 ⚽ UK + Japan TV",
+               "FIFA World Cup 2026, all 104 matches. UK BBC/ITV with 4K/HD tag, plus a "
+               "🇯🇵 flag when on Japanese free-to-air (🇯🇵 BS = BS4K only; no flag = DAZN only). "
+               "Knockouts TBC. Kickoffs auto-convert to your local time."),
+}
+HYBRID_ALIAS = "worldcup.ics"  # keep the original URL working
 
 MONTHS = {m: i for i, m in enumerate(
     ["January", "February", "March", "April", "May", "June", "July", "August",
      "September", "October", "November", "December"], 1)}
 MONTHS.update({m[:3]: i for m, i in list(MONTHS.items())})  # also accept Jun/Jul
 
-# Normalise team-name spelling variants to one token for matching.
 ALIASES = {
     "korearepublic": "southkorea",
     "czechrepublic": "czech", "czechia": "czech",
@@ -43,6 +60,9 @@ ALIASES = {
     "caboverde": "capeverde",
     "unitedstates": "usa", "us": "usa",
 }
+
+JP_FULL = {"NHK": "NHK総合", "NTV": "日本テレビ", "Fuji": "フジテレビ",
+           "BS4K": "NHK BS Premium 4K"}
 
 
 def norm(name):
@@ -56,7 +76,6 @@ def pair_key(a, b):
 
 
 def split_matchup(m):
-    """Return (home, away, score_or_None) from an openfootball matchup string."""
     m = m.strip()
     sc = re.search(r"(\d+)-(\d+)\s*\(\d+-\d+\)", m)
     if sc:
@@ -74,7 +93,7 @@ def parse_groups(text):
         if mg:
             group, date, started = mg.group(1), None, True
             continue
-        if line.startswith("▪"):          # matchday list etc. — skip
+        if line.startswith("▪"):
             continue
         if not started:
             continue
@@ -86,7 +105,7 @@ def parse_groups(text):
         if mt and date:
             hh, mm, off, matchup, venue = mt.groups()
             home, away, score = split_matchup(matchup)
-            matches.append(dict(stage="group", label="Group " + group, group=group,
+            matches.append(dict(stage="group", label="Group " + group,
                                 mon=date[0], day=date[1], hh=int(hh), mm=int(mm),
                                 off=int(off), home=home, away=away, score=score,
                                 venue=venue.strip()))
@@ -157,109 +176,120 @@ def fold(line):
     chunks, i, limit = [], 0, 73
     while i < len(b):
         j = min(i + limit, len(b))
-        while j < len(b) and (b[j] & 0xC0) == 0x80:   # don't split a code point
+        while j < len(b) and (b[j] & 0xC0) == 0x80:
             j -= 1
         chunks.append(b[i:j].decode("utf-8"))
-        i, limit = j, 72                              # continuation lines get a leading space
+        i, limit = j, 72
     return "\r\n ".join(chunks)
 
 
-JP_FULL = {"NHK": "NHK総合", "NTV": "日本テレビ", "Fuji": "フジテレビ",
-           "BS4K": "NHK BS Premium 4K"}
+def uk_quality(uk):
+    """Return (short_tag, long_detail) for a UK broadcaster."""
+    if uk == "BBC":
+        return "4K", "BBC One / iPlayer — live in 4K UHD"
+    return "HD", "ITV1 / ITVX — HD only (STV in Scotland)"
 
 
-def build_event(m, dtstamp):
+def summary_for(m, variant, bc):
+    fixture = f'{m["home"]} v {m["away"]}'
+    if m["stage"] != "group":
+        return f'{m["label"]}: {fixture}'
+    uk, jp = bc.get("uk"), bc.get("jp")
+    qtag, _ = uk_quality(uk)
+    if variant == "uk":
+        return f'{fixture} — {uk} ({qtag})'
+    if variant == "jp":
+        return f'{fixture} — {jp}' if jp else fixture
+    s = f'{fixture} — 🇬🇧 {uk} ({qtag})'        # hybrid
+    if jp == "BS4K":
+        s += " · 🇯🇵 BS"
+    elif jp:
+        s += " · 🇯🇵"
+    return s
+
+
+def description_for(m, variant, bc, location):
+    parts = [m["label"], f"Venue: {location}"]
+    if m["stage"] == "group":
+        uk, jp = bc.get("uk"), bc.get("jp")
+        if variant in ("uk", "hybrid"):
+            parts.append("UK: " + uk_quality(uk)[1])
+        if variant in ("jp", "hybrid"):
+            if jp == "BS4K":
+                parts.append("Japan: NHK BS Premium 4K only (free, needs BS4K tuner) / DAZN")
+            elif jp:
+                parts.append(f"Japan: {JP_FULL[jp]} (free-to-air) / DAZN")
+            else:
+                parts.append("Japan: DAZN only (no free-to-air)")
+    else:
+        parts.append("Broadcasters: TBC (depends on who qualifies)")
+    if m["score"]:
+        parts.append(f'Result: {m["home"]} {m["score"]} {m["away"]}')
+    parts.append("Kickoff shown in your device's local time zone.")
+    return " · ".join(parts)
+
+
+def build_event(m, variant, bc, location, dtstamp):
     dt = to_utc(m)
     dur = timedelta(hours=2) if m["stage"] == "group" else timedelta(hours=2, minutes=30)
-    bc = BROAD.get(pair_key(m["home"], m["away"]), {}) if m["stage"] == "group" else {}
-
-    fixture = f'{m["home"]} v {m["away"]}'
-    title = fixture if m["stage"] == "group" else f'{m["label"]}: {fixture}'
-    tv = []
-    if bc.get("uk"):
-        tv.append(f'🇬🇧 {bc["uk"]}')
-    if bc.get("jp"):
-        tv.append(f'🇯🇵 {bc["jp"]}')
-    summary = title + (" — " + " · ".join(tv) if tv else "")
-
-    venue = m["venue"]
-    location = f'{STADIUMS.get(venue, "")}, {venue}'.lstrip(", ")
-
-    desc = [m["label"], f'Venue: {location}']
-    if m["stage"] == "group":
-        desc.append(f'UK: {bc.get("uk", "TBC")} (incl. iPlayer / ITVX)')
-        if bc.get("jp"):
-            desc.append(f'Japan: {JP_FULL.get(bc["jp"], bc["jp"])} (free-to-air) / DAZN')
-        else:
-            desc.append("Japan: DAZN only (no free-to-air)")
-    else:
-        desc.append("UK & Japan broadcasters: TBC")
-    if m["score"]:
-        desc.append(f'Result: {m["home"]} {m["score"]} {m["away"]}')
-    desc.append("Kickoff shown in your device's local time zone.")
-
-    if m["stage"] == "group":
-        uid = "wc2026-grp-" + pair_key(m["home"], m["away"]).replace("|", "-")
-    else:
-        uid = f'wc2026-ko-{m["num"]}'
-
-    lines = [
+    key = pair_key(m["home"], m["away"]).replace("|", "-") if m["stage"] == "group" else f'ko-{m["num"]}'
+    return dt, [
         "BEGIN:VEVENT",
-        f"UID:{uid}@worldcup-2026-calendar",
+        f"UID:wc2026-{variant}-{key}@worldcup-2026-calendar",
         f"DTSTAMP:{dtstamp}",
         f'DTSTART:{dt.strftime("%Y%m%dT%H%M%SZ")}',
         f'DTEND:{(dt + dur).strftime("%Y%m%dT%H%M%SZ")}',
-        f"SUMMARY:{esc(summary)}",
+        f"SUMMARY:{esc(summary_for(m, variant, bc))}",
         f"LOCATION:{esc(location)}",
-        f"DESCRIPTION:{esc(' · '.join(desc))}",
+        f"DESCRIPTION:{esc(description_for(m, variant, bc, location))}",
         "CATEGORIES:World Cup 2026,Football",
         "TRANSP:TRANSPARENT",
         "STATUS:CONFIRMED",
         "END:VEVENT",
     ]
-    return dt, lines
 
 
-def main():
-    global STADIUMS, BROAD
-    STADIUMS = load_stadiums()
-    BROAD = load_broadcasters()
-
-    matches = parse_groups((DATA / "cup.txt").read_text(encoding="utf-8"))
-    matches += parse_finals((DATA / "cup_finals.txt").read_text(encoding="utf-8"))
-
-    dtstamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    events = sorted((build_event(m, dtstamp) for m in matches), key=lambda x: x[0])
-
+def write_calendar(path, name, desc, event_lines):
     out = [
         "BEGIN:VCALENDAR", "VERSION:2.0", f"PRODID:{PRODID}",
         "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
-        f"X-WR-CALNAME:{esc(CAL_NAME)}", "X-WR-TIMEZONE:UTC",
-        f"X-WR-CALDESC:{esc(CAL_DESC)}",
+        f"X-WR-CALNAME:{esc(name)}", "X-WR-TIMEZONE:UTC",
+        f"X-WR-CALDESC:{esc(desc)}",
         "REFRESH-INTERVAL;VALUE=DURATION:PT12H", "X-PUBLISHED-TTL:PT12H",
-    ]
-    for _, lines in events:
-        out += lines
-    out.append("END:VCALENDAR")
+    ] + event_lines + ["END:VCALENDAR"]
+    path.write_text("\r\n".join(fold(l) for l in out) + "\r\n", encoding="utf-8")
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text("\r\n".join(fold(l) for l in out) + "\r\n", encoding="utf-8")
 
-    # ---- validation summary -------------------------------------------------
+def main():
+    stadiums = load_stadiums()
+    broad = load_broadcasters()
+    matches = parse_groups((DATA / "cup.txt").read_text(encoding="utf-8"))
+    matches += parse_finals((DATA / "cup_finals.txt").read_text(encoding="utf-8"))
+    dtstamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+    DOCS.mkdir(parents=True, exist_ok=True)
+    for variant, (fname, name, desc) in VARIANTS.items():
+        events = []
+        for m in matches:
+            bc = broad.get(pair_key(m["home"], m["away"]), {}) if m["stage"] == "group" else {}
+            location = f'{stadiums.get(m["venue"], "")}, {m["venue"]}'.lstrip(", ")
+            events.append(build_event(m, variant, bc, location, dtstamp))
+        lines = [l for _, ls in sorted(events, key=lambda x: x[0]) for l in ls]
+        write_calendar(DOCS / fname, name, desc, lines)
+        if variant == "hybrid":
+            write_calendar(DOCS / HYBRID_ALIAS, name, desc, lines)
+        print(f"{fname:14s} {len(events)} events  ({(DOCS / fname).stat().st_size} bytes)")
+
+    # ---- validation ---------------------------------------------------------
     grp = [m for m in matches if m["stage"] == "group"]
     ko = [m for m in matches if m["stage"] == "ko"]
     missing_uk = [f'{m["home"]} v {m["away"]}' for m in grp
-                  if not BROAD.get(pair_key(m["home"], m["away"]), {}).get("uk")]
-    with_jp = [m for m in grp if BROAD.get(pair_key(m["home"], m["away"]), {}).get("jp")]
-    missing_venue = sorted({m["venue"] for m in matches if m["venue"] not in STADIUMS})
-
-    print(f"groups parsed : {len(grp)}  (expected 72)")
-    print(f"knockout parsed: {len(ko)}  (expected 32)")
-    print(f"total events  : {len(matches)}")
-    print(f"group matches missing UK label: {len(missing_uk)} {missing_uk}")
-    print(f"group matches with JP FTA label: {len(with_jp)} (expected 32)")
-    print(f"venues not found in stadium map: {missing_venue or 'none'}")
-    print(f"written: {OUT}  ({OUT.stat().st_size} bytes)")
+                  if not broad.get(pair_key(m["home"], m["away"]), {}).get("uk")]
+    with_jp = sum(1 for m in grp if broad.get(pair_key(m["home"], m["away"]), {}).get("jp"))
+    missing_venue = sorted({m["venue"] for m in matches if m["venue"] not in stadiums})
+    print(f"\ngroups={len(grp)} (exp 72)  knockout={len(ko)} (exp 32)  total={len(matches)}")
+    print(f"missing UK label: {len(missing_uk)} {missing_uk}")
+    print(f"JP FTA labels: {with_jp} (exp 32)   venues unmapped: {missing_venue or 'none'}")
     if len(grp) != 72 or len(ko) != 32 or missing_uk or missing_venue:
         print("!! VALIDATION FAILED", file=sys.stderr)
         sys.exit(1)

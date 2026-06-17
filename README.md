@@ -1,29 +1,32 @@
-# World Cup 2026 — UK & Japan TV calendar
+# World Cup 2026 — TV calendars
 
-A subscribable `.ics` calendar of **all 104** 2026 FIFA World Cup matches, with the
-**UK** (🇬🇧 BBC/ITV) and **Japan free-to-air** (🇯🇵 NHK/NTV/Fuji) broadcaster written
-into every event title — e.g. `Netherlands v Japan — 🇬🇧 ITV · 🇯🇵 NHK`.
+Subscribable `.ics` calendars of **all 104** 2026 FIFA World Cup matches, with the
+broadcaster written into every event title. Three flavours from the same data.
 
 Hosted free on GitHub Pages. No server, no tracking.
-
-## Subscribe
-
-| Client | How |
-| --- | --- |
-| **iPhone / iPad / Mac** | Open <webcal://taro-arumakan.github.io/worldcup-2026-calendar/worldcup.ics> → Add |
-| **Google Calendar** | Other calendars ▸ **+** ▸ *From URL* → paste the HTTPS URL below |
-| **Outlook** | Add calendar ▸ *Subscribe from web* → paste the HTTPS URL |
-
-**Feed URL:** `https://taro-arumakan.github.io/worldcup-2026-calendar/worldcup.ics`
 **Landing page:** https://taro-arumakan.github.io/worldcup-2026-calendar/
+
+## Three feeds
+
+| # | Feed | For | Title example |
+| - | --- | --- | --- |
+| 1 | `uk.ics` | UK viewers | `England v Ghana — BBC (4K)` · `England v Croatia — ITV (HD)` |
+| 2 | `japan.ics` | Japanese friends | `Mexico v South Africa — NHK` · `England v Croatia` (blank = DAZN only) |
+| 3 | `hybrid.ics` | UK channel + JP free-to-air | `Netherlands v Japan — 🇬🇧 ITV (HD) · 🇯🇵` |
+
+`https://taro-arumakan.github.io/worldcup-2026-calendar/<feed>` — or `webcal://…/<feed>` to
+open Apple Calendar directly. `worldcup.ics` is kept as an alias of the hybrid feed.
+
+**Subscribe:** iPhone/Mac → open the `webcal://` link → Add. Google Calendar → Other
+calendars ▸ **+** ▸ *From URL* → paste the HTTPS URL. Outlook → Subscribe from web.
 
 Kickoffs are stored in **UTC**, so every client shows them in *your* local time zone.
 
 ## Labels
 
-- 🇬🇧 `BBC` / `ITV` — UK free-to-air (also iPlayer / ITVX; STV in Scotland).
-- 🇯🇵 `NHK` (NHK総合), `NTV` (日本テレビ), `Fuji` (フジテレビ) — Japanese free-to-air. `BS4K` = NHK BS Premium 4K only.
-- **No 🇯🇵 label** = DAZN-only in Japan (paid). Only DAZN carries all 104 matches live.
+- 🇬🇧 `BBC` = iPlayer, **live in 4K UHD** · `ITV` = ITVX, **HD only** (STV in Scotland). The UK feeds tag each as `(4K)` / `(HD)`.
+- 🇯🇵 `NHK` (NHK総合), `NTV` (日本テレビ), `Fuji` (フジテレビ) = terrestrial free-to-air · `BS4K` = NHK BS Premium 4K only.
+- **No Japanese channel** = DAZN-only (paid). Only DAZN carries all 104 live. In the hybrid feed: 🇯🇵 = free-to-air, `🇯🇵 BS` = BS4K only, nothing = DAZN.
 - **Knockouts** show bracket slots (`1A v 3C/E/F/H/I`, `W74 v W77`) and broadcasters are **TBC** — they depend on qualification.
 
 ## How it's built
@@ -31,8 +34,9 @@ Kickoffs are stored in **UTC**, so every client shows them in *your* local time 
 ```
 data/cup.txt, cup_finals.txt, cup_stadiums.csv   # fixtures/venues (vendored from openfootball)
 data/broadcasters.json                            # UK + JP broadcaster overlay, keyed by team pair
-generate.py                                        # parses the above → docs/worldcup.ics
-docs/worldcup.ics                                  # the published calendar
+generate.py                                        # parses the above → the .ics feeds below
+docs/uk.ics, japan.ics, hybrid.ics                 # the three published calendars
+docs/worldcup.ics                                  # alias of hybrid.ics (back-compat)
 docs/index.html                                    # landing page
 ```
 

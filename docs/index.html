@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>World Cup 2026 — UK &amp; Japan TV Calendar</title>
-<meta name="description" content="Subscribe to a live calendar of every 2026 FIFA World Cup match with UK (BBC/ITV) and Japan free-to-air (NHK/NTV/Fuji) broadcasters.">
+<title>World Cup 2026 — TV Calendars (UK · Japan · Hybrid)</title>
+<meta name="description" content="Subscribe to live calendars of every 2026 FIFA World Cup match with UK (BBC/ITV, 4K/HD) and Japan free-to-air (NHK/NTV/Fuji) broadcasters.">
 <style>
   :root{
     --bg:#0f1115; --card:#181b22; --line:#2a2f3a; --fg:#e8eaed; --muted:#9aa3b2;
@@ -16,72 +16,111 @@
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--fg);
        font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
-  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
   h1{font-size:1.9rem;line-height:1.2;margin:.2em 0}
-  h2{font-size:1.15rem;margin:2em 0 .6em;border-bottom:1px solid var(--line);padding-bottom:.3em}
+  h2{font-size:1.15rem;margin:2.2em 0 .6em;border-bottom:1px solid var(--line);padding-bottom:.3em}
   p{color:var(--fg)} .muted{color:var(--muted)}
   .sub{color:var(--muted);font-size:1.05rem;margin-top:0}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:18px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0}
+  .card h3{margin:.1em 0 .2em;font-size:1.15rem}
+  .who{color:var(--muted);font-size:.9rem;margin:.1em 0 .7em}
+  .eg{font-size:.92rem;background:var(--chip);border:1px solid var(--line);border-radius:8px;
+      padding:8px 11px;margin:.5em 0;display:inline-block}
   .btn{display:inline-block;text-decoration:none;font-weight:600;border-radius:10px;
-       padding:14px 22px;margin:6px 8px 6px 0;border:1px solid var(--line)}
-  .btn-main{background:var(--accent);color:#fff;border-color:transparent;font-size:1.05rem}
+       padding:11px 18px;margin:8px 8px 4px 0;border:1px solid var(--line)}
+  .btn-main{background:var(--accent);color:#fff;border-color:transparent}
   .btn-2{background:var(--chip);color:var(--fg)}
-  code,.url{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.92rem}
+  .reco{border-color:var(--accent)}
+  .tag{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+       background:var(--accent);color:#fff;border-radius:6px;padding:2px 7px;margin-left:8px;vertical-align:middle}
   .urlbox{display:flex;gap:8px;align-items:center;background:var(--chip);border:1px solid var(--line);
-          border-radius:10px;padding:10px 12px;margin:10px 0;overflow:auto}
-  .urlbox .url{white-space:nowrap}
-  .legend li{margin:.3em 0}
-  .flag{font-size:1.1rem}
-  ol{padding-left:1.2em} ol li{margin:.35em 0}
+          border-radius:10px;padding:8px 10px;margin:8px 0 2px;overflow:auto}
+  .url{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82rem;white-space:nowrap}
+  button.copy{cursor:pointer;background:var(--accent2);color:#fff;border:none;border-radius:8px;padding:7px 11px;font-weight:600}
+  .legend li{margin:.35em 0}
+  .flag{font-size:1.05rem}
   .pill{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:999px;
         padding:2px 10px;font-size:.85rem;margin:2px 4px 2px 0}
   footer{color:var(--muted);font-size:.85rem;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
   a{color:var(--accent2)}
-  button.copy{cursor:pointer;background:var(--accent2);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-weight:600}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9rem}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <h1>⚽ World Cup 2026 — UK &amp; Japan TV</h1>
-  <p class="sub">Every match · kickoff in <strong>your</strong> local time · with the
-     <span class="flag">🇬🇧</span> UK (BBC/ITV) and <span class="flag">🇯🇵</span> Japan free-to-air channel baked into each event.</p>
+  <h1>⚽ World Cup 2026 — TV Calendars</h1>
+  <p class="sub">Every match · kickoff in <strong>your</strong> local time · broadcaster baked into each title.
+     Pick the feed you want and subscribe once.</p>
+  <p class="muted">Tip: <strong>BBC</strong> = iPlayer, <strong>live in 4K UHD</strong>. <strong>ITV</strong> = ITVX, <strong>HD only</strong>. So “BBC vs ITV” in the UK feeds tells you whether 4K is available.</p>
 
+  <!-- 1. UK -->
   <div class="card">
-    <a class="btn btn-main" href="webcal://taro-arumakan.github.io/worldcup-2026-calendar/worldcup.ics">📲 Subscribe (iPhone / Mac)</a>
-    <a class="btn btn-2" href="worldcup.ics" download>⬇️ Download .ics</a>
-    <p class="muted" style="margin:.8em 0 0">The subscribe button opens Apple Calendar directly. For Google Calendar, use the URL below.</p>
-    <div class="urlbox">
-      <span class="url" id="feed">https://taro-arumakan.github.io/worldcup-2026-calendar/worldcup.ics</span>
-      <button class="copy" onclick="navigator.clipboard.writeText(document.getElementById('feed').textContent).then(()=>{this.textContent='Copied ✓'})">Copy</button>
+    <h3>1 · UK <span class="muted" style="font-weight:400">— BBC / ITV</span></h3>
+    <p class="who">UK viewers. The 4K/HD tag comes straight from the channel.</p>
+    <span class="eg">England v Ghana — BBC (4K)</span> <span class="eg">England v Croatia — ITV (HD)</span>
+    <div>
+      <a class="btn btn-main" href="webcal://taro-arumakan.github.io/worldcup-2026-calendar/uk.ics">📲 Subscribe</a>
+      <a class="btn btn-2" href="uk.ics" download>⬇️ .ics</a>
     </div>
+    <div class="urlbox"><span class="url" id="u-uk">https://taro-arumakan.github.io/worldcup-2026-calendar/uk.ics</span>
+      <button class="copy" onclick="cp(this,'u-uk')">Copy</button></div>
+  </div>
+
+  <!-- 2. Japan -->
+  <div class="card">
+    <h3>2 · Japan <span class="muted" style="font-weight:400">— NHK / NTV / Fuji / BS4K</span></h3>
+    <p class="who">For Japanese friends. No channel in the title = DAZN only (paid).</p>
+    <span class="eg">Mexico v South Africa — NHK</span> <span class="eg">Brazil v Morocco — BS4K</span> <span class="eg">England v Croatia</span>
+    <div>
+      <a class="btn btn-main" href="webcal://taro-arumakan.github.io/worldcup-2026-calendar/japan.ics">📲 登録 / Subscribe</a>
+      <a class="btn btn-2" href="japan.ics" download>⬇️ .ics</a>
+    </div>
+    <div class="urlbox"><span class="url" id="u-jp">https://taro-arumakan.github.io/worldcup-2026-calendar/japan.ics</span>
+      <button class="copy" onclick="cp(this,'u-jp')">Copy</button></div>
+  </div>
+
+  <!-- 3. Hybrid -->
+  <div class="card reco">
+    <h3>3 · Hybrid <span class="tag">recommended</span></h3>
+    <p class="who">UK channel + whether it's free in Japan — best of both.</p>
+    <span class="eg">Netherlands v Japan — 🇬🇧 ITV (HD) · 🇯🇵</span> <span class="eg">Brazil v Morocco — 🇬🇧 BBC (4K) · 🇯🇵 BS</span> <span class="eg">England v Croatia — 🇬🇧 ITV (HD)</span>
+    <p class="muted" style="font-size:.85rem;margin:.3em 0 0">🇯🇵 = on Japanese free-to-air · 🇯🇵 BS = BS4K only · nothing = DAZN only</p>
+    <div>
+      <a class="btn btn-main" href="webcal://taro-arumakan.github.io/worldcup-2026-calendar/hybrid.ics">📲 Subscribe</a>
+      <a class="btn btn-2" href="hybrid.ics" download>⬇️ .ics</a>
+    </div>
+    <div class="urlbox"><span class="url" id="u-hy">https://taro-arumakan.github.io/worldcup-2026-calendar/hybrid.ics</span>
+      <button class="copy" onclick="cp(this,'u-hy')">Copy</button></div>
   </div>
 
   <h2>How to subscribe</h2>
-  <p><strong>iPhone / iPad</strong> &nbsp;<span class="muted">→ tap “Subscribe” above → Add.</span></p>
-  <p><strong>Mac (Calendar app)</strong> &nbsp;<span class="muted">→ tap “Subscribe”, or File ▸ New Calendar Subscription and paste the URL.</span></p>
-  <p><strong>Google Calendar</strong> &nbsp;<span class="muted">(desktop) → Other calendars ▸ + ▸ <em>From URL</em> → paste the URL above → Add calendar. It then syncs to the Google Calendar app on Android/iPhone.</span></p>
-  <p><strong>Outlook</strong> &nbsp;<span class="muted">→ Add calendar ▸ Subscribe from web → paste the URL.</span></p>
+  <p><strong>iPhone / iPad / Mac</strong> <span class="muted">→ tap “Subscribe” → Add. (Mac: File ▸ New Calendar Subscription, paste the URL.)</span></p>
+  <p><strong>Google Calendar</strong> <span class="muted">(desktop) → Other calendars ▸ + ▸ <em>From URL</em> → paste the feed URL → Add. Then it syncs to the app on Android/iPhone.</span></p>
+  <p><strong>Outlook</strong> <span class="muted">→ Add calendar ▸ Subscribe from web → paste the URL.</span></p>
 
-  <h2>What the labels mean</h2>
+  <h2>Notes</h2>
   <ul class="legend">
-    <li><span class="flag">🇬🇧</span> <strong>BBC</strong> / <strong>ITV</strong> — the UK free-to-air broadcaster (also on iPlayer / ITVX; STV in Scotland).</li>
-    <li><span class="flag">🇯🇵</span> <strong>NHK</strong> (NHK総合), <strong>NTV</strong> (日本テレビ), <strong>Fuji</strong> (フジテレビ) — Japanese free-to-air. <strong>BS4K</strong> = NHK BS Premium 4K only.</li>
-    <li>No 🇯🇵 label = <strong>DAZN only</strong> in Japan (paid) — only DAZN carries all 104 live.</li>
-    <li>Group stage is fully labelled. <strong>Knockout broadcasters are TBC</strong> (they depend on who qualifies) and show bracket slots like <code>1A v 3C/E/F/H/I</code> until teams are confirmed.</li>
-    <li>⏱️ Every kickoff is stored in UTC and shown in <strong>your device's own time zone</strong> automatically.</li>
+    <li><span class="flag">🇬🇧</span> <strong>BBC</strong> = iPlayer, live in 4K UHD · <strong>ITV</strong> = ITVX, HD only (STV in Scotland).</li>
+    <li><span class="flag">🇯🇵</span> <strong>NHK</strong> (NHK総合), <strong>NTV</strong> (日本テレビ), <strong>Fuji</strong> (フジテレビ) = terrestrial free-to-air · <strong>BS4K</strong> = NHK BS Premium 4K only.</li>
+    <li>Only <strong>DAZN</strong> carries all 104 live in Japan (paid) — matches with no Japanese free channel are DAZN-only.</li>
+    <li>Group stage is fully labelled. <strong>Knockout broadcasters are TBC</strong>; those events show bracket slots like <code>1A v 3C/E/F/H/I</code> until teams are confirmed.</li>
+    <li>⏱️ Kickoffs are stored in UTC and shown in <strong>your device's own time zone</strong>.</li>
   </ul>
-  <p><span class="pill">104 matches</span><span class="pill">12 Jun – 19 Jul 2026</span><span class="pill">USA · Canada · Mexico</span></p>
+  <p><span class="pill">104 matches</span><span class="pill">11 Jun – 19 Jul 2026</span><span class="pill">USA · Canada · Mexico</span></p>
 
   <footer>
-    Fixtures, times &amp; venues from the public-domain
-    <a href="https://github.com/openfootball/world-cup">openfootball</a> dataset.
-    UK schedule via Sports Mole; Japan free-to-air via ABEMA TIMES.
-    Broadcaster assignments — especially knockouts — can change; verify against the broadcaster before kickoff.
-    <br>Built from <a href="https://github.com/taro-arumakan/worldcup-2026-calendar">this repo</a>.
-    Last updated 17 June 2026.
+    Fixtures, times &amp; venues from the public-domain <a href="https://github.com/openfootball/world-cup">openfootball</a> dataset.
+    UK schedule via Sports Mole; Japan free-to-air via ABEMA TIMES. Assignments (especially knockouts) can change — verify before kickoff.
+    <br>Source &amp; corrections: <a href="https://github.com/taro-arumakan/worldcup-2026-calendar">github.com/taro-arumakan/worldcup-2026-calendar</a>. Updated 17 June 2026.
   </footer>
 
 </div>
+<script>
+function cp(btn,id){
+  navigator.clipboard.writeText(document.getElementById(id).textContent)
+    .then(()=>{const t=btn.textContent;btn.textContent='Copied ✓';setTimeout(()=>btn.textContent=t,1500)});
+}
+</script>
 </body>
 </html>

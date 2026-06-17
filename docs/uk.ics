@@ -3,1048 +3,1021 @@ VERSION:2.0
 PRODID:-//taro-arumakan//WorldCup2026 TV//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:World Cup 2026 ⚽ UK + Japan TV
+X-WR-CALNAME:World Cup 2026 ⚽ UK TV (BBC/ITV)
 X-WR-TIMEZONE:UTC
-X-WR-CALDESC:FIFA World Cup 2026\, all 104 matches. UK BBC/ITV with 4K/HD
-  tag\, plus a 🇯🇵 flag when on Japanese free-to-air (🇯🇵 BS = 
- BS4K only\; no flag = DAZN only). Knockouts TBC. Kickoffs auto-convert t
- o your local time.
+X-WR-CALDESC:FIFA World Cup 2026\, all 104 matches\, UK broadcaster in th
+ e title. BBC = iPlayer (live in 4K UHD)\; ITV = ITVX (HD only). Knockout
+ s TBC. Kickoffs auto-convert to your local time.
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:wc2026-hybrid-mexico-southafrica@worldcup-2026-calendar
+UID:wc2026-uk-mexico-southafrica@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260611T190000Z
 DTEND:20260611T210000Z
-SUMMARY:Mexico v South Africa — 🇬🇧 ITV (HD) · 🇯🇵
+SUMMARY:Mexico v South Africa — ITV (HD)
 LOCATION:Estadio Azteca\, Mexico City
 DESCRIPTION:Group A · Venue: Estadio Azteca\, Mexico City · UK: ITV1 / 
- ITVX — HD only (STV in Scotland) · Japan: NHK総合 (free-to-air) / D
- AZN · Result: Mexico 2-0 South Africa · Kickoff shown in your device's
-  local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-czech-southkorea@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260612T020000Z
-DTEND:20260612T040000Z
-SUMMARY:South Korea v Czech Republic — 🇬🇧 ITV (HD)
-LOCATION:Estadio Akron\, Guadalajara (Zapopan)
-DESCRIPTION:Group A · Venue: Estadio Akron\, Guadalajara (Zapopan) · UK
- : ITV1 / ITVX — HD only (STV in Scotland) · Japan: DAZN only (no free
- -to-air) · Result: South Korea 2-1 Czech Republic · Kickoff shown in y
- our device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-bosnia-canada@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260612T190000Z
-DTEND:20260612T210000Z
-SUMMARY:Canada v Bosnia & Herzegovina — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group B · Venue: BMO Field\, Toronto · UK: BBC One / iPlaye
- r — live in 4K UHD · Japan: NHK総合 (free-to-air) / DAZN · Result:
-  Canada 1-1 Bosnia & Herzegovina · Kickoff shown in your device's local
-  time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-paraguay-usa@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260613T010000Z
-DTEND:20260613T030000Z
-SUMMARY:USA v Paraguay — 🇬🇧 BBC (4K)
-LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group D · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
- K: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-
- air) · Result: USA 4-1 Paraguay · Kickoff shown in your device's local
-  time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-qatar-switzerland@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260613T190000Z
-DTEND:20260613T210000Z
-SUMMARY:Qatar v Switzerland — 🇬🇧 ITV (HD)
-LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group B · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Japan: DA
- ZN only (no free-to-air) · Result: Qatar 1-1 Switzerland · Kickoff sho
- wn in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-brazil-morocco@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260613T220000Z
-DTEND:20260614T000000Z
-SUMMARY:Brazil v Morocco — 🇬🇧 BBC (4K) · 🇯🇵 BS
-LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group C · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · UK: BBC One / iPlayer — live in 4K UHD · Japan: NHK B
- S Premium 4K only (free\, needs BS4K tuner) / DAZN · Result: Brazil 1-1
-  Morocco · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-haiti-scotland@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260614T010000Z
-DTEND:20260614T030000Z
-SUMMARY:Haiti v Scotland — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group C · Venue: Gillette Stadium\, Boston (Foxborough) · U
- K: BBC One / iPlayer — live in 4K UHD · Japan: NHK総合 (free-to-air
- ) / DAZN · Result: Haiti 0-1 Scotland · Kickoff shown in your device's
-  local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-australia-turkey@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260614T040000Z
-DTEND:20260614T060000Z
-SUMMARY:Australia v Turkey — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group D · Venue: BC Place\, Vancouver · UK: ITV1 / ITVX —
-  HD only (STV in Scotland) · Japan: 日本テレビ (free-to-air) / DAZ
- N · Result: Australia 2-0 Turkey · Kickoff shown in your device's loca
- l time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-curacao-germany@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260614T170000Z
-DTEND:20260614T190000Z
-SUMMARY:Germany v Curaçao — 🇬🇧 ITV (HD)
-LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group E · Venue: NRG Stadium\, Houston · UK: ITV1 / ITVX 
- — HD only (STV in Scotland) · Japan: DAZN only (no free-to-air) · Re
- sult: Germany 7-1 Curaçao · Kickoff shown in your device's local time 
- zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-japan-netherlands@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260614T200000Z
-DTEND:20260614T220000Z
-SUMMARY:Netherlands v Japan — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group F · Venue: AT&T Stadium\, Dallas (Arlington) · UK: IT
- V1 / ITVX — HD only (STV in Scotland) · Japan: NHK総合 (free-to-air
- ) / DAZN · Result: Netherlands 2-2 Japan · Kickoff shown in your devic
- e's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-ecuador-ivorycoast@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260614T230000Z
-DTEND:20260615T010000Z
-SUMMARY:Ivory Coast v Ecuador — 🇬🇧 BBC (4K)
-LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group E · Venue: Lincoln Financial Field\, Philadelphia · U
- K: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-
- air) · Result: Ivory Coast 1-0 Ecuador · Kickoff shown in your device'
- s local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-sweden-tunisia@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260615T020000Z
-DTEND:20260615T040000Z
-SUMMARY:Sweden v Tunisia — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
-DESCRIPTION:Group F · Venue: Estadio BBVA\, Monterrey (Guadalupe) · UK:
-  ITV1 / ITVX — HD only (STV in Scotland) · Japan: 日本テレビ (fr
- ee-to-air) / DAZN · Result: Sweden 5-1 Tunisia · Kickoff shown in your
-  device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-capeverde-spain@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260615T160000Z
-DTEND:20260615T180000Z
-SUMMARY:Spain v Cape Verde — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group H · Venue: Mercedes-Benz Stadium\, Atlanta · UK: ITV1
-  / ITVX — HD only (STV in Scotland) · Japan: NHK総合 (free-to-air) 
- / DAZN · Result: Spain 0-0 Cape Verde · Kickoff shown in your device's
-  local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-belgium-egypt@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260615T190000Z
-DTEND:20260615T210000Z
-SUMMARY:Belgium v Egypt — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group G · Venue: Lumen Field\, Seattle · UK: BBC One / iPla
- yer — live in 4K UHD · Japan: NHK総合 (free-to-air) / DAZN · Resul
- t: Belgium 1-1 Egypt · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-saudiarabia-uruguay@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260615T220000Z
-DTEND:20260616T000000Z
-SUMMARY:Saudi Arabia v Uruguay — 🇬🇧 ITV (HD)
-LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Group H · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
- · UK: ITV1 / ITVX — HD only (STV in Scotland) · Japan: DAZN only (no
-  free-to-air) · Result: Saudi Arabia 1-1 Uruguay · Kickoff shown in yo
- ur device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-iran-newzealand@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260616T010000Z
-DTEND:20260616T030000Z
-SUMMARY:Iran v New Zealand — 🇬🇧 BBC (4K)
-LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group G · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
- K: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-
- air) · Result: Iran 2-2 New Zealand · Kickoff shown in your device's l
- ocal time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-france-senegal@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260616T190000Z
-DTEND:20260616T210000Z
-SUMMARY:France v Senegal — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group I · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · UK: BBC One / iPlayer — live in 4K UHD · Japan: フ
- ジテレビ (free-to-air) / DAZN · Result: France 3-1 Senegal · Kicko
- ff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-iraq-norway@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260616T220000Z
-DTEND:20260617T000000Z
-SUMMARY:Iraq v Norway — 🇬🇧 BBC (4K)
-LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group I · Venue: Gillette Stadium\, Boston (Foxborough) · U
- K: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-
- air) · Result: Iraq 1-4 Norway · Kickoff shown in your device's local 
- time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-algeria-argentina@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260617T010000Z
-DTEND:20260617T030000Z
-SUMMARY:Argentina v Algeria — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group J · Venue: Arrowhead Stadium\, Kansas City · UK: ITV1
-  / ITVX — HD only (STV in Scotland) · Japan: NHK総合 (free-to-air) 
- / DAZN · Result: Argentina 3-0 Algeria · Kickoff shown in your device'
- s local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-austria-jordan@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260617T040000Z
-DTEND:20260617T060000Z
-SUMMARY:Austria v Jordan — 🇬🇧 BBC (4K)
-LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group J · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · UK: BBC One / iPlayer — live in 4K UHD · Japan: DAZN on
- ly (no free-to-air) · Result: Austria 3-1 Jordan · Kickoff shown in yo
- ur device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-drcongo-portugal@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260617T170000Z
-DTEND:20260617T190000Z
-SUMMARY:Portugal v DR Congo — 🇬🇧 BBC (4K)
-LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group K · Venue: NRG Stadium\, Houston · UK: BBC One / iPla
- yer — live in 4K UHD · Japan: DAZN only (no free-to-air) · Kickoff s
- hown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-croatia-england@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260617T200000Z
-DTEND:20260617T220000Z
-SUMMARY:England v Croatia — 🇬🇧 ITV (HD)
-LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group L · Venue: AT&T Stadium\, Dallas (Arlington) · UK: IT
- V1 / ITVX — HD only (STV in Scotland) · Japan: DAZN only (no free-to-
- air) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-ghana-panama@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260617T230000Z
-DTEND:20260618T010000Z
-SUMMARY:Ghana v Panama — 🇬🇧 ITV (HD)
-LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group L · Venue: BMO Field\, Toronto · UK: ITV1 / ITVX — 
- HD only (STV in Scotland) · Japan: DAZN only (no free-to-air) · Kickof
- f shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-colombia-uzbekistan@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260618T020000Z
-DTEND:20260618T040000Z
-SUMMARY:Uzbekistan v Colombia — 🇬🇧 BBC (4K)
-LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Group K · Venue: Estadio Azteca\, Mexico City · UK: BBC One
-  / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-air) · Ki
- ckoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-czech-southafrica@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260618T160000Z
-DTEND:20260618T180000Z
-SUMMARY:Czech Republic v South Africa — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group A · Venue: Mercedes-Benz Stadium\, Atlanta · UK: BBC 
- One / iPlayer — live in 4K UHD · Japan: 日本テレビ (free-to-air)
-  / DAZN · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-bosnia-switzerland@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260618T190000Z
-DTEND:20260618T210000Z
-SUMMARY:Switzerland v Bosnia & Herzegovina — 🇬🇧 ITV (HD)
-LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group B · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
- K: ITV1 / ITVX — HD only (STV in Scotland) · Japan: DAZN only (no fre
- e-to-air) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-canada-qatar@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260618T220000Z
-DTEND:20260619T000000Z
-SUMMARY:Canada v Qatar — 🇬🇧 ITV (HD)
-LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group B · Venue: BC Place\, Vancouver · UK: ITV1 / ITVX —
-  HD only (STV in Scotland) · Japan: DAZN only (no free-to-air) · Kicko
- ff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-mexico-southkorea@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260619T010000Z
-DTEND:20260619T030000Z
-SUMMARY:Mexico v South Korea — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:Estadio Akron\, Guadalajara (Zapopan)
-DESCRIPTION:Group A · Venue: Estadio Akron\, Guadalajara (Zapopan) · UK
- : BBC One / iPlayer — live in 4K UHD · Japan: NHK総合 (free-to-air)
-  / DAZN · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-australia-usa@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260619T190000Z
-DTEND:20260619T210000Z
-SUMMARY:USA v Australia — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group D · Venue: Lumen Field\, Seattle · UK: BBC One / iPla
- yer — live in 4K UHD · Japan: NHK総合 (free-to-air) / DAZN · Kicko
- ff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-morocco-scotland@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260619T220000Z
-DTEND:20260620T000000Z
-SUMMARY:Scotland v Morocco — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group C · Venue: Gillette Stadium\, Boston (Foxborough) · U
- K: ITV1 / ITVX — HD only (STV in Scotland) · Japan: フジテレビ (
- free-to-air) / DAZN · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-brazil-haiti@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260620T003000Z
-DTEND:20260620T023000Z
-SUMMARY:Brazil v Haiti — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group C · Venue: Lincoln Financial Field\, Philadelphia · U
- K: ITV1 / ITVX — HD only (STV in Scotland) · Japan: NHK総合 (free-t
- o-air) / DAZN · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-paraguay-turkey@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260620T030000Z
-DTEND:20260620T050000Z
-SUMMARY:Turkey v Paraguay — 🇬🇧 ITV (HD)
-LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group D · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Japan: DA
- ZN only (no free-to-air) · Kickoff shown in your device's local time zo
- ne.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-netherlands-sweden@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260620T170000Z
-DTEND:20260620T190000Z
-SUMMARY:Netherlands v Sweden — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group F · Venue: NRG Stadium\, Houston · UK: BBC One / iPla
- yer — live in 4K UHD · Japan: NHK総合 (free-to-air) / DAZN · Kicko
- ff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-germany-ivorycoast@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260620T200000Z
-DTEND:20260620T220000Z
-SUMMARY:Germany v Ivory Coast — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group E · Venue: BMO Field\, Toronto · UK: ITV1 / ITVX — 
- HD only (STV in Scotland) · Japan: 日本テレビ (free-to-air) / DAZN
-  · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-curacao-ecuador@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260621T000000Z
-DTEND:20260621T020000Z
-SUMMARY:Ecuador v Curaçao — 🇬🇧 BBC (4K)
-LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group E · Venue: Arrowhead Stadium\, Kansas City · UK: BBC 
- One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-air) ·
+ ITVX — HD only (STV in Scotland) · Result: Mexico 2-0 South Africa ·
   Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-japan-tunisia@worldcup-2026-calendar
+UID:wc2026-uk-czech-southkorea@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260621T040000Z
-DTEND:20260621T060000Z
-SUMMARY:Tunisia v Japan — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
-DESCRIPTION:Group F · Venue: Estadio BBVA\, Monterrey (Guadalupe) · UK:
-  BBC One / iPlayer — live in 4K UHD · Japan: 日本テレビ (free-to
- -air) / DAZN · Kickoff shown in your device's local time zone.
+DTSTART:20260612T020000Z
+DTEND:20260612T040000Z
+SUMMARY:South Korea v Czech Republic — ITV (HD)
+LOCATION:Estadio Akron\, Guadalajara (Zapopan)
+DESCRIPTION:Group A · Venue: Estadio Akron\, Guadalajara (Zapopan) · UK
+ : ITV1 / ITVX — HD only (STV in Scotland) · Result: South Korea 2-1 C
+ zech Republic · Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-saudiarabia-spain@worldcup-2026-calendar
+UID:wc2026-uk-bosnia-canada@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260621T160000Z
-DTEND:20260621T180000Z
-SUMMARY:Spain v Saudi Arabia — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group H · Venue: Mercedes-Benz Stadium\, Atlanta · UK: BBC 
- One / iPlayer — live in 4K UHD · Japan: NHK総合 (free-to-air) / DAZ
- N · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-belgium-iran@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260621T190000Z
-DTEND:20260621T210000Z
-SUMMARY:Belgium v Iran — 🇬🇧 ITV (HD)
-LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group G · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
- K: ITV1 / ITVX — HD only (STV in Scotland) · Japan: DAZN only (no fre
- e-to-air) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-capeverde-uruguay@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260621T220000Z
-DTEND:20260622T000000Z
-SUMMARY:Uruguay v Cape Verde — 🇬🇧 BBC (4K)
-LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Group H · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
- · UK: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free
- -to-air) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-egypt-newzealand@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260622T010000Z
-DTEND:20260622T030000Z
-SUMMARY:New Zealand v Egypt — 🇬🇧 ITV (HD)
-LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group G · Venue: BC Place\, Vancouver · UK: ITV1 / ITVX —
-  HD only (STV in Scotland) · Japan: DAZN only (no free-to-air) · Kicko
+DTSTART:20260612T190000Z
+DTEND:20260612T210000Z
+SUMMARY:Canada v Bosnia & Herzegovina — BBC (4K)
+LOCATION:BMO Field\, Toronto
+DESCRIPTION:Group B · Venue: BMO Field\, Toronto · UK: BBC One / iPlaye
+ r — live in 4K UHD · Result: Canada 1-1 Bosnia & Herzegovina · Kicko
  ff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-argentina-austria@worldcup-2026-calendar
+UID:wc2026-uk-paraguay-usa@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260622T170000Z
-DTEND:20260622T190000Z
-SUMMARY:Argentina v Austria — 🇬🇧 BBC (4K)
-LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group J · Venue: AT&T Stadium\, Dallas (Arlington) · UK: BB
- C One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-air) 
- · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-france-iraq@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260622T210000Z
-DTEND:20260622T230000Z
-SUMMARY:France v Iraq — 🇬🇧 BBC (4K)
-LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group I · Venue: Lincoln Financial Field\, Philadelphia · U
- K: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-
- air) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-norway-senegal@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260623T000000Z
-DTEND:20260623T020000Z
-SUMMARY:Norway v Senegal — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group I · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Japan: 
- NHK総合 (free-to-air) / DAZN · Kickoff shown in your device's local t
- ime zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-algeria-jordan@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260623T030000Z
-DTEND:20260623T050000Z
-SUMMARY:Jordan v Algeria — 🇬🇧 ITV (HD)
-LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group J · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Japan: DA
- ZN only (no free-to-air) · Kickoff shown in your device's local time zo
- ne.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-portugal-uzbekistan@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260623T170000Z
-DTEND:20260623T190000Z
-SUMMARY:Portugal v Uzbekistan — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group K · Venue: NRG Stadium\, Houston · UK: ITV1 / ITVX 
- — HD only (STV in Scotland) · Japan: NHK総合 (free-to-air) / DAZN 
- · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-england-ghana@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260623T200000Z
-DTEND:20260623T220000Z
-SUMMARY:England v Ghana — 🇬🇧 BBC (4K)
-LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Group L · Venue: Gillette Stadium\, Boston (Foxborough) · U
- K: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-
- air) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-croatia-panama@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260623T230000Z
-DTEND:20260624T010000Z
-SUMMARY:Panama v Croatia — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group L · Venue: BMO Field\, Toronto · UK: BBC One / iPlaye
- r — live in 4K UHD · Japan: フジテレビ (free-to-air) / DAZN · K
+DTSTART:20260613T010000Z
+DTEND:20260613T030000Z
+SUMMARY:USA v Paraguay — BBC (4K)
+LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
+DESCRIPTION:Group D · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
+ K: BBC One / iPlayer — live in 4K UHD · Result: USA 4-1 Paraguay · K
  ickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-colombia-drcongo@worldcup-2026-calendar
+UID:wc2026-uk-qatar-switzerland@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260624T020000Z
-DTEND:20260624T040000Z
-SUMMARY:Colombia v DR Congo — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:Estadio Akron\, Guadalajara (Zapopan)
-DESCRIPTION:Group K · Venue: Estadio Akron\, Guadalajara (Zapopan) · UK
- : ITV1 / ITVX — HD only (STV in Scotland) · Japan: 日本テレビ (f
- ree-to-air) / DAZN · Kickoff shown in your device's local time zone.
+DTSTART:20260613T190000Z
+DTEND:20260613T210000Z
+SUMMARY:Qatar v Switzerland — ITV (HD)
+LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
+DESCRIPTION:Group B · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
+ nta Clara) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Result: Q
+ atar 1-1 Switzerland · Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-canada-switzerland@worldcup-2026-calendar
+UID:wc2026-uk-brazil-morocco@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260624T190000Z
-DTEND:20260624T210000Z
-SUMMARY:Switzerland v Canada — 🇬🇧 ITV (HD)
-LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group B · Venue: BC Place\, Vancouver · UK: ITV1 / ITVX —
-  HD only (STV in Scotland) · Japan: DAZN only (no free-to-air) · Kicko
- ff shown in your device's local time zone.
+DTSTART:20260613T220000Z
+DTEND:20260614T000000Z
+SUMMARY:Brazil v Morocco — BBC (4K)
+LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
+DESCRIPTION:Group C · Venue: MetLife Stadium\, New York/New Jersey (East
+  Rutherford) · UK: BBC One / iPlayer — live in 4K UHD · Result: Braz
+ il 1-1 Morocco · Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-bosnia-qatar@worldcup-2026-calendar
+UID:wc2026-uk-haiti-scotland@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260624T190000Z
-DTEND:20260624T210000Z
-SUMMARY:Bosnia & Herzegovina v Qatar — 🇬🇧 ITV (HD)
-LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group B · Venue: Lumen Field\, Seattle · UK: ITV1 / ITVX 
- — HD only (STV in Scotland) · Japan: DAZN only (no free-to-air) · Ki
- ckoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-brazil-scotland@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260624T220000Z
-DTEND:20260625T000000Z
-SUMMARY:Scotland v Brazil — 🇬🇧 BBC (4K)
-LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Group C · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
- · UK: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free
- -to-air) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-haiti-morocco@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260624T220000Z
-DTEND:20260625T000000Z
-SUMMARY:Morocco v Haiti — 🇬🇧 BBC (4K)
-LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group C · Venue: Mercedes-Benz Stadium\, Atlanta · UK: BBC 
- One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-air) ·
+DTSTART:20260614T010000Z
+DTEND:20260614T030000Z
+SUMMARY:Haiti v Scotland — BBC (4K)
+LOCATION:Gillette Stadium\, Boston (Foxborough)
+DESCRIPTION:Group C · Venue: Gillette Stadium\, Boston (Foxborough) · U
+ K: BBC One / iPlayer — live in 4K UHD · Result: Haiti 0-1 Scotland ·
   Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-czech-mexico@worldcup-2026-calendar
+UID:wc2026-uk-australia-turkey@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260625T010000Z
-DTEND:20260625T030000Z
-SUMMARY:Czech Republic v Mexico — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Group A · Venue: Estadio Azteca\, Mexico City · UK: BBC One
-  / iPlayer — live in 4K UHD · Japan: NHK総合 (free-to-air) / DAZN 
+DTSTART:20260614T040000Z
+DTEND:20260614T060000Z
+SUMMARY:Australia v Turkey — ITV (HD)
+LOCATION:BC Place\, Vancouver
+DESCRIPTION:Group D · Venue: BC Place\, Vancouver · UK: ITV1 / ITVX —
+  HD only (STV in Scotland) · Result: Australia 2-0 Turkey · Kickoff sh
+ own in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-curacao-germany@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260614T170000Z
+DTEND:20260614T190000Z
+SUMMARY:Germany v Curaçao — ITV (HD)
+LOCATION:NRG Stadium\, Houston
+DESCRIPTION:Group E · Venue: NRG Stadium\, Houston · UK: ITV1 / ITVX 
+ — HD only (STV in Scotland) · Result: Germany 7-1 Curaçao · Kickoff
+  shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-japan-netherlands@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260614T200000Z
+DTEND:20260614T220000Z
+SUMMARY:Netherlands v Japan — ITV (HD)
+LOCATION:AT&T Stadium\, Dallas (Arlington)
+DESCRIPTION:Group F · Venue: AT&T Stadium\, Dallas (Arlington) · UK: IT
+ V1 / ITVX — HD only (STV in Scotland) · Result: Netherlands 2-2 Japan
+  · Kickoff shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-ecuador-ivorycoast@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260614T230000Z
+DTEND:20260615T010000Z
+SUMMARY:Ivory Coast v Ecuador — BBC (4K)
+LOCATION:Lincoln Financial Field\, Philadelphia
+DESCRIPTION:Group E · Venue: Lincoln Financial Field\, Philadelphia · U
+ K: BBC One / iPlayer — live in 4K UHD · Result: Ivory Coast 1-0 Ecuad
+ or · Kickoff shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-sweden-tunisia@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260615T020000Z
+DTEND:20260615T040000Z
+SUMMARY:Sweden v Tunisia — ITV (HD)
+LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
+DESCRIPTION:Group F · Venue: Estadio BBVA\, Monterrey (Guadalupe) · UK:
+  ITV1 / ITVX — HD only (STV in Scotland) · Result: Sweden 5-1 Tunisia
+  · Kickoff shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-capeverde-spain@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260615T160000Z
+DTEND:20260615T180000Z
+SUMMARY:Spain v Cape Verde — ITV (HD)
+LOCATION:Mercedes-Benz Stadium\, Atlanta
+DESCRIPTION:Group H · Venue: Mercedes-Benz Stadium\, Atlanta · UK: ITV1
+  / ITVX — HD only (STV in Scotland) · Result: Spain 0-0 Cape Verde ·
+  Kickoff shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-belgium-egypt@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260615T190000Z
+DTEND:20260615T210000Z
+SUMMARY:Belgium v Egypt — BBC (4K)
+LOCATION:Lumen Field\, Seattle
+DESCRIPTION:Group G · Venue: Lumen Field\, Seattle · UK: BBC One / iPla
+ yer — live in 4K UHD · Result: Belgium 1-1 Egypt · Kickoff shown in 
+ your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-saudiarabia-uruguay@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260615T220000Z
+DTEND:20260616T000000Z
+SUMMARY:Saudi Arabia v Uruguay — ITV (HD)
+LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
+DESCRIPTION:Group H · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
+ · UK: ITV1 / ITVX — HD only (STV in Scotland) · Result: Saudi Arabia
+  1-1 Uruguay · Kickoff shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-iran-newzealand@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260616T010000Z
+DTEND:20260616T030000Z
+SUMMARY:Iran v New Zealand — BBC (4K)
+LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
+DESCRIPTION:Group G · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
+ K: BBC One / iPlayer — live in 4K UHD · Result: Iran 2-2 New Zealand 
  · Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-southafrica-southkorea@worldcup-2026-calendar
+UID:wc2026-uk-france-senegal@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260625T010000Z
-DTEND:20260625T030000Z
-SUMMARY:South Africa v South Korea — 🇬🇧 BBC (4K)
-LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
-DESCRIPTION:Group A · Venue: Estadio BBVA\, Monterrey (Guadalupe) · UK:
-  BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-ai
- r) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-curacao-ivorycoast@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260625T200000Z
-DTEND:20260625T220000Z
-SUMMARY:Curaçao v Ivory Coast — 🇬🇧 BBC (4K)
-LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Group E · Venue: Lincoln Financial Field\, Philadelphia · U
- K: BBC One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-
- air) · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-ecuador-germany@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260625T200000Z
-DTEND:20260625T220000Z
-SUMMARY:Ecuador v Germany — 🇬🇧 BBC (4K)
+DTSTART:20260616T190000Z
+DTEND:20260616T210000Z
+SUMMARY:France v Senegal — BBC (4K)
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group E · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · UK: BBC One / iPlayer — live in 4K UHD · Japan: DAZN 
- only (no free-to-air) · Kickoff shown in your device's local time zone.
+DESCRIPTION:Group I · Venue: MetLife Stadium\, New York/New Jersey (East
+  Rutherford) · UK: BBC One / iPlayer — live in 4K UHD · Result: Fran
+ ce 3-1 Senegal · Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-japan-sweden@worldcup-2026-calendar
+UID:wc2026-uk-iraq-norway@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260625T230000Z
-DTEND:20260626T010000Z
-SUMMARY:Japan v Sweden — 🇬🇧 BBC (4K) · 🇯🇵
-LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Group F · Venue: AT&T Stadium\, Dallas (Arlington) · UK: BB
- C One / iPlayer — live in 4K UHD · Japan: NHK総合 (free-to-air) / D
- AZN · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-netherlands-tunisia@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260625T230000Z
-DTEND:20260626T010000Z
-SUMMARY:Tunisia v Netherlands — 🇬🇧 BBC (4K)
-LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group F · Venue: Arrowhead Stadium\, Kansas City · UK: BBC 
- One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-air) ·
-  Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-turkey-usa@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260626T020000Z
-DTEND:20260626T040000Z
-SUMMARY:Turkey v USA — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Group D · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
- K: ITV1 / ITVX — HD only (STV in Scotland) · Japan: 日本テレビ (
- free-to-air) / DAZN · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-australia-paraguay@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260626T020000Z
-DTEND:20260626T040000Z
-SUMMARY:Paraguay v Australia — 🇬🇧 ITV (HD)
-LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
-DESCRIPTION:Group D · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
- nta Clara) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Japan: DA
- ZN only (no free-to-air) · Kickoff shown in your device's local time zo
- ne.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-france-norway@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260626T190000Z
-DTEND:20260626T210000Z
-SUMMARY:Norway v France — 🇬🇧 ITV (HD) · 🇯🇵
+DTSTART:20260616T220000Z
+DTEND:20260617T000000Z
+SUMMARY:Iraq v Norway — BBC (4K)
 LOCATION:Gillette Stadium\, Boston (Foxborough)
 DESCRIPTION:Group I · Venue: Gillette Stadium\, Boston (Foxborough) · U
- K: ITV1 / ITVX — HD only (STV in Scotland) · Japan: NHK総合 (free-t
- o-air) / DAZN · Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-iraq-senegal@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260626T190000Z
-DTEND:20260626T210000Z
-SUMMARY:Senegal v Iraq — 🇬🇧 ITV (HD)
-LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group I · Venue: BMO Field\, Toronto · UK: ITV1 / ITVX — 
- HD only (STV in Scotland) · Japan: DAZN only (no free-to-air) · Kickof
- f shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-capeverde-saudiarabia@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260627T000000Z
-DTEND:20260627T020000Z
-SUMMARY:Cape Verde v Saudi Arabia — 🇬🇧 ITV (HD)
-LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group H · Venue: NRG Stadium\, Houston · UK: ITV1 / ITVX 
- — HD only (STV in Scotland) · Japan: DAZN only (no free-to-air) · Ki
+ K: BBC One / iPlayer — live in 4K UHD · Result: Iraq 1-4 Norway · Ki
  ckoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-spain-uruguay@worldcup-2026-calendar
+UID:wc2026-uk-algeria-argentina@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260627T000000Z
-DTEND:20260627T020000Z
-SUMMARY:Uruguay v Spain — 🇬🇧 ITV (HD) · 🇯🇵
-LOCATION:Estadio Akron\, Guadalajara (Zapopan)
-DESCRIPTION:Group H · Venue: Estadio Akron\, Guadalajara (Zapopan) · UK
- : ITV1 / ITVX — HD only (STV in Scotland) · Japan: 日本テレビ (f
- ree-to-air) / DAZN · Kickoff shown in your device's local time zone.
+DTSTART:20260617T010000Z
+DTEND:20260617T030000Z
+SUMMARY:Argentina v Algeria — ITV (HD)
+LOCATION:Arrowhead Stadium\, Kansas City
+DESCRIPTION:Group J · Venue: Arrowhead Stadium\, Kansas City · UK: ITV1
+  / ITVX — HD only (STV in Scotland) · Result: Argentina 3-0 Algeria 
+ · Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-egypt-iran@worldcup-2026-calendar
+UID:wc2026-uk-austria-jordan@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260627T030000Z
-DTEND:20260627T050000Z
-SUMMARY:Egypt v Iran — 🇬🇧 BBC (4K)
-LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group G · Venue: Lumen Field\, Seattle · UK: BBC One / iPla
- yer — live in 4K UHD · Japan: DAZN only (no free-to-air) · Kickoff s
- hown in your device's local time zone.
+DTSTART:20260617T040000Z
+DTEND:20260617T060000Z
+SUMMARY:Austria v Jordan — BBC (4K)
+LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
+DESCRIPTION:Group J · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
+ nta Clara) · UK: BBC One / iPlayer — live in 4K UHD · Result: Austri
+ a 3-1 Jordan · Kickoff shown in your device's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-belgium-newzealand@worldcup-2026-calendar
+UID:wc2026-uk-drcongo-portugal@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
-DTSTART:20260627T030000Z
-DTEND:20260627T050000Z
-SUMMARY:New Zealand v Belgium — 🇬🇧 BBC (4K) · 🇯🇵
+DTSTART:20260617T170000Z
+DTEND:20260617T190000Z
+SUMMARY:Portugal v DR Congo — BBC (4K)
+LOCATION:NRG Stadium\, Houston
+DESCRIPTION:Group K · Venue: NRG Stadium\, Houston · UK: BBC One / iPla
+ yer — live in 4K UHD · Kickoff shown in your device's local time zone
+ .
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-croatia-england@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260617T200000Z
+DTEND:20260617T220000Z
+SUMMARY:England v Croatia — ITV (HD)
+LOCATION:AT&T Stadium\, Dallas (Arlington)
+DESCRIPTION:Group L · Venue: AT&T Stadium\, Dallas (Arlington) · UK: IT
+ V1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your device'
+ s local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-ghana-panama@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260617T230000Z
+DTEND:20260618T010000Z
+SUMMARY:Ghana v Panama — ITV (HD)
+LOCATION:BMO Field\, Toronto
+DESCRIPTION:Group L · Venue: BMO Field\, Toronto · UK: ITV1 / ITVX — 
+ HD only (STV in Scotland) · Kickoff shown in your device's local time z
+ one.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-colombia-uzbekistan@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260618T020000Z
+DTEND:20260618T040000Z
+SUMMARY:Uzbekistan v Colombia — BBC (4K)
+LOCATION:Estadio Azteca\, Mexico City
+DESCRIPTION:Group K · Venue: Estadio Azteca\, Mexico City · UK: BBC One
+  / iPlayer — live in 4K UHD · Kickoff shown in your device's local ti
+ me zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-czech-southafrica@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260618T160000Z
+DTEND:20260618T180000Z
+SUMMARY:Czech Republic v South Africa — BBC (4K)
+LOCATION:Mercedes-Benz Stadium\, Atlanta
+DESCRIPTION:Group A · Venue: Mercedes-Benz Stadium\, Atlanta · UK: BBC 
+ One / iPlayer — live in 4K UHD · Kickoff shown in your device's local
+  time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-bosnia-switzerland@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260618T190000Z
+DTEND:20260618T210000Z
+SUMMARY:Switzerland v Bosnia & Herzegovina — ITV (HD)
+LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
+DESCRIPTION:Group B · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
+ K: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your de
+ vice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-canada-qatar@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260618T220000Z
+DTEND:20260619T000000Z
+SUMMARY:Canada v Qatar — ITV (HD)
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group G · Venue: BC Place\, Vancouver · UK: BBC One / iPlay
- er — live in 4K UHD · Japan: 日本テレビ (free-to-air) / DAZN · 
- Kickoff shown in your device's local time zone.
-CATEGORIES:World Cup 2026,Football
-TRANSP:TRANSPARENT
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-UID:wc2026-hybrid-england-panama@worldcup-2026-calendar
-DTSTAMP:20260617T110945Z
-DTSTART:20260627T210000Z
-DTEND:20260627T230000Z
-SUMMARY:Panama v England — 🇬🇧 ITV (HD)
-LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
-DESCRIPTION:Group L · Venue: MetLife Stadium\, New York/New Jersey (East
-  Rutherford) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Japan: 
- DAZN only (no free-to-air) · Kickoff shown in your device's local time 
+DESCRIPTION:Group B · Venue: BC Place\, Vancouver · UK: ITV1 / ITVX —
+  HD only (STV in Scotland) · Kickoff shown in your device's local time 
  zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-croatia-ghana@worldcup-2026-calendar
+UID:wc2026-uk-mexico-southkorea@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260619T010000Z
+DTEND:20260619T030000Z
+SUMMARY:Mexico v South Korea — BBC (4K)
+LOCATION:Estadio Akron\, Guadalajara (Zapopan)
+DESCRIPTION:Group A · Venue: Estadio Akron\, Guadalajara (Zapopan) · UK
+ : BBC One / iPlayer — live in 4K UHD · Kickoff shown in your device's
+  local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-australia-usa@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260619T190000Z
+DTEND:20260619T210000Z
+SUMMARY:USA v Australia — BBC (4K)
+LOCATION:Lumen Field\, Seattle
+DESCRIPTION:Group D · Venue: Lumen Field\, Seattle · UK: BBC One / iPla
+ yer — live in 4K UHD · Kickoff shown in your device's local time zone
+ .
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-morocco-scotland@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260619T220000Z
+DTEND:20260620T000000Z
+SUMMARY:Scotland v Morocco — ITV (HD)
+LOCATION:Gillette Stadium\, Boston (Foxborough)
+DESCRIPTION:Group C · Venue: Gillette Stadium\, Boston (Foxborough) · U
+ K: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your de
+ vice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-brazil-haiti@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260620T003000Z
+DTEND:20260620T023000Z
+SUMMARY:Brazil v Haiti — ITV (HD)
+LOCATION:Lincoln Financial Field\, Philadelphia
+DESCRIPTION:Group C · Venue: Lincoln Financial Field\, Philadelphia · U
+ K: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your de
+ vice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-paraguay-turkey@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260620T030000Z
+DTEND:20260620T050000Z
+SUMMARY:Turkey v Paraguay — ITV (HD)
+LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
+DESCRIPTION:Group D · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
+ nta Clara) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff s
+ hown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-netherlands-sweden@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260620T170000Z
+DTEND:20260620T190000Z
+SUMMARY:Netherlands v Sweden — BBC (4K)
+LOCATION:NRG Stadium\, Houston
+DESCRIPTION:Group F · Venue: NRG Stadium\, Houston · UK: BBC One / iPla
+ yer — live in 4K UHD · Kickoff shown in your device's local time zone
+ .
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-germany-ivorycoast@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260620T200000Z
+DTEND:20260620T220000Z
+SUMMARY:Germany v Ivory Coast — ITV (HD)
+LOCATION:BMO Field\, Toronto
+DESCRIPTION:Group E · Venue: BMO Field\, Toronto · UK: ITV1 / ITVX — 
+ HD only (STV in Scotland) · Kickoff shown in your device's local time z
+ one.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-curacao-ecuador@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260621T000000Z
+DTEND:20260621T020000Z
+SUMMARY:Ecuador v Curaçao — BBC (4K)
+LOCATION:Arrowhead Stadium\, Kansas City
+DESCRIPTION:Group E · Venue: Arrowhead Stadium\, Kansas City · UK: BBC 
+ One / iPlayer — live in 4K UHD · Kickoff shown in your device's local
+  time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-japan-tunisia@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260621T040000Z
+DTEND:20260621T060000Z
+SUMMARY:Tunisia v Japan — BBC (4K)
+LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
+DESCRIPTION:Group F · Venue: Estadio BBVA\, Monterrey (Guadalupe) · UK:
+  BBC One / iPlayer — live in 4K UHD · Kickoff shown in your device's 
+ local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-saudiarabia-spain@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260621T160000Z
+DTEND:20260621T180000Z
+SUMMARY:Spain v Saudi Arabia — BBC (4K)
+LOCATION:Mercedes-Benz Stadium\, Atlanta
+DESCRIPTION:Group H · Venue: Mercedes-Benz Stadium\, Atlanta · UK: BBC 
+ One / iPlayer — live in 4K UHD · Kickoff shown in your device's local
+  time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-belgium-iran@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260621T190000Z
+DTEND:20260621T210000Z
+SUMMARY:Belgium v Iran — ITV (HD)
+LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
+DESCRIPTION:Group G · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
+ K: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your de
+ vice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-capeverde-uruguay@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260621T220000Z
+DTEND:20260622T000000Z
+SUMMARY:Uruguay v Cape Verde — BBC (4K)
+LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
+DESCRIPTION:Group H · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
+ · UK: BBC One / iPlayer — live in 4K UHD · Kickoff shown in your dev
+ ice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-egypt-newzealand@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260622T010000Z
+DTEND:20260622T030000Z
+SUMMARY:New Zealand v Egypt — ITV (HD)
+LOCATION:BC Place\, Vancouver
+DESCRIPTION:Group G · Venue: BC Place\, Vancouver · UK: ITV1 / ITVX —
+  HD only (STV in Scotland) · Kickoff shown in your device's local time 
+ zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-argentina-austria@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260622T170000Z
+DTEND:20260622T190000Z
+SUMMARY:Argentina v Austria — BBC (4K)
+LOCATION:AT&T Stadium\, Dallas (Arlington)
+DESCRIPTION:Group J · Venue: AT&T Stadium\, Dallas (Arlington) · UK: BB
+ C One / iPlayer — live in 4K UHD · Kickoff shown in your device's loc
+ al time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-france-iraq@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260622T210000Z
+DTEND:20260622T230000Z
+SUMMARY:France v Iraq — BBC (4K)
+LOCATION:Lincoln Financial Field\, Philadelphia
+DESCRIPTION:Group I · Venue: Lincoln Financial Field\, Philadelphia · U
+ K: BBC One / iPlayer — live in 4K UHD · Kickoff shown in your device'
+ s local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-norway-senegal@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260623T000000Z
+DTEND:20260623T020000Z
+SUMMARY:Norway v Senegal — ITV (HD)
+LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
+DESCRIPTION:Group I · Venue: MetLife Stadium\, New York/New Jersey (East
+  Rutherford) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff
+  shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-algeria-jordan@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260623T030000Z
+DTEND:20260623T050000Z
+SUMMARY:Jordan v Algeria — ITV (HD)
+LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
+DESCRIPTION:Group J · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
+ nta Clara) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff s
+ hown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-portugal-uzbekistan@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260623T170000Z
+DTEND:20260623T190000Z
+SUMMARY:Portugal v Uzbekistan — ITV (HD)
+LOCATION:NRG Stadium\, Houston
+DESCRIPTION:Group K · Venue: NRG Stadium\, Houston · UK: ITV1 / ITVX 
+ — HD only (STV in Scotland) · Kickoff shown in your device's local ti
+ me zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-england-ghana@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260623T200000Z
+DTEND:20260623T220000Z
+SUMMARY:England v Ghana — BBC (4K)
+LOCATION:Gillette Stadium\, Boston (Foxborough)
+DESCRIPTION:Group L · Venue: Gillette Stadium\, Boston (Foxborough) · U
+ K: BBC One / iPlayer — live in 4K UHD · Kickoff shown in your device'
+ s local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-croatia-panama@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260623T230000Z
+DTEND:20260624T010000Z
+SUMMARY:Panama v Croatia — BBC (4K)
+LOCATION:BMO Field\, Toronto
+DESCRIPTION:Group L · Venue: BMO Field\, Toronto · UK: BBC One / iPlaye
+ r — live in 4K UHD · Kickoff shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-colombia-drcongo@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260624T020000Z
+DTEND:20260624T040000Z
+SUMMARY:Colombia v DR Congo — ITV (HD)
+LOCATION:Estadio Akron\, Guadalajara (Zapopan)
+DESCRIPTION:Group K · Venue: Estadio Akron\, Guadalajara (Zapopan) · UK
+ : ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your dev
+ ice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-canada-switzerland@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260624T190000Z
+DTEND:20260624T210000Z
+SUMMARY:Switzerland v Canada — ITV (HD)
+LOCATION:BC Place\, Vancouver
+DESCRIPTION:Group B · Venue: BC Place\, Vancouver · UK: ITV1 / ITVX —
+  HD only (STV in Scotland) · Kickoff shown in your device's local time 
+ zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-bosnia-qatar@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260624T190000Z
+DTEND:20260624T210000Z
+SUMMARY:Bosnia & Herzegovina v Qatar — ITV (HD)
+LOCATION:Lumen Field\, Seattle
+DESCRIPTION:Group B · Venue: Lumen Field\, Seattle · UK: ITV1 / ITVX 
+ — HD only (STV in Scotland) · Kickoff shown in your device's local ti
+ me zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-brazil-scotland@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260624T220000Z
+DTEND:20260625T000000Z
+SUMMARY:Scotland v Brazil — BBC (4K)
+LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
+DESCRIPTION:Group C · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
+ · UK: BBC One / iPlayer — live in 4K UHD · Kickoff shown in your dev
+ ice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-haiti-morocco@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260624T220000Z
+DTEND:20260625T000000Z
+SUMMARY:Morocco v Haiti — BBC (4K)
+LOCATION:Mercedes-Benz Stadium\, Atlanta
+DESCRIPTION:Group C · Venue: Mercedes-Benz Stadium\, Atlanta · UK: BBC 
+ One / iPlayer — live in 4K UHD · Kickoff shown in your device's local
+  time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-czech-mexico@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260625T010000Z
+DTEND:20260625T030000Z
+SUMMARY:Czech Republic v Mexico — BBC (4K)
+LOCATION:Estadio Azteca\, Mexico City
+DESCRIPTION:Group A · Venue: Estadio Azteca\, Mexico City · UK: BBC One
+  / iPlayer — live in 4K UHD · Kickoff shown in your device's local ti
+ me zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-southafrica-southkorea@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260625T010000Z
+DTEND:20260625T030000Z
+SUMMARY:South Africa v South Korea — BBC (4K)
+LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
+DESCRIPTION:Group A · Venue: Estadio BBVA\, Monterrey (Guadalupe) · UK:
+  BBC One / iPlayer — live in 4K UHD · Kickoff shown in your device's 
+ local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-curacao-ivorycoast@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260625T200000Z
+DTEND:20260625T220000Z
+SUMMARY:Curaçao v Ivory Coast — BBC (4K)
+LOCATION:Lincoln Financial Field\, Philadelphia
+DESCRIPTION:Group E · Venue: Lincoln Financial Field\, Philadelphia · U
+ K: BBC One / iPlayer — live in 4K UHD · Kickoff shown in your device'
+ s local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-ecuador-germany@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260625T200000Z
+DTEND:20260625T220000Z
+SUMMARY:Ecuador v Germany — BBC (4K)
+LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
+DESCRIPTION:Group E · Venue: MetLife Stadium\, New York/New Jersey (East
+  Rutherford) · UK: BBC One / iPlayer — live in 4K UHD · Kickoff show
+ n in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-japan-sweden@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260625T230000Z
+DTEND:20260626T010000Z
+SUMMARY:Japan v Sweden — BBC (4K)
+LOCATION:AT&T Stadium\, Dallas (Arlington)
+DESCRIPTION:Group F · Venue: AT&T Stadium\, Dallas (Arlington) · UK: BB
+ C One / iPlayer — live in 4K UHD · Kickoff shown in your device's loc
+ al time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-netherlands-tunisia@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260625T230000Z
+DTEND:20260626T010000Z
+SUMMARY:Tunisia v Netherlands — BBC (4K)
+LOCATION:Arrowhead Stadium\, Kansas City
+DESCRIPTION:Group F · Venue: Arrowhead Stadium\, Kansas City · UK: BBC 
+ One / iPlayer — live in 4K UHD · Kickoff shown in your device's local
+  time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-turkey-usa@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260626T020000Z
+DTEND:20260626T040000Z
+SUMMARY:Turkey v USA — ITV (HD)
+LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
+DESCRIPTION:Group D · Venue: SoFi Stadium\, Los Angeles (Inglewood) · U
+ K: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your de
+ vice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-australia-paraguay@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260626T020000Z
+DTEND:20260626T040000Z
+SUMMARY:Paraguay v Australia — ITV (HD)
+LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
+DESCRIPTION:Group D · Venue: Levi's Stadium\, San Francisco Bay Area (Sa
+ nta Clara) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff s
+ hown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-france-norway@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260626T190000Z
+DTEND:20260626T210000Z
+SUMMARY:Norway v France — ITV (HD)
+LOCATION:Gillette Stadium\, Boston (Foxborough)
+DESCRIPTION:Group I · Venue: Gillette Stadium\, Boston (Foxborough) · U
+ K: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your de
+ vice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-iraq-senegal@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260626T190000Z
+DTEND:20260626T210000Z
+SUMMARY:Senegal v Iraq — ITV (HD)
+LOCATION:BMO Field\, Toronto
+DESCRIPTION:Group I · Venue: BMO Field\, Toronto · UK: ITV1 / ITVX — 
+ HD only (STV in Scotland) · Kickoff shown in your device's local time z
+ one.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-capeverde-saudiarabia@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260627T000000Z
+DTEND:20260627T020000Z
+SUMMARY:Cape Verde v Saudi Arabia — ITV (HD)
+LOCATION:NRG Stadium\, Houston
+DESCRIPTION:Group H · Venue: NRG Stadium\, Houston · UK: ITV1 / ITVX 
+ — HD only (STV in Scotland) · Kickoff shown in your device's local ti
+ me zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-spain-uruguay@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260627T000000Z
+DTEND:20260627T020000Z
+SUMMARY:Uruguay v Spain — ITV (HD)
+LOCATION:Estadio Akron\, Guadalajara (Zapopan)
+DESCRIPTION:Group H · Venue: Estadio Akron\, Guadalajara (Zapopan) · UK
+ : ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your dev
+ ice's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-egypt-iran@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260627T030000Z
+DTEND:20260627T050000Z
+SUMMARY:Egypt v Iran — BBC (4K)
+LOCATION:Lumen Field\, Seattle
+DESCRIPTION:Group G · Venue: Lumen Field\, Seattle · UK: BBC One / iPla
+ yer — live in 4K UHD · Kickoff shown in your device's local time zone
+ .
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-belgium-newzealand@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260627T030000Z
+DTEND:20260627T050000Z
+SUMMARY:New Zealand v Belgium — BBC (4K)
+LOCATION:BC Place\, Vancouver
+DESCRIPTION:Group G · Venue: BC Place\, Vancouver · UK: BBC One / iPlay
+ er — live in 4K UHD · Kickoff shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-england-panama@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260627T210000Z
 DTEND:20260627T230000Z
-SUMMARY:Croatia v Ghana — 🇬🇧 ITV (HD)
+SUMMARY:Panama v England — ITV (HD)
+LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
+DESCRIPTION:Group L · Venue: MetLife Stadium\, New York/New Jersey (East
+  Rutherford) · UK: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff
+  shown in your device's local time zone.
+CATEGORIES:World Cup 2026,Football
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wc2026-uk-croatia-ghana@worldcup-2026-calendar
+DTSTAMP:20260617T110945Z
+DTSTART:20260627T210000Z
+DTEND:20260627T230000Z
+SUMMARY:Croatia v Ghana — ITV (HD)
 LOCATION:Lincoln Financial Field\, Philadelphia
 DESCRIPTION:Group L · Venue: Lincoln Financial Field\, Philadelphia · U
- K: ITV1 / ITVX — HD only (STV in Scotland) · Japan: DAZN only (no fre
- e-to-air) · Kickoff shown in your device's local time zone.
+ K: ITV1 / ITVX — HD only (STV in Scotland) · Kickoff shown in your de
+ vice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-colombia-portugal@worldcup-2026-calendar
+UID:wc2026-uk-colombia-portugal@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260627T233000Z
 DTEND:20260628T013000Z
-SUMMARY:Colombia v Portugal — 🇬🇧 BBC (4K) · 🇯🇵
+SUMMARY:Colombia v Portugal — BBC (4K)
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
 DESCRIPTION:Group K · Venue: Hard Rock Stadium\, Miami (Miami Gardens) 
- · UK: BBC One / iPlayer — live in 4K UHD · Japan: フジテレビ (f
- ree-to-air) / DAZN · Kickoff shown in your device's local time zone.
+ · UK: BBC One / iPlayer — live in 4K UHD · Kickoff shown in your dev
+ ice's local time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-drcongo-uzbekistan@worldcup-2026-calendar
+UID:wc2026-uk-drcongo-uzbekistan@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260627T233000Z
 DTEND:20260628T013000Z
-SUMMARY:DR Congo v Uzbekistan — 🇬🇧 BBC (4K)
+SUMMARY:DR Congo v Uzbekistan — BBC (4K)
 LOCATION:Mercedes-Benz Stadium\, Atlanta
 DESCRIPTION:Group K · Venue: Mercedes-Benz Stadium\, Atlanta · UK: BBC 
- One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-air) ·
-  Kickoff shown in your device's local time zone.
+ One / iPlayer — live in 4K UHD · Kickoff shown in your device's local
+  time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-algeria-austria@worldcup-2026-calendar
+UID:wc2026-uk-algeria-austria@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260628T020000Z
 DTEND:20260628T040000Z
-SUMMARY:Algeria v Austria — 🇬🇧 BBC (4K)
+SUMMARY:Algeria v Austria — BBC (4K)
 LOCATION:Arrowhead Stadium\, Kansas City
 DESCRIPTION:Group J · Venue: Arrowhead Stadium\, Kansas City · UK: BBC 
- One / iPlayer — live in 4K UHD · Japan: DAZN only (no free-to-air) ·
-  Kickoff shown in your device's local time zone.
+ One / iPlayer — live in 4K UHD · Kickoff shown in your device's local
+  time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-argentina-jordan@worldcup-2026-calendar
+UID:wc2026-uk-argentina-jordan@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260628T020000Z
 DTEND:20260628T040000Z
-SUMMARY:Jordan v Argentina — 🇬🇧 BBC (4K) · 🇯🇵
+SUMMARY:Jordan v Argentina — BBC (4K)
 LOCATION:AT&T Stadium\, Dallas (Arlington)
 DESCRIPTION:Group J · Venue: AT&T Stadium\, Dallas (Arlington) · UK: BB
- C One / iPlayer — live in 4K UHD · Japan: NHK総合 (free-to-air) / D
- AZN · Kickoff shown in your device's local time zone.
+ C One / iPlayer — live in 4K UHD · Kickoff shown in your device's loc
+ al time zone.
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-73@worldcup-2026-calendar
+UID:wc2026-uk-ko-73@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260628T190000Z
 DTEND:20260628T213000Z
@@ -1058,7 +1031,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-76@worldcup-2026-calendar
+UID:wc2026-uk-ko-76@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260629T170000Z
 DTEND:20260629T193000Z
@@ -1072,7 +1045,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-74@worldcup-2026-calendar
+UID:wc2026-uk-ko-74@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260629T203000Z
 DTEND:20260629T230000Z
@@ -1086,7 +1059,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-75@worldcup-2026-calendar
+UID:wc2026-uk-ko-75@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260630T010000Z
 DTEND:20260630T033000Z
@@ -1100,7 +1073,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-78@worldcup-2026-calendar
+UID:wc2026-uk-ko-78@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260630T170000Z
 DTEND:20260630T193000Z
@@ -1114,7 +1087,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-77@worldcup-2026-calendar
+UID:wc2026-uk-ko-77@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260630T210000Z
 DTEND:20260630T233000Z
@@ -1128,7 +1101,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-79@worldcup-2026-calendar
+UID:wc2026-uk-ko-79@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260701T010000Z
 DTEND:20260701T033000Z
@@ -1142,7 +1115,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-80@worldcup-2026-calendar
+UID:wc2026-uk-ko-80@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260701T160000Z
 DTEND:20260701T183000Z
@@ -1156,7 +1129,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-82@worldcup-2026-calendar
+UID:wc2026-uk-ko-82@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260701T200000Z
 DTEND:20260701T223000Z
@@ -1170,7 +1143,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-81@worldcup-2026-calendar
+UID:wc2026-uk-ko-81@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260702T000000Z
 DTEND:20260702T023000Z
@@ -1184,7 +1157,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-84@worldcup-2026-calendar
+UID:wc2026-uk-ko-84@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260702T190000Z
 DTEND:20260702T213000Z
@@ -1198,7 +1171,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-83@worldcup-2026-calendar
+UID:wc2026-uk-ko-83@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260702T230000Z
 DTEND:20260703T013000Z
@@ -1212,7 +1185,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-85@worldcup-2026-calendar
+UID:wc2026-uk-ko-85@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260703T030000Z
 DTEND:20260703T053000Z
@@ -1226,7 +1199,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-88@worldcup-2026-calendar
+UID:wc2026-uk-ko-88@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260703T180000Z
 DTEND:20260703T203000Z
@@ -1240,7 +1213,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-86@worldcup-2026-calendar
+UID:wc2026-uk-ko-86@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260703T220000Z
 DTEND:20260704T003000Z
@@ -1254,7 +1227,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-87@worldcup-2026-calendar
+UID:wc2026-uk-ko-87@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260704T013000Z
 DTEND:20260704T040000Z
@@ -1268,7 +1241,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-90@worldcup-2026-calendar
+UID:wc2026-uk-ko-90@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260704T170000Z
 DTEND:20260704T193000Z
@@ -1282,7 +1255,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-89@worldcup-2026-calendar
+UID:wc2026-uk-ko-89@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260704T210000Z
 DTEND:20260704T233000Z
@@ -1296,7 +1269,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-91@worldcup-2026-calendar
+UID:wc2026-uk-ko-91@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260705T200000Z
 DTEND:20260705T223000Z
@@ -1310,7 +1283,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-92@worldcup-2026-calendar
+UID:wc2026-uk-ko-92@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260706T000000Z
 DTEND:20260706T023000Z
@@ -1324,7 +1297,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-93@worldcup-2026-calendar
+UID:wc2026-uk-ko-93@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260706T190000Z
 DTEND:20260706T213000Z
@@ -1338,7 +1311,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-94@worldcup-2026-calendar
+UID:wc2026-uk-ko-94@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260707T000000Z
 DTEND:20260707T023000Z
@@ -1352,7 +1325,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-95@worldcup-2026-calendar
+UID:wc2026-uk-ko-95@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260707T160000Z
 DTEND:20260707T183000Z
@@ -1366,7 +1339,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-96@worldcup-2026-calendar
+UID:wc2026-uk-ko-96@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260707T200000Z
 DTEND:20260707T223000Z
@@ -1380,7 +1353,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-97@worldcup-2026-calendar
+UID:wc2026-uk-ko-97@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260709T200000Z
 DTEND:20260709T223000Z
@@ -1394,7 +1367,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-98@worldcup-2026-calendar
+UID:wc2026-uk-ko-98@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260710T190000Z
 DTEND:20260710T213000Z
@@ -1408,7 +1381,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-99@worldcup-2026-calendar
+UID:wc2026-uk-ko-99@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260711T210000Z
 DTEND:20260711T233000Z
@@ -1422,7 +1395,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-100@worldcup-2026-calendar
+UID:wc2026-uk-ko-100@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260712T010000Z
 DTEND:20260712T033000Z
@@ -1436,7 +1409,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-101@worldcup-2026-calendar
+UID:wc2026-uk-ko-101@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260714T190000Z
 DTEND:20260714T213000Z
@@ -1450,7 +1423,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-102@worldcup-2026-calendar
+UID:wc2026-uk-ko-102@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260715T190000Z
 DTEND:20260715T213000Z
@@ -1464,7 +1437,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-103@worldcup-2026-calendar
+UID:wc2026-uk-ko-103@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260718T210000Z
 DTEND:20260718T233000Z
@@ -1478,7 +1451,7 @@ TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:wc2026-hybrid-ko-104@worldcup-2026-calendar
+UID:wc2026-uk-ko-104@worldcup-2026-calendar
 DTSTAMP:20260617T110945Z
 DTSTART:20260719T190000Z
 DTEND:20260719T213000Z
