@@ -10,12 +10,12 @@ Hosted free on GitHub Pages. No server, no tracking.
 
 | # | Feed | For | Title example |
 | - | --- | --- | --- |
-| 1 | `uk.ics` | UK viewers | `England v Ghana — BBC (4K)` · `England v Croatia — ITV (HD)` |
+| 1 | `uk.ics` | UK viewers | `England v Ghana — BBC` · `England v Croatia — ITV` |
 | 2 | `japan.ics` | Japanese friends | `Mexico v South Africa — NHK` · `England v Croatia` (blank = DAZN only) |
-| 3 | `hybrid.ics` | UK channel + JP free-to-air | `Netherlands v Japan — 🇬🇧 ITV (HD) · 🇯🇵` |
+| 3 | `hybrid.ics` | UK channel + JP free-to-air | `Netherlands v Japan — ITV · 🇯🇵` · `Brazil v Morocco — BBC · 🇯🇵 BS` |
 
 `https://taro-arumakan.github.io/worldcup-2026-calendar/<feed>` — or `webcal://…/<feed>` to
-open Apple Calendar directly. `worldcup.ics` is kept as an alias of the hybrid feed.
+open Apple Calendar directly.
 
 **Subscribe:** iPhone/Mac → open the `webcal://` link → Add. Google Calendar → Other
 calendars ▸ **+** ▸ *From URL* → paste the HTTPS URL. Outlook → Subscribe from web.
@@ -24,7 +24,7 @@ Kickoffs are stored in **UTC**, so every client shows them in *your* local time 
 
 ## Labels
 
-- 🇬🇧 `BBC` = iPlayer, **live in 4K UHD** · `ITV` = ITVX, **HD only** (STV in Scotland). The UK feeds tag each as `(4K)` / `(HD)`.
+- `BBC` = iPlayer, **live in 4K UHD** · `ITV` = ITVX, **HD only** (STV in Scotland) — the channel name alone tells you 4K vs HD, so titles aren't tagged.
 - 🇯🇵 `NHK` (NHK総合), `NTV` (日本テレビ), `Fuji` (フジテレビ) = terrestrial free-to-air · `BS4K` = NHK BS Premium 4K only.
 - **No Japanese channel** = DAZN-only (paid). Only DAZN carries all 104 live. In the hybrid feed: 🇯🇵 = free-to-air, `🇯🇵 BS` = BS4K only, nothing = DAZN.
 - **Knockouts** show bracket slots (`1A v 3C/E/F/H/I`, `W74 v W77`) and broadcasters are **TBC** — they depend on qualification.
@@ -36,7 +36,6 @@ data/cup.txt, cup_finals.txt, cup_stadiums.csv   # fixtures/venues (vendored fro
 data/broadcasters.json                            # UK + JP broadcaster overlay, keyed by team pair
 generate.py                                        # parses the above → the .ics feeds below
 docs/uk.ics, japan.ics, hybrid.ics                 # the three published calendars
-docs/worldcup.ics                                  # alias of hybrid.ics (back-compat)
 docs/index.html                                    # landing page
 ```
 

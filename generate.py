@@ -6,10 +6,9 @@ bracket come from the vendored openfootball data in data/. Broadcaster labels
 (UK BBC/ITV + Japan free-to-air) come from data/broadcasters.json.
 
 Three calendars are produced from the same data:
-  docs/uk.ics      UK only      — BBC/ITV with 4K/HD tag (BBC=iPlayer 4K, ITV=ITVX HD)
+  docs/uk.ics      UK only      — BBC/ITV (BBC = iPlayer 4K, ITV = ITVX HD)
   docs/japan.ics   Japan only   — NHK/NTV/Fuji/BS4K; no label = DAZN only
-  docs/hybrid.ics  UK + Japan   — UK BBC/ITV (4K/HD) + 🇯🇵 flag (FTA) / 🇯🇵 BS (BS4K only)
-  docs/worldcup.ics  alias of the hybrid feed (kept for older subscriptions)
+  docs/hybrid.ics  UK + Japan   — UK BBC/ITV + 🇯🇵 flag (FTA) / 🇯🇵 BS (BS4K only)
 
 Every event is emitted in UTC (…Z), so calendar apps display each kickoff in
 the subscriber's own local time zone automatically.
@@ -39,11 +38,10 @@ VARIANTS = {
            "FIFAワールドカップ2026 全104試合。地上波(NHK/日テレ/フジ)・BS4Kを表示。"
            "表示のない試合はDAZNのみ。ノックアウトは未定。時刻は端末のタイムゾーンで表示。"),
     "hybrid": ("hybrid.ics", "World Cup 2026 ⚽ UK + Japan TV",
-               "FIFA World Cup 2026, all 104 matches. UK BBC/ITV with 4K/HD tag, plus a "
+               "FIFA World Cup 2026, all 104 matches. UK BBC/ITV channel, plus a "
                "🇯🇵 flag when on Japanese free-to-air (🇯🇵 BS = BS4K only; no flag = DAZN only). "
                "Knockouts TBC. Kickoffs auto-convert to your local time."),
 }
-HYBRID_ALIAS = "worldcup.ics"  # keep the original URL working
 
 MONTHS = {m: i for i, m in enumerate(
     ["January", "February", "March", "April", "May", "June", "July", "August",
@@ -195,12 +193,11 @@ def summary_for(m, variant, bc):
     if m["stage"] != "group":
         return f'{m["label"]}: {fixture}'
     uk, jp = bc.get("uk"), bc.get("jp")
-    qtag, _ = uk_quality(uk)
     if variant == "uk":
-        return f'{fixture} — {uk} ({qtag})'
+        return f'{fixture} — {uk}'
     if variant == "jp":
         return f'{fixture} — {jp}' if jp else fixture
-    s = f'{fixture} — 🇬🇧 {uk} ({qtag})'        # hybrid
+    s = f'{fixture} — {uk}'        # hybrid: BBC/ITV already implies UK + (BBC=4K, ITV=HD)
     if jp == "BS4K":
         s += " · 🇯🇵 BS"
     elif jp:
@@ -276,8 +273,6 @@ def main():
             events.append(build_event(m, variant, bc, location, dtstamp))
         lines = [l for _, ls in sorted(events, key=lambda x: x[0]) for l in ls]
         write_calendar(DOCS / fname, name, desc, lines)
-        if variant == "hybrid":
-            write_calendar(DOCS / HYBRID_ALIAS, name, desc, lines)
         print(f"{fname:14s} {len(events)} events  ({(DOCS / fname).stat().st_size} bytes)")
 
     # ---- validation ---------------------------------------------------------
