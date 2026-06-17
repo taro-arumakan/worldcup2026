@@ -77,5 +77,7 @@
     {"match": "Jordan v Argentina", "uk": "BBC", "jp": "NHK"}
   ],
   "_knockouts_comment": "Knockout broadcasters keyed by match number (R32 73-88, R16 89-96, QF 97-100, SF 101-102, 3rd 103, Final 104). Add entries as BBC/ITV/NHK announce picks, e.g. \"104\": {\"uk\": \"BBC\", \"jp\": \"NHK\"}. uk = BBC|ITV; jp = NHK|NTV|Fuji|BS4K. Team slots (2A, W74, …) resolve automatically from openfootball.",
-  "knockouts": {}
+  "knockouts": {
+    "104": { "jp": "NHK" }
+  }
 }
