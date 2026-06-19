@@ -344,7 +344,7 @@ DTEND:20260618T210000Z
 SUMMARY:Switzerland v Bosnia & Herzegovina
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
 DESCRIPTION:Group B / SoFi Stadium\, Los Angeles (Inglewood)\nJapan: DAZN
-  only
+  only\nResult: Switzerland 4-1 Bosnia & Herzegovina
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -356,7 +356,8 @@ DTSTART:20260618T220000Z
 DTEND:20260619T000000Z
 SUMMARY:Canada v Qatar
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group B / BC Place\, Vancouver\nJapan: DAZN only
+DESCRIPTION:Group B / BC Place\, Vancouver\nJapan: DAZN only\nResult: Can
+ ada 6-0 Qatar
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -369,7 +370,7 @@ DTEND:20260619T030000Z
 SUMMARY:Mexico v South Korea - NHK
 LOCATION:Estadio Akron\, Guadalajara (Zapopan)
 DESCRIPTION:Group A / Estadio Akron\, Guadalajara (Zapopan)\nJapan: NHK
- 総合 / DAZN
+ 総合 / DAZN\nResult: Mexico 1-0 South Korea
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
