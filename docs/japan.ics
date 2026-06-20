@@ -382,7 +382,8 @@ DTSTART:20260619T190000Z
 DTEND:20260619T210000Z
 SUMMARY:USA v Australia - NHK
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group D / Lumen Field\, Seattle\nJapan: NHK総合 / DAZN
+DESCRIPTION:Group D / Lumen Field\, Seattle\nJapan: NHK総合 / DAZN\nRes
+ ult: USA 2-0 Australia
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -395,7 +396,7 @@ DTEND:20260620T000000Z
 SUMMARY:Scotland v Morocco - Fuji
 LOCATION:Gillette Stadium\, Boston (Foxborough)
 DESCRIPTION:Group C / Gillette Stadium\, Boston (Foxborough)\nJapan: フ
- ジテレビ / DAZN
+ ジテレビ / DAZN\nResult: Scotland 0-1 Morocco
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -408,7 +409,7 @@ DTEND:20260620T023000Z
 SUMMARY:Brazil v Haiti - NHK
 LOCATION:Lincoln Financial Field\, Philadelphia
 DESCRIPTION:Group C / Lincoln Financial Field\, Philadelphia\nJapan: NHK
- 総合 / DAZN
+ 総合 / DAZN\nResult: Brazil 3-0 Haiti
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

@@ -384,7 +384,7 @@ DTEND:20260619T210000Z
 SUMMARY:USA v Australia - BBC
 LOCATION:Lumen Field\, Seattle
 DESCRIPTION:Group D / Lumen Field\, Seattle\nUK: BBC One / iPlayer - live
-  in 4K UHD
+  in 4K UHD\nResult: USA 2-0 Australia
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -397,7 +397,7 @@ DTEND:20260620T000000Z
 SUMMARY:Scotland v Morocco - ITV
 LOCATION:Gillette Stadium\, Boston (Foxborough)
 DESCRIPTION:Group C / Gillette Stadium\, Boston (Foxborough)\nUK: ITV1 / 
- ITVX - HD only (STV in Scotland)
+ ITVX - HD only (STV in Scotland)\nResult: Scotland 0-1 Morocco
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -410,7 +410,7 @@ DTEND:20260620T023000Z
 SUMMARY:Brazil v Haiti - ITV
 LOCATION:Lincoln Financial Field\, Philadelphia
 DESCRIPTION:Group C / Lincoln Financial Field\, Philadelphia\nUK: ITV1 / 
- ITVX - HD only (STV in Scotland)
+ ITVX - HD only (STV in Scotland)\nResult: Brazil 3-0 Haiti
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
