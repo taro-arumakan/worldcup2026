@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//taro-arumakan//WorldCup2026 TV//EN
+PRODID:-//taro-arumakan//WorldCup2026//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:World Cup 2026 ⚽ 日本の放送 (NHK/民放/BS4K)
+X-WR-CALNAME:⚽ World Cup 2026 Game Calendar (日本)
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:FIFAワールドカップ2026 全104試合。地上波(NHK/
  日テレ/フジ)・BS4Kを表示。表示のない試合はDAZNのみ

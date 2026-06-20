@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//taro-arumakan//WorldCup2026 TV//EN
+PRODID:-//taro-arumakan//WorldCup2026//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:World Cup 2026 ⚽ UK + Japan TV
+X-WR-CALNAME:⚽ World Cup 2026 Game Calendar (UK + Japan)
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:FIFA World Cup 2026\, all 104 matches. UK BBC/ITV channel\, 
  plus a 🇯🇵 flag when on Japanese free-to-air (🇯🇵 BS = BS4K on

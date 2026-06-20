@@ -31,18 +31,18 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 DOCS = ROOT / "docs"
 
-PRODID = "-//taro-arumakan//WorldCup2026 TV//EN"
+PRODID = "-//taro-arumakan//WorldCup2026//EN"
 
 # variant -> (filename, X-WR-CALNAME, X-WR-CALDESC)
 VARIANTS = {
-    "uk": ("uk.ics", "World Cup 2026 ⚽ UK TV (BBC/ITV)",
+    "uk": ("uk.ics", "⚽ World Cup 2026 Game Calendar (UK)",
            "FIFA World Cup 2026, all 104 matches, UK broadcaster in the title. "
            "BBC = iPlayer (live in 4K UHD); ITV = ITVX (HD only). Knockouts TBC. "
            "Kickoffs auto-convert to your local time."),
-    "jp": ("japan.ics", "World Cup 2026 ⚽ 日本の放送 (NHK/民放/BS4K)",
+    "jp": ("japan.ics", "⚽ World Cup 2026 Game Calendar (日本)",
            "FIFAワールドカップ2026 全104試合。地上波(NHK/日テレ/フジ)・BS4Kを表示。"
            "表示のない試合はDAZNのみ。ノックアウトは未定。時刻は端末のタイムゾーンで表示。"),
-    "hybrid": ("hybrid.ics", "World Cup 2026 ⚽ UK + Japan TV",
+    "hybrid": ("hybrid.ics", "⚽ World Cup 2026 Game Calendar (UK + Japan)",
                "FIFA World Cup 2026, all 104 matches. UK BBC/ITV channel, plus a "
                "🇯🇵 flag when on Japanese free-to-air (🇯🇵 BS = BS4K only; no flag = DAZN only). "
                "Knockouts TBC. Kickoffs auto-convert to your local time."),

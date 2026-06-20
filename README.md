@@ -1,7 +1,8 @@
-# World Cup 2026 - TV calendars
+# World Cup 2026 Game Calendar
 
-Subscribable `.ics` calendars of **all 104** 2026 FIFA World Cup matches, with the
-broadcaster written into every event title. Three flavours from the same data.
+A subscribable `.ics` calendar of **all 104** 2026 FIFA World Cup matches. It
+auto-updates knockout teams & scores as the bracket plays out, and tags each game
+with its UK (BBC/ITV) and Japan free-to-air channel. Three flavours from the same data.
 
 Hosted free on GitHub Pages. No server, no tracking.
 **Landing page:** https://yadot.sniarti.fi/worldcup2026/

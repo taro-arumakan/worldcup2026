@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//taro-arumakan//WorldCup2026 TV//EN
+PRODID:-//taro-arumakan//WorldCup2026//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:World Cup 2026 ⚽ UK TV (BBC/ITV)
+X-WR-CALNAME:⚽ World Cup 2026 Game Calendar (UK)
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:FIFA World Cup 2026\, all 104 matches\, UK broadcaster in th
  e title. BBC = iPlayer (live in 4K UHD)\; ITV = ITVX (HD only). Knockout
