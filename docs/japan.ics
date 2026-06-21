@@ -447,7 +447,8 @@ DTSTART:20260620T200000Z
 DTEND:20260620T220000Z
 SUMMARY:Germany v Ivory Coast - NTV
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group E / BMO Field\, Toronto\nJapan: 日本テレビ / DAZN
+DESCRIPTION:Group E / BMO Field\, Toronto\nJapan: 日本テレビ / DAZN\
+ nResult: Germany 2-1 Ivory Coast
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -459,7 +460,8 @@ DTSTART:20260621T000000Z
 DTEND:20260621T020000Z
 SUMMARY:Ecuador v Curaçao
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group E / Arrowhead Stadium\, Kansas City\nJapan: DAZN only
+DESCRIPTION:Group E / Arrowhead Stadium\, Kansas City\nJapan: DAZN only\n
+ Result: Ecuador 0-0 Curaçao
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
