@@ -541,7 +541,7 @@ DTEND:20260622T190000Z
 SUMMARY:Argentina v Austria - BBC
 LOCATION:AT&T Stadium\, Dallas (Arlington)
 DESCRIPTION:Group J / AT&T Stadium\, Dallas (Arlington)\nUK: BBC One / iP
- layer - live in 4K UHD
+ layer - live in 4K UHD\nResult: Argentina 2-0 Austria
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -554,7 +554,7 @@ DTEND:20260622T230000Z
 SUMMARY:France v Iraq - BBC
 LOCATION:Lincoln Financial Field\, Philadelphia
 DESCRIPTION:Group I / Lincoln Financial Field\, Philadelphia\nUK: BBC One
-  / iPlayer - live in 4K UHD
+  / iPlayer - live in 4K UHD\nResult: France 3-0 Iraq
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -567,7 +567,8 @@ DTEND:20260623T020000Z
 SUMMARY:Norway v Senegal - ITV
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
 DESCRIPTION:Group I / MetLife Stadium\, New York/New Jersey (East Rutherf
- ord)\nUK: ITV1 / ITVX - HD only (STV in Scotland)
+ ord)\nUK: ITV1 / ITVX - HD only (STV in Scotland)\nResult: Norway 3-2 Se
+ negal
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -979,7 +980,7 @@ UID:wc2026-uk-ko-74@worldcup-2026-calendar
 DTSTAMP:20260629T203000Z
 DTSTART:20260629T203000Z
 DTEND:20260629T230000Z
-SUMMARY:Round of 32: 1E v 3A/B/C/D/F
+SUMMARY:Round of 32: Germany v 3A/B/C/D/F
 LOCATION:Gillette Stadium\, Boston (Foxborough)
 DESCRIPTION:Round of 32 / Gillette Stadium\, Boston (Foxborough)\nBroadca
  sters: TBC
@@ -1031,7 +1032,7 @@ UID:wc2026-uk-ko-79@worldcup-2026-calendar
 DTSTAMP:20260701T010000Z
 DTSTART:20260701T010000Z
 DTEND:20260701T033000Z
-SUMMARY:Round of 32: 1A v 3C/E/F/H/I
+SUMMARY:Round of 32: Mexico v 3C/E/F/H/I
 LOCATION:Estadio Azteca\, Mexico City
 DESCRIPTION:Round of 32 / Estadio Azteca\, Mexico City\nBroadcasters: TBC
 CATEGORIES:World Cup 2026,Football
@@ -1068,7 +1069,7 @@ UID:wc2026-uk-ko-81@worldcup-2026-calendar
 DTSTAMP:20260702T000000Z
 DTSTART:20260702T000000Z
 DTEND:20260702T023000Z
-SUMMARY:Round of 32: 1D v 3B/E/F/I/J
+SUMMARY:Round of 32: USA v 3B/E/F/I/J
 LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
 DESCRIPTION:Round of 32 / Levi's Stadium\, San Francisco Bay Area (Santa 
  Clara)\nBroadcasters: TBC
