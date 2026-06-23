@@ -88,7 +88,15 @@ def split_matchup(m):
     return home.strip(), away.strip(), None
 
 
+def strip_comments(text):
+    """Drop openfootball '#' comments - full-line and the inline '## 1E'-style
+    slot tags appended to fixtures as the draw resolves (they otherwise bleed
+    into the venue capture and break the stadium lookup)."""
+    return re.sub(r"[ \t]*#.*", "", text)
+
+
 def parse_groups(text):
+    text = strip_comments(text)
     matches, group, date, started = [], None, None, False
     for raw in text.splitlines():
         line = raw.strip()
@@ -119,6 +127,7 @@ def parse_finals(text):
     stages = [("Round of 32", "Round of 32"), ("Round of 16", "Round of 16"),
               ("Quarter-final", "Quarter-final"), ("Semi-final", "Semi-final"),
               ("Match for third place", "Third-place play-off"), ("Final", "Final")]
+    text = strip_comments(text)
     matches, stage, date = [], None, None
     for raw in text.splitlines():
         line = raw.strip()
