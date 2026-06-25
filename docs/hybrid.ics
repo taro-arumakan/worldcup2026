@@ -675,7 +675,7 @@ DTEND:20260624T210000Z
 SUMMARY:Switzerland v Canada - ITV
 LOCATION:BC Place\, Vancouver
 DESCRIPTION:Group B / BC Place\, Vancouver\nUK: ITV1 / ITVX - HD only (ST
- V in Scotland)\nJapan: DAZN only
+ V in Scotland)\nJapan: DAZN only\nResult: Switzerland 2-1 Canada
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -688,7 +688,8 @@ DTEND:20260624T210000Z
 SUMMARY:Bosnia & Herzegovina v Qatar - ITV
 LOCATION:Lumen Field\, Seattle
 DESCRIPTION:Group B / Lumen Field\, Seattle\nUK: ITV1 / ITVX - HD only (S
- TV in Scotland)\nJapan: DAZN only
+ TV in Scotland)\nJapan: DAZN only\nResult: Bosnia & Herzegovina 3-1 Qata
+ r
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -701,7 +702,8 @@ DTEND:20260625T000000Z
 SUMMARY:Scotland v Brazil - BBC
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
 DESCRIPTION:Group C / Hard Rock Stadium\, Miami (Miami Gardens)\nUK: BBC 
- One / iPlayer - live in 4K UHD\nJapan: DAZN only
+ One / iPlayer - live in 4K UHD\nJapan: DAZN only\nResult: Scotland 0-3 B
+ razil
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -714,7 +716,7 @@ DTEND:20260625T000000Z
 SUMMARY:Morocco v Haiti - BBC
 LOCATION:Mercedes-Benz Stadium\, Atlanta
 DESCRIPTION:Group C / Mercedes-Benz Stadium\, Atlanta\nUK: BBC One / iPla
- yer - live in 4K UHD\nJapan: DAZN only
+ yer - live in 4K UHD\nJapan: DAZN only\nResult: Morocco 4-2 Haiti
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -727,7 +729,8 @@ DTEND:20260625T030000Z
 SUMMARY:Czech Republic v Mexico - BBC | 🇯🇵
 LOCATION:Estadio Azteca\, Mexico City
 DESCRIPTION:Group A / Estadio Azteca\, Mexico City\nUK: BBC One / iPlayer
-  - live in 4K UHD\nJapan: NHK総合 / DAZN
+  - live in 4K UHD\nJapan: NHK総合 / DAZN\nResult: Czech Republic 0-3 M
+ exico
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -740,7 +743,8 @@ DTEND:20260625T030000Z
 SUMMARY:South Africa v South Korea - BBC
 LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
 DESCRIPTION:Group A / Estadio BBVA\, Monterrey (Guadalupe)\nUK: BBC One /
-  iPlayer - live in 4K UHD\nJapan: DAZN only
+  iPlayer - live in 4K UHD\nJapan: DAZN only\nResult: South Africa 1-0 So
+ uth Korea
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

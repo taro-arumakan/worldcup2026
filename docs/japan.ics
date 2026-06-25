@@ -642,7 +642,8 @@ DTSTART:20260624T190000Z
 DTEND:20260624T210000Z
 SUMMARY:Switzerland v Canada
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Group B / BC Place\, Vancouver\nJapan: DAZN only
+DESCRIPTION:Group B / BC Place\, Vancouver\nJapan: DAZN only\nResult: Swi
+ tzerland 2-1 Canada
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -654,7 +655,8 @@ DTSTART:20260624T190000Z
 DTEND:20260624T210000Z
 SUMMARY:Bosnia & Herzegovina v Qatar
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group B / Lumen Field\, Seattle\nJapan: DAZN only
+DESCRIPTION:Group B / Lumen Field\, Seattle\nJapan: DAZN only\nResult: Bo
+ snia & Herzegovina 3-1 Qatar
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -667,7 +669,7 @@ DTEND:20260625T000000Z
 SUMMARY:Scotland v Brazil
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
 DESCRIPTION:Group C / Hard Rock Stadium\, Miami (Miami Gardens)\nJapan: D
- AZN only
+ AZN only\nResult: Scotland 0-3 Brazil
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -679,7 +681,8 @@ DTSTART:20260624T220000Z
 DTEND:20260625T000000Z
 SUMMARY:Morocco v Haiti
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group C / Mercedes-Benz Stadium\, Atlanta\nJapan: DAZN only
+DESCRIPTION:Group C / Mercedes-Benz Stadium\, Atlanta\nJapan: DAZN only\n
+ Result: Morocco 4-2 Haiti
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -692,7 +695,7 @@ DTEND:20260625T030000Z
 SUMMARY:Czech Republic v Mexico - NHK
 LOCATION:Estadio Azteca\, Mexico City
 DESCRIPTION:Group A / Estadio Azteca\, Mexico City\nJapan: NHK総合 / DA
- ZN
+ ZN\nResult: Czech Republic 0-3 Mexico
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -705,7 +708,7 @@ DTEND:20260625T030000Z
 SUMMARY:South Africa v South Korea
 LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
 DESCRIPTION:Group A / Estadio BBVA\, Monterrey (Guadalupe)\nJapan: DAZN o
- nly
+ nly\nResult: South Africa 1-0 South Korea
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
