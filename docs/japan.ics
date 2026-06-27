@@ -850,7 +850,8 @@ DTSTART:20260627T030000Z
 DTEND:20260627T050000Z
 SUMMARY:Egypt v Iran
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Group G / Lumen Field\, Seattle\nJapan: DAZN only
+DESCRIPTION:Group G / Lumen Field\, Seattle\nJapan: DAZN only\nResult: Eg
+ ypt 1-1 Iran
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -863,6 +864,7 @@ DTEND:20260627T050000Z
 SUMMARY:New Zealand v Belgium - NTV
 LOCATION:BC Place\, Vancouver
 DESCRIPTION:Group G / BC Place\, Vancouver\nJapan: 日本テレビ / DAZN
+ \nResult: New Zealand 1-5 Belgium
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
