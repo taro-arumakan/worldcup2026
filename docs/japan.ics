@@ -799,7 +799,7 @@ DTEND:20260626T210000Z
 SUMMARY:Norway v France - NHK
 LOCATION:Gillette Stadium\, Boston (Foxborough)
 DESCRIPTION:Group I / Gillette Stadium\, Boston (Foxborough)\nJapan: NHK
- 総合 / DAZN
+ 総合 / DAZN\nResult: Norway 1-4 France
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -811,7 +811,8 @@ DTSTART:20260626T190000Z
 DTEND:20260626T210000Z
 SUMMARY:Senegal v Iraq
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Group I / BMO Field\, Toronto\nJapan: DAZN only
+DESCRIPTION:Group I / BMO Field\, Toronto\nJapan: DAZN only\nResult: Sene
+ gal 5-0 Iraq
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -823,7 +824,8 @@ DTSTART:20260627T000000Z
 DTEND:20260627T020000Z
 SUMMARY:Cape Verde v Saudi Arabia
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Group H / NRG Stadium\, Houston\nJapan: DAZN only
+DESCRIPTION:Group H / NRG Stadium\, Houston\nJapan: DAZN only\nResult: Ca
+ pe Verde 0-0 Saudi Arabia
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -836,7 +838,7 @@ DTEND:20260627T020000Z
 SUMMARY:Uruguay v Spain - NTV
 LOCATION:Estadio Akron\, Guadalajara (Zapopan)
 DESCRIPTION:Group H / Estadio Akron\, Guadalajara (Zapopan)\nJapan: 日
- 本テレビ / DAZN
+ 本テレビ / DAZN\nResult: Uruguay 0-1 Spain
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
