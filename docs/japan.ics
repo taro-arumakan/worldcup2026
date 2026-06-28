@@ -877,7 +877,7 @@ DTEND:20260627T230000Z
 SUMMARY:Panama v England
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
 DESCRIPTION:Group L / MetLife Stadium\, New York/New Jersey (East Rutherf
- ord)\nJapan: DAZN only
+ ord)\nJapan: DAZN only\nResult: Panama 0-2 England
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -890,7 +890,7 @@ DTEND:20260627T230000Z
 SUMMARY:Croatia v Ghana
 LOCATION:Lincoln Financial Field\, Philadelphia
 DESCRIPTION:Group L / Lincoln Financial Field\, Philadelphia\nJapan: DAZN
-  only
+  only\nResult: Croatia 2-1 Ghana
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -903,7 +903,7 @@ DTEND:20260628T013000Z
 SUMMARY:Colombia v Portugal - Fuji
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
 DESCRIPTION:Group K / Hard Rock Stadium\, Miami (Miami Gardens)\nJapan: 
- フジテレビ / DAZN
+ フジテレビ / DAZN\nResult: Colombia 0-0 Portugal
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -915,7 +915,8 @@ DTSTART:20260627T233000Z
 DTEND:20260628T013000Z
 SUMMARY:DR Congo v Uzbekistan
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Group K / Mercedes-Benz Stadium\, Atlanta\nJapan: DAZN only
+DESCRIPTION:Group K / Mercedes-Benz Stadium\, Atlanta\nJapan: DAZN only\n
+ Result: DR Congo 3-1 Uzbekistan
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -927,7 +928,8 @@ DTSTART:20260628T020000Z
 DTEND:20260628T040000Z
 SUMMARY:Algeria v Austria
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Group J / Arrowhead Stadium\, Kansas City\nJapan: DAZN only
+DESCRIPTION:Group J / Arrowhead Stadium\, Kansas City\nJapan: DAZN only\n
+ Result: Algeria 3-3 Austria
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -940,7 +942,7 @@ DTEND:20260628T040000Z
 SUMMARY:Jordan v Argentina - NHK
 LOCATION:AT&T Stadium\, Dallas (Arlington)
 DESCRIPTION:Group J / AT&T Stadium\, Dallas (Arlington)\nJapan: NHK総合
-  / DAZN
+  / DAZN\nResult: Jordan 1-3 Argentina
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
