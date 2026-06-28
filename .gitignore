@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Google service-account key — never commit this; use the GitHub Actions secret
+service-account*.json
+sa-key.json
+credentials.json
+.secrets/

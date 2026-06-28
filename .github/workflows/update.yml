@@ -37,6 +37,17 @@ jobs:
       - name: Regenerate calendars
         run: python3 generate.py
 
+      - name: Sync Round-of-32 teams to the pool sheet
+        env:
+          GOOGLE_SHEETS_SA_KEY: ${{ secrets.GOOGLE_SHEETS_SA_KEY }}
+        run: |
+          if [ -z "$GOOGLE_SHEETS_SA_KEY" ]; then
+            echo "GOOGLE_SHEETS_SA_KEY secret not set — skipping sheet sync."
+            exit 0
+          fi
+          pip install --quiet google-api-python-client google-auth
+          python3 sync_bracket.py
+
       - name: Commit if changed
         run: |
           if git diff --quiet -- docs data; then
