@@ -1,0 +1,28 @@
+name: Build tree
+
+# Manual rebuild of the トーナメント表 tab (narrow stacked bracket) from build_tree.py.
+# Run from the Actions tab (or the GitHub app) after tweaking the layout.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Rebuild the tournament tree
+        env:
+          GOOGLE_SHEETS_SA_KEY: ${{ secrets.GOOGLE_SHEETS_SA_KEY }}
+        run: |
+          if [ -z "$GOOGLE_SHEETS_SA_KEY" ]; then
+            echo "GOOGLE_SHEETS_SA_KEY secret not set."; exit 1
+          fi
+          pip install --quiet google-api-python-client google-auth
+          python3 build_tree.py
