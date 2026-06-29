@@ -220,6 +220,15 @@ def knockout_uk(m):
     return None
 
 
+def knockout_jp(m):
+    """Japan-team routing: Japan's R32 game is on Fuji, R16 onward on NHK総合
+    (per the Japan Consortium plan). Fires only when Japan are actually in the
+    tie; neutral games stay None until their round's terrestrial card is set."""
+    if "japan" in {norm(m["home"]), norm(m["away"])}:
+        return "Fuji" if m["label"] == "Round of 32" else "NHK"
+    return None
+
+
 def summary_for(m, variant, bc):
     fixture = f'{m["home"]} v {m["away"]}'
     title = fixture if m["stage"] == "group" else f'{m["label"]}: {fixture}'
@@ -310,8 +319,9 @@ def main():
                 uk = ex.get("uk") or knockout_uk(m)
                 if uk:
                     bc["uk"] = uk
-                if ex.get("jp"):
-                    bc["jp"] = ex["jp"]
+                jp = ex.get("jp") or knockout_jp(m)
+                if jp:
+                    bc["jp"] = jp
             location = f'{stadiums.get(m["venue"], "")}, {m["venue"]}'.lstrip(", ")
             events.append(build_event(m, variant, bc, location))
         lines = [l for _, ls in sorted(events, key=lambda x: x[0]) for l in ls]

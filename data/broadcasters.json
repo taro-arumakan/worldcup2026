@@ -78,6 +78,22 @@
   ],
   "_knockouts_comment": "Knockout broadcasters keyed by match number (R32 73-88, R16 89-96, QF 97-100, SF 101-102, 3rd 103, Final 104). Add entries as BBC/ITV/NHK announce picks, e.g. \"104\": {\"uk\": \"BBC\", \"jp\": \"NHK\"}. uk = BBC|ITV; jp = NHK|NTV|Fuji|BS4K. Team slots (2A, W74, …) resolve automatically from openfootball.",
   "knockouts": {
+    "73": { "uk": "ITV", "jp": "NHK" },
+    "74": { "uk": "BBC", "jp": "BS4K" },
+    "75": { "uk": "ITV", "jp": "NHK" },
+    "76": { "uk": "ITV", "jp": "Fuji" },
+    "77": { "uk": "ITV", "jp": "Fuji" },
+    "78": { "uk": "BBC", "jp": "NTV" },
+    "79": { "uk": "ITV", "jp": "NHK" },
+    "80": { "uk": "BBC", "jp": "Fuji" },
+    "81": { "uk": "BBC", "jp": "NHK" },
+    "82": { "uk": "ITV", "jp": "NHK" },
+    "83": { "uk": "BBC", "jp": "NTV" },
+    "84": { "uk": "BBC", "jp": "NHK" },
+    "85": { "uk": "BBC", "jp": "NHK" },
+    "86": { "uk": "ITV", "jp": "NTV" },
+    "87": { "uk": "ITV", "jp": "BS4K" },
+    "88": { "uk": "BBC", "jp": "NHK" },
     "104": { "jp": "NHK" }
   }
 }

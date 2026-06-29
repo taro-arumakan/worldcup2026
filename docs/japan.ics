@@ -952,10 +952,10 @@ UID:wc2026-jp-ko-73@worldcup-2026-calendar
 DTSTAMP:20260628T190000Z
 DTSTART:20260628T190000Z
 DTEND:20260628T213000Z
-SUMMARY:Round of 32: South Africa v Canada
+SUMMARY:Round of 32: South Africa v Canada - NHK
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Round of 32 / SoFi Stadium\, Los Angeles (Inglewood)\nBroadca
- sters: TBC
+DESCRIPTION:Round of 32 / SoFi Stadium\, Los Angeles (Inglewood)\nJapan: 
+ NHK総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -965,9 +965,10 @@ UID:wc2026-jp-ko-76@worldcup-2026-calendar
 DTSTAMP:20260629T170000Z
 DTSTART:20260629T170000Z
 DTEND:20260629T193000Z
-SUMMARY:Round of 32: Brazil v Japan
+SUMMARY:Round of 32: Brazil v Japan - Fuji
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Round of 32 / NRG Stadium\, Houston\nBroadcasters: TBC
+DESCRIPTION:Round of 32 / NRG Stadium\, Houston\nJapan: フジテレビ /
+  DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -977,10 +978,10 @@ UID:wc2026-jp-ko-74@worldcup-2026-calendar
 DTSTAMP:20260629T203000Z
 DTSTART:20260629T203000Z
 DTEND:20260629T230000Z
-SUMMARY:Round of 32: Germany v Paraguay
+SUMMARY:Round of 32: Germany v Paraguay - BS4K
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Round of 32 / Gillette Stadium\, Boston (Foxborough)\nBroadca
- sters: TBC
+DESCRIPTION:Round of 32 / Gillette Stadium\, Boston (Foxborough)\nJapan: 
+ NHK BS Premium 4K / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -990,10 +991,10 @@ UID:wc2026-jp-ko-75@worldcup-2026-calendar
 DTSTAMP:20260630T010000Z
 DTSTART:20260630T010000Z
 DTEND:20260630T033000Z
-SUMMARY:Round of 32: Netherlands v Morocco
+SUMMARY:Round of 32: Netherlands v Morocco - NHK
 LOCATION:Estadio BBVA\, Monterrey (Guadalupe)
-DESCRIPTION:Round of 32 / Estadio BBVA\, Monterrey (Guadalupe)\nBroadcast
- ers: TBC
+DESCRIPTION:Round of 32 / Estadio BBVA\, Monterrey (Guadalupe)\nJapan: NH
+ K総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1003,10 +1004,10 @@ UID:wc2026-jp-ko-78@worldcup-2026-calendar
 DTSTAMP:20260630T170000Z
 DTSTART:20260630T170000Z
 DTEND:20260630T193000Z
-SUMMARY:Round of 32: Ivory Coast v Norway
+SUMMARY:Round of 32: Ivory Coast v Norway - NTV
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Round of 32 / AT&T Stadium\, Dallas (Arlington)\nBroadcasters
- : TBC
+DESCRIPTION:Round of 32 / AT&T Stadium\, Dallas (Arlington)\nJapan: 日
+ 本テレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1016,10 +1017,10 @@ UID:wc2026-jp-ko-77@worldcup-2026-calendar
 DTSTAMP:20260630T210000Z
 DTSTART:20260630T210000Z
 DTEND:20260630T233000Z
-SUMMARY:Round of 32: France v Sweden
+SUMMARY:Round of 32: France v Sweden - Fuji
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
 DESCRIPTION:Round of 32 / MetLife Stadium\, New York/New Jersey (East Rut
- herford)\nBroadcasters: TBC
+ herford)\nJapan: フジテレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1029,9 +1030,10 @@ UID:wc2026-jp-ko-79@worldcup-2026-calendar
 DTSTAMP:20260701T010000Z
 DTSTART:20260701T010000Z
 DTEND:20260701T033000Z
-SUMMARY:Round of 32: Mexico v Ecuador
+SUMMARY:Round of 32: Mexico v Ecuador - NHK
 LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Round of 32 / Estadio Azteca\, Mexico City\nBroadcasters: TBC
+DESCRIPTION:Round of 32 / Estadio Azteca\, Mexico City\nJapan: NHK総合 
+ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1041,9 +1043,10 @@ UID:wc2026-jp-ko-80@worldcup-2026-calendar
 DTSTAMP:20260701T160000Z
 DTSTART:20260701T160000Z
 DTEND:20260701T183000Z
-SUMMARY:Round of 32: England v DR Congo
+SUMMARY:Round of 32: England v DR Congo - Fuji
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Round of 32 / Mercedes-Benz Stadium\, Atlanta\nJapan: TBC
+DESCRIPTION:Round of 32 / Mercedes-Benz Stadium\, Atlanta\nJapan: フジ
+ テレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1053,9 +1056,9 @@ UID:wc2026-jp-ko-82@worldcup-2026-calendar
 DTSTAMP:20260701T200000Z
 DTSTART:20260701T200000Z
 DTEND:20260701T223000Z
-SUMMARY:Round of 32: Belgium v Senegal
+SUMMARY:Round of 32: Belgium v Senegal - NHK
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Round of 32 / Lumen Field\, Seattle\nBroadcasters: TBC
+DESCRIPTION:Round of 32 / Lumen Field\, Seattle\nJapan: NHK総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1065,10 +1068,10 @@ UID:wc2026-jp-ko-81@worldcup-2026-calendar
 DTSTAMP:20260702T000000Z
 DTSTART:20260702T000000Z
 DTEND:20260702T023000Z
-SUMMARY:Round of 32: USA v Bosnia & Herzegovina
+SUMMARY:Round of 32: USA v Bosnia & Herzegovina - NHK
 LOCATION:Levi's Stadium\, San Francisco Bay Area (Santa Clara)
 DESCRIPTION:Round of 32 / Levi's Stadium\, San Francisco Bay Area (Santa 
- Clara)\nBroadcasters: TBC
+ Clara)\nJapan: NHK総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1078,10 +1081,10 @@ UID:wc2026-jp-ko-84@worldcup-2026-calendar
 DTSTAMP:20260702T190000Z
 DTSTART:20260702T190000Z
 DTEND:20260702T213000Z
-SUMMARY:Round of 32: Spain v Austria
+SUMMARY:Round of 32: Spain v Austria - NHK
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Round of 32 / SoFi Stadium\, Los Angeles (Inglewood)\nBroadca
- sters: TBC
+DESCRIPTION:Round of 32 / SoFi Stadium\, Los Angeles (Inglewood)\nJapan: 
+ NHK総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1091,9 +1094,10 @@ UID:wc2026-jp-ko-83@worldcup-2026-calendar
 DTSTAMP:20260702T230000Z
 DTSTART:20260702T230000Z
 DTEND:20260703T013000Z
-SUMMARY:Round of 32: Portugal v Croatia
+SUMMARY:Round of 32: Portugal v Croatia - NTV
 LOCATION:BMO Field\, Toronto
-DESCRIPTION:Round of 32 / BMO Field\, Toronto\nBroadcasters: TBC
+DESCRIPTION:Round of 32 / BMO Field\, Toronto\nJapan: 日本テレビ / D
+ AZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1103,9 +1107,9 @@ UID:wc2026-jp-ko-85@worldcup-2026-calendar
 DTSTAMP:20260703T030000Z
 DTSTART:20260703T030000Z
 DTEND:20260703T053000Z
-SUMMARY:Round of 32: Switzerland v Algeria
+SUMMARY:Round of 32: Switzerland v Algeria - NHK
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Round of 32 / BC Place\, Vancouver\nBroadcasters: TBC
+DESCRIPTION:Round of 32 / BC Place\, Vancouver\nJapan: NHK総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1115,10 +1119,10 @@ UID:wc2026-jp-ko-88@worldcup-2026-calendar
 DTSTAMP:20260703T180000Z
 DTSTART:20260703T180000Z
 DTEND:20260703T203000Z
-SUMMARY:Round of 32: Australia v Egypt
+SUMMARY:Round of 32: Australia v Egypt - NHK
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Round of 32 / AT&T Stadium\, Dallas (Arlington)\nBroadcasters
- : TBC
+DESCRIPTION:Round of 32 / AT&T Stadium\, Dallas (Arlington)\nJapan: NHK
+ 総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1128,10 +1132,10 @@ UID:wc2026-jp-ko-86@worldcup-2026-calendar
 DTSTAMP:20260703T220000Z
 DTSTART:20260703T220000Z
 DTEND:20260704T003000Z
-SUMMARY:Round of 32: Argentina v Cape Verde
+SUMMARY:Round of 32: Argentina v Cape Verde - NTV
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
-DESCRIPTION:Round of 32 / Hard Rock Stadium\, Miami (Miami Gardens)\nBroa
- dcasters: TBC
+DESCRIPTION:Round of 32 / Hard Rock Stadium\, Miami (Miami Gardens)\nJapa
+ n: 日本テレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1141,10 +1145,10 @@ UID:wc2026-jp-ko-87@worldcup-2026-calendar
 DTSTAMP:20260704T013000Z
 DTSTART:20260704T013000Z
 DTEND:20260704T040000Z
-SUMMARY:Round of 32: Colombia v Ghana
+SUMMARY:Round of 32: Colombia v Ghana - BS4K
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Round of 32 / Arrowhead Stadium\, Kansas City\nBroadcasters: 
- TBC
+DESCRIPTION:Round of 32 / Arrowhead Stadium\, Kansas City\nJapan: NHK BS 
+ Premium 4K / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
