@@ -24,7 +24,7 @@ TREE_GID = int(os.environ.get("TREE_GID", "1141681331"))
 FLAGMAP = "$AE$2:$AF$49"   # existing JA -> ISO2 map already on the tab
 SHORTMAP = "$AE$52:$AF$70"  # long-JA -> short-JA, written by this script (spare rows under the flag map)
 
-BOX_W, CONN_W, FONT = 52, 10, 8        # column widths (px) and font size (pt)
+BOX_W, CONN_W, FONT = 58, 8, 8         # column widths (px) and font size (pt)
 
 # round column (letter) per depth. A=L-R32 C=L-R16 E=L-QF G=L-SF I=L-final
 # J=champion  K=R-final M=R-SF O=R-QF Q=R-R16 S=R-R32. B,D,F,H,L,N,P,R = connectors.
@@ -109,7 +109,7 @@ def format_requests():
         "range": {"sheetId": TREE_GID, "startRowIndex": 0, "endRowIndex": 33,
                   "startColumnIndex": 0, "endColumnIndex": col_idx("S") + 1},
         "cell": {"userEnteredFormat": {
-            "horizontalAlignment": "CENTER", "verticalAlignment": "MIDDLE",
+            "horizontalAlignment": "LEFT", "verticalAlignment": "MIDDLE",
             "textFormat": {"fontSize": FONT}}},
         "fields": "userEnteredFormat(horizontalAlignment,verticalAlignment,textFormat.fontSize)"}})
     return reqs
