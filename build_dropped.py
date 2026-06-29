@@ -94,8 +94,11 @@ def main():
     players, bracket, results = (g.get("values", []) for g in got)
 
     all_teams = [r[0].strip() for r in results if r and r[0].strip()]
-    rows = build_rows(parse_players(players), dropped_teams(bracket, all_teams))
-    print(f"{len(rows)} dead nomination(s) across {len({r[1] for r in rows})} eliminated team(s).")
+    picks, dropped = parse_players(players), dropped_teams(bracket, all_teams)
+    rows = build_rows(picks, dropped)
+    print(f"parsed {len(picks)} picks from {len({p for p, _, _ in picks})} players; "
+          f"{len(dropped)} teams out; {len(rows)} dead nomination(s) "
+          f"across {len({r[1] for r in rows})} picked team(s).")
 
     # ensure the tab exists; get its sheetId
     meta = api.get(spreadsheetId=SHEET_ID, fields="sheets.properties").execute()["sheets"]
