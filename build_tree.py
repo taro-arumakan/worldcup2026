@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 """(Re)build the トーナメント表 tab as a narrow, mobile-friendlier mirrored bracket.
 
-Each team box is a flag with its country name stacked directly BELOW it, so every
-round is ONE column instead of two. Flags are centred; left-half names hug the
-left, right-half names hug the right (mirror-symmetric); the Champion box is
-centred. A compact A-L group legend (from the Results rosters) sits below.
+Each team box is a flag with its 3-letter country code (GER, BRA, JPN, …) stacked
+directly below it, centred — so every round is one narrow column. A compact A-L
+group legend (flag + code, from the Results rosters) sits below.
 
 It stays a pure presentation layer over the Bracket tab — every cell is a formula,
 so it auto-advances as winners are marked.
 
 Run via the build-tree workflow (needs GOOGLE_SHEETS_SA_KEY). Tweak SIZES at the
-top and re-run. Clears A1:AD60 first; leaves the flag map (AE:AF) and writes a
-short-name map under it.
+top and re-run. Clears A1:AD60 first; leaves the flag map (AE:AF rows 2-49) and
+writes the JA->code map under it.
 """
 import json
 import os
@@ -21,19 +20,29 @@ SHEET_ID = os.environ.get("BRACKET_SHEET_ID", "191IR0O6kja_mULoNnneVS7Tj1FKbwk31
 TREE = "トーナメント表"
 TREE_GID = int(os.environ.get("TREE_GID", "1141681331"))
 FLAGMAP = "$AE$2:$AF$49"     # existing JA -> ISO2 map already on the tab
-SHORTMAP = "$AE$52:$AF$70"   # long-JA -> short-JA, written by this script
+CODEMAP = "$AE$52:$AF$99"    # JA -> FIFA 3-letter code, written by this script
 
-BOX_W, CONN_W, FONT = 58, 8, 8         # column widths (px) and font size (pt)
+BOX_W, CONN_W, FONT = 40, 8, 9         # column widths (px) and font size (pt)
 
 # round column per depth. A=L-R32 C=L-R16 E=L-QF G=L-SF I=L-final  J=champion
 # K=R-final M=R-SF O=R-QF Q=R-R16 S=R-R32. B,D,F,H,L,N,P,R = connectors.
 BOX_COLS = list("ACEGIJKMOQS")
 CONN_COLS = list("BDFHLNPR")
-LEFT_NAME_COLS, RIGHT_NAME_COLS = set("ACEGI"), set("KMOQS")   # name alignment by half
 
-_SHORT = {
-    "ボスニア・ヘルツェゴビナ": "ボスニア", "コンゴ民主共和国": "コンゴ",
-    "ニュージーランド": "NZ", "コートジボワール": "コートジ", "サウジアラビア": "サウジ",
+# Japanese name -> FIFA 3-letter code (as used in broadcast graphics).
+_CODE = {
+    "メキシコ": "MEX", "南アフリカ": "RSA", "韓国": "KOR", "チェコ": "CZE",
+    "カナダ": "CAN", "ボスニア・ヘルツェゴビナ": "BIH", "カタール": "QAT", "スイス": "SUI",
+    "ブラジル": "BRA", "モロッコ": "MAR", "ハイチ": "HAI", "スコットランド": "SCO",
+    "アメリカ": "USA", "パラグアイ": "PAR", "オーストラリア": "AUS", "トルコ": "TUR",
+    "ドイツ": "GER", "キュラソー": "CUW", "コートジボワール": "CIV", "エクアドル": "ECU",
+    "オランダ": "NED", "日本": "JPN", "スウェーデン": "SWE", "チュニジア": "TUN",
+    "ベルギー": "BEL", "エジプト": "EGY", "イラン": "IRN", "ニュージーランド": "NZL",
+    "スペイン": "ESP", "カーボベルデ": "CPV", "サウジアラビア": "KSA", "ウルグアイ": "URU",
+    "フランス": "FRA", "セネガル": "SEN", "イラク": "IRQ", "ノルウェー": "NOR",
+    "アルゼンチン": "ARG", "アルジェリア": "ALG", "オーストリア": "AUT", "ヨルダン": "JOR",
+    "ポルトガル": "POR", "コンゴ民主共和国": "COD", "ウズベキスタン": "UZB", "コロンビア": "COL",
+    "イングランド": "ENG", "クロアチア": "CRO", "ガーナ": "GHA", "パナマ": "PAN",
 }
 
 LEFT_R32 = [
@@ -72,13 +81,13 @@ def flag(src):
     return f'=IFERROR(IMAGE("https://flagcdn.com/h20/"&VLOOKUP({src},{FLAGMAP},2,FALSE)&".png"),"")'
 
 
-def label(src, seed):
+def code(src, seed):
     placeholder = f'"{seed}"' if seed else '""'
-    return f'=IF({src}="",{placeholder},IFERROR(VLOOKUP({src},{SHORTMAP},2,FALSE),{src}))'
+    return f'=IF({src}="",{placeholder},IFERROR(VLOOKUP({src},{CODEMAP},2,FALSE),{src}))'
 
 
 def legend_cells():
-    """Compact A-L group rosters from Results, stacked flag-over-name, 6 per band."""
+    """Compact A-L group rosters from Results, stacked flag-over-code, 6 per band."""
     out, cols = {}, ["A", "C", "E", "G", "I", "K"]
     for idx in range(12):
         col, top = cols[idx % 6], 36 + (idx // 6) * 10
@@ -86,7 +95,7 @@ def legend_cells():
         for t in range(4):
             rr, fr = 3 + 4 * idx + t, top + 1 + t * 2
             out[f"{col}{fr}"] = flag(f"Results!A{rr}")
-            out[f"{col}{fr + 1}"] = f'=IFERROR(VLOOKUP(Results!A{rr},{SHORTMAP},2,FALSE),Results!A{rr})'
+            out[f"{col}{fr + 1}"] = code(f"Results!A{rr}", None)
     return out
 
 
@@ -94,24 +103,16 @@ def cell_formulas():
     out = {}
     for col, row, src, seed in boxes():
         b = f"Bracket!{src}"
-        out[f"{col}{row}"], out[f"{col}{row + 1}"] = flag(b), label(b, seed)
+        out[f"{col}{row}"], out[f"{col}{row + 1}"] = flag(b), code(b, seed)
     out["J14"] = '="CHAMPION 優勝"'
     out.update(legend_cells())
-    for i, (lng, short) in enumerate(_SHORT.items()):
-        out[f"AE{52 + i}"], out[f"AF{52 + i}"] = f'="{lng}"', f'="{short}"'
+    for i, (ja, c) in enumerate(_CODE.items()):     # JA -> code map at AE52:AF99
+        out[f"AE{52 + i}"], out[f"AF{52 + i}"] = f'="{ja}"', f'="{c}"'
     return out
 
 
 def col_idx(letter):
     return ord(letter) - 65
-
-
-def _cell_align(col, row, align):
-    return {"repeatCell": {
-        "range": {"sheetId": TREE_GID, "startRowIndex": row - 1, "endRowIndex": row,
-                  "startColumnIndex": col_idx(col), "endColumnIndex": col_idx(col) + 1},
-        "cell": {"userEnteredFormat": {"horizontalAlignment": align}},
-        "fields": "userEnteredFormat.horizontalAlignment"}}
 
 
 def format_requests():
@@ -123,20 +124,13 @@ def format_requests():
             "range": {"sheetId": TREE_GID, "dimension": "COLUMNS",
                       "startIndex": col_idx(c), "endIndex": col_idx(c) + 1},
             "properties": {"pixelSize": w}, "fields": "pixelSize"}})
-    # base: small, centred, vertically middle across bracket + legend
-    reqs.append({"repeatCell": {
+    reqs.append({"repeatCell": {     # small, centred, vertically middle everywhere
         "range": {"sheetId": TREE_GID, "startRowIndex": 0, "endRowIndex": 55,
                   "startColumnIndex": 0, "endColumnIndex": col_idx("S") + 1},
         "cell": {"userEnteredFormat": {
             "horizontalAlignment": "CENTER", "verticalAlignment": "MIDDLE",
             "textFormat": {"fontSize": FONT}}},
         "fields": "userEnteredFormat(horizontalAlignment,verticalAlignment,textFormat.fontSize)"}})
-    # names hug the outer edge of their half (flags + Champion stay centred)
-    for col, flag_row, _src, _seed in boxes():
-        if col in LEFT_NAME_COLS:
-            reqs.append(_cell_align(col, flag_row + 1, "LEFT"))
-        elif col in RIGHT_NAME_COLS:
-            reqs.append(_cell_align(col, flag_row + 1, "RIGHT"))
     return reqs
 
 
@@ -160,7 +154,7 @@ def main():
         "data": [{"range": f"{TREE}!{c}", "values": [[f]]} for c, f in cells.items()],
     }).execute()
     api.batchUpdate(spreadsheetId=SHEET_ID, body={"requests": format_requests()}).execute()
-    print(f"Rebuilt {TREE}: {len(cells)} cells, boxes @ {BOX_W}px, font {FONT}, legend A-L.")
+    print(f"Rebuilt {TREE}: {len(cells)} cells, boxes @ {BOX_W}px, font {FONT}, codes + legend.")
 
 
 if __name__ == "__main__":
