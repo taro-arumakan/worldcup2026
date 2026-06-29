@@ -37,7 +37,7 @@ jobs:
       - name: Regenerate calendars
         run: python3 generate.py
 
-      - name: Sync Round-of-32 teams to the pool sheet
+      - name: Sync bracket + dropped-teams to the pool sheet
         env:
           GOOGLE_SHEETS_SA_KEY: ${{ secrets.GOOGLE_SHEETS_SA_KEY }}
         run: |
@@ -47,6 +47,7 @@ jobs:
           fi
           pip install --quiet google-api-python-client google-auth
           python3 sync_bracket.py
+          python3 build_dropped.py
 
       - name: Commit if changed
         run: |
