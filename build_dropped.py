@@ -66,7 +66,7 @@ def dropped_teams(bracket, all_teams):
 
 
 def build_rows(picks, dropped):
-    rows = [[dropped[t], t, player, rank, 11 - rank] for player, rank, t in picks if t in dropped]
+    rows = [[dropped[t], t, player, rank] for player, rank, t in picks if t in dropped]
     rows.sort(key=lambda x: (ROUND_ORDER.get(x[0], 9), x[1], x[3]))
     return rows
 
@@ -109,11 +109,11 @@ def main():
             {"addSheet": {"properties": {"title": TAB}}}]}).execute(
         )["replies"][0]["addSheet"]["properties"]["sheetId"]
 
-    header = ["Out", "", "Team", "Player", "Rank", "Pts/win"]
+    header = ["Out", "", "Team", "Player", "Rank"]
     body = [["脱落ノミネート / Dropped nominations — picks that can no longer score"], [], header]
     formula_cells = []
-    for i, (out, team, player, rank, ptw) in enumerate(rows):
-        body.append([out, "", team, player, rank, ptw])
+    for out, team, player, rank in rows:
+        body.append([out, "", team, player, rank])
         formula_cells.append((f"{TAB}!B{len(body)}", flag_formula(f'"{team}"')))
 
     api.values().clear(spreadsheetId=SHEET_ID, range=f"{TAB}!A1:F400").execute()
@@ -126,7 +126,7 @@ def main():
 
     api.batchUpdate(spreadsheetId=SHEET_ID, body={"requests": [
         {"repeatCell": {"range": {"sheetId": sheet_id, "startRowIndex": 2, "endRowIndex": 3,
-                                  "startColumnIndex": 0, "endColumnIndex": 6},
+                                  "startColumnIndex": 0, "endColumnIndex": 5},
                         "cell": {"userEnteredFormat": {"textFormat": {"bold": True}}},
                         "fields": "userEnteredFormat.textFormat.bold"}},
         {"updateSheetProperties": {"properties": {"sheetId": sheet_id,
@@ -135,7 +135,7 @@ def main():
     ] + [{"updateDimensionProperties": {
             "range": {"sheetId": sheet_id, "dimension": "COLUMNS", "startIndex": c, "endIndex": c + 1},
             "properties": {"pixelSize": w}, "fields": "pixelSize"}}
-         for c, w in enumerate((78, 30, 96, 132, 46, 60))]}).execute()
+         for c, w in enumerate((78, 30, 96, 132, 46))]}).execute()
     print(f"Wrote {len(rows)} rows to the {TAB} tab.")
 
 
