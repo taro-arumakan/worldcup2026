@@ -79,13 +79,22 @@ def pair_key(a, b):
 
 
 def split_matchup(m):
+    """Return (home, away, score|None). Handles scheduled ('A v B', incl. bracket
+    slots like 'W74 v W77'), played ('A 2-0 (1-0) B'), and extra-time/penalty
+    knockout formats ('A 1-1 a.e.t. (1-1, 1-0), 1-3 pen. B')."""
     m = m.strip()
-    sc = re.search(r"(\d+)-(\d+)\s*\(\d+-\d+\)", m)
-    if sc:
-        home, away = re.split(r"\s+\d+-\d+\s*\(\d+-\d+\)\s+", m, maxsplit=1)
-        return home.strip(), away.strip(), f"{sc.group(1)}-{sc.group(2)}"
-    home, away = re.split(r"\s+v\s+", m, maxsplit=1)
-    return home.strip(), away.strip(), None
+    if re.search(r"\s+v\s+", m):
+        home, away = re.split(r"\s+v\s+", m, maxsplit=1)
+        return home.strip(), away.strip(), None
+    score_block = (r"\s+(\d+)-(\d+)"                 # full-time score
+                   r"(?:\s+a\.e\.t\.?)?"             # optional 'a.e.t' / 'a.e.t.'
+                   r"(?:\s*\([\d\s,-]+\))?"           # optional '(1-0)' or '(1-1, 1-0)'
+                   r"(?:\s*,?\s*\d+-\d+\s+pen\.?)?"   # optional ', 1-3 pen.'
+                   r"\s+")
+    parts = re.split(score_block, m, maxsplit=1)
+    if len(parts) >= 4:                              # [home, g1, g2, away]
+        return parts[0].strip(), parts[-1].strip(), f"{parts[1]}-{parts[2]}"
+    return m.strip(), "", None                       # last resort: never crash
 
 
 def strip_comments(text):
@@ -142,11 +151,12 @@ def parse_finals(text):
         mt = re.match(r"^\s*\((\d+)\)\s+(\d{1,2}):(\d{2})\s+UTC([+-]\d+)\s+(.+?)\s+@\s+(.+?)\s*$", raw)
         if mt and date:
             num, hh, mm, off, matchup, venue = mt.groups()
-            home, away = re.split(r"\s+v\s+", matchup.strip(), maxsplit=1)
+            home, away, score = split_matchup(matchup)
+            venue = re.sub(r"\s*##.*$", "", venue).strip()   # drop trailing '## slot' note
             matches.append(dict(stage="ko", label=stage, num=int(num), mon=date[0],
                                 day=date[1], hh=int(hh), mm=int(mm), off=int(off),
-                                home=home.strip(), away=away.strip(), score=None,
-                                venue=venue.strip()))
+                                home=home, away=away, score=score,
+                                venue=venue))
     return matches
 
 
