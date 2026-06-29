@@ -22,7 +22,7 @@ SHEET_ID = os.environ.get("BRACKET_SHEET_ID", "191IR0O6kja_mULoNnneVS7Tj1FKbwk31
 TREE = "トーナメント表"
 TREE_GID = int(os.environ.get("TREE_GID", "1141681331"))
 FLAGMAP = "$AE$2:$AF$49"   # existing JA -> ISO2 map already on the tab
-SHORTMAP = "$AH$2:$AI$20"  # long-JA -> short-JA, written by this script
+SHORTMAP = "$AE$52:$AF$70"  # long-JA -> short-JA, written by this script (spare rows under the flag map)
 
 BOX_W, CONN_W, FONT = 52, 10, 8        # column widths (px) and font size (pt)
 
@@ -87,7 +87,7 @@ def cell_formulas():
             f'=IF({b}="",{placeholder},IFERROR(VLOOKUP({b},{SHORTMAP},2,FALSE),{b}))')
     out["J14"] = '="CHAMPION 優勝"'
     for i, (long, short) in enumerate(_SHORT.items()):
-        out[f"AH{2 + i}"], out[f"AI{2 + i}"] = f'="{long}"', f'="{short}"'
+        out[f"AE{52 + i}"], out[f"AF{52 + i}"] = f'="{long}"', f'="{short}"'
     return out
 
 
