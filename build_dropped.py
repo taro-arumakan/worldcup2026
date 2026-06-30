@@ -26,7 +26,6 @@ TREE = "トーナメント表"        # its AE2:AF49 is the JA -> ISO2 flag map 
 # Semi-finals (rows 42-43) are excluded — their losers go to the 3rd-place match.
 KO_MATCHES = ([(r, "R32") for r in range(5, 21)] + [(r, "R16") for r in range(24, 32)]
               + [(r, "QF") for r in range(35, 39)] + [(47, "Final"), (51, "3rd place")])
-ROUND_ORDER = {"Group stage": 0, "R32": 1, "R16": 2, "QF": 3, "3rd place": 4, "Final": 5}
 
 
 def at(grid, idx, col):
@@ -66,8 +65,11 @@ def dropped_teams(bracket, all_teams):
 
 
 def build_rows(picks, dropped):
+    order = {}
+    for player, _, _ in picks:
+        order.setdefault(player, len(order))       # players in Players-tab order
     rows = [[dropped[t], t, player, rank] for player, rank, t in picks if t in dropped]
-    rows.sort(key=lambda x: (ROUND_ORDER.get(x[0], 9), x[1], x[3]))
+    rows.sort(key=lambda x: (order[x[2]], x[3]))   # group by player, then by rank
     return rows
 
 
