@@ -3,9 +3,9 @@
 
 A nomination is dead once its team can win no further knockout matches — i.e. the
 team either failed to qualify for the Round of 32 (out in the group stage) or lost
-a knockout tie. This lists every such pick: when the team went out, the team, the
-player who picked it, and the rank they placed it at (so rank 1 = 10 pts/win now
-forfeited … rank 10 = 1).
+a knockout tie. This lists every such pick: the player who picked it, the rank they
+placed it at (so rank 1 = 10 pts/win now forfeited … rank 10 = 1), the team, and
+when it went out.
 
 Reads the live sheet (Players picks, the Bracket, the Results roster) via the
 Google Sheets API and rewrites the Dropped tab. Runs in the 6-hourly workflow
@@ -111,12 +111,12 @@ def main():
             {"addSheet": {"properties": {"title": TAB}}}]}).execute(
         )["replies"][0]["addSheet"]["properties"]["sheetId"]
 
-    header = ["Out", "", "Team", "Player", "Rank"]
+    header = ["Player", "Rank", "", "Team", "Out"]
     body = [["脱落ノミネート / Dropped nominations — picks that can no longer score"], [], header]
     formula_cells = []
     for out, team, player, rank in rows:
-        body.append([out, "", team, player, rank])
-        formula_cells.append((f"{TAB}!B{len(body)}", flag_formula(f'"{team}"')))
+        body.append([player, rank, "", team, out])
+        formula_cells.append((f"{TAB}!C{len(body)}", flag_formula(f'"{team}"')))
 
     api.values().clear(spreadsheetId=SHEET_ID, range=f"{TAB}!A1:F400").execute()
     api.values().update(spreadsheetId=SHEET_ID, range=f"{TAB}!A1", valueInputOption="RAW",
@@ -137,7 +137,7 @@ def main():
     ] + [{"updateDimensionProperties": {
             "range": {"sheetId": sheet_id, "dimension": "COLUMNS", "startIndex": c, "endIndex": c + 1},
             "properties": {"pixelSize": w}, "fields": "pixelSize"}}
-         for c, w in enumerate((78, 30, 96, 132, 46))]}).execute()
+         for c, w in enumerate((132, 46, 30, 96, 78))]}).execute()  # Player, Rank, flag, Team, Out
     print(f"Wrote {len(rows)} rows to the {TAB} tab.")
 
 
