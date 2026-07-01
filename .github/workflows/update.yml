@@ -4,11 +4,18 @@ name: Update calendars
 # .ics feeds. Output is deterministic, so a commit happens only when something
 # actually changed. Knockout broadcaster picks are added by hand in
 # data/broadcasters.json and get picked up on the next run.
+#
+# Schedule: hourly while a match could plausibly be in progress. US-hosted
+# kickoffs run 16:00-03:00 UTC; add ~3h for extra time/penalties, so
+# 16:00-05:59 UTC is the active window. Outside that, just a light touch
+# every 3h to keep things from going stale.
 
 on:
   schedule:
-    - cron: '17 */6 * * *'   # every 6 hours (offset off the hour)
-  workflow_dispatch:           # allow manual runs
+    - cron: '17 16-23 * * *'      # active window pt.1: 16:00-23:59 UTC, hourly
+    - cron: '17 0-5 * * *'        # active window pt.2: 00:00-05:59 UTC, hourly
+    - cron: '17 6,9,12,15 * * *'  # quiet window: every ~3h the rest of the day
+  workflow_dispatch:                # allow manual runs
 
 permissions:
   contents: write
