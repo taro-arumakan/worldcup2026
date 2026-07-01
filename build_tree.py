@@ -2,8 +2,9 @@
 """(Re)build the トーナメント表 tab as a narrow, mobile-friendlier mirrored bracket.
 
 Each team box is a flag with its 3-letter country code (GER, BRA, JPN, …) stacked
-directly below it, centred — so every round is one narrow column. A compact A-L
-group legend (flag + code, from the Results rosters) sits below.
+directly below it, centred — so every round is one narrow column. A thin border
+boxes each facing pair (R32..SF, both sides) so it's clear at a glance who plays
+whom. A compact A-L group legend (flag + code, from the Results rosters) sits below.
 
 It stays a pure presentation layer over the Bracket tab — every cell is a formula,
 so it auto-advances as winners are marked.
@@ -58,6 +59,10 @@ RIGHT_R32 = [
     ("S", 25, "B19", "1B"), ("S", 27, "C19", "3EFGIJ"), ("S", 29, "B20", "1K"), ("S", 31, "C20", "3DEIJL"),
 ]
 ADV_ROWS = {"R16": [2, 6, 10, 14, 18, 22, 26, 30], "QF": [4, 12, 20, 28], "SF": [8, 24], "F": [16]}
+R32_ROWS = list(range(1, 32, 2))     # flag-row of each of the 16 R32 boxes, per side
+
+BORDER = {"style": "SOLID", "width": 1, "color": {"red": 0.45, "green": 0.45, "blue": 0.45}}
+NO_BORDER = {"style": "NONE"}
 
 
 def advancers(col, winner_cells, rounds):
@@ -134,6 +139,34 @@ def format_requests():
     return reqs
 
 
+def border_requests():
+    """Thin box around each pair of boxes that face each other — R32 team A/B, and
+    each later round's two advancers into that round's match — on both sides of
+    the bracket. Clears any stale borders on the grid first, so this stays correct
+    even if a future layout change moves things around."""
+    groups = {                                    # column -> ordered box rows, paired 2-at-a-time
+        "A": R32_ROWS, "S": R32_ROWS,
+        "C": ADV_ROWS["R16"], "Q": ADV_ROWS["R16"],
+        "E": ADV_ROWS["QF"], "O": ADV_ROWS["QF"],
+        "G": ADV_ROWS["SF"], "M": ADV_ROWS["SF"],
+    }
+    clear = {"updateBorders": {
+        "range": {"sheetId": TREE_GID, "startRowIndex": 0, "endRowIndex": 31,
+                  "startColumnIndex": 0, "endColumnIndex": col_idx("S") + 1},
+        "top": NO_BORDER, "bottom": NO_BORDER, "left": NO_BORDER, "right": NO_BORDER,
+        "innerHorizontal": NO_BORDER, "innerVertical": NO_BORDER}}
+    reqs = [clear]
+    for col, rows in groups.items():
+        c = col_idx(col)
+        for i in range(0, len(rows), 2):
+            r1, r2 = rows[i], rows[i + 1]         # flag-rows of the two facing boxes
+            rng = {"sheetId": TREE_GID, "startRowIndex": r1 - 1, "endRowIndex": r2 + 1,
+                   "startColumnIndex": c, "endColumnIndex": c + 1}
+            reqs.append({"updateBorders": {"range": rng, "top": BORDER, "bottom": BORDER,
+                                            "left": BORDER, "right": BORDER}})
+    return reqs
+
+
 def main():
     key = os.environ.get("GOOGLE_SHEETS_SA_KEY")
     cells = cell_formulas()
@@ -153,8 +186,9 @@ def main():
         "valueInputOption": "USER_ENTERED",
         "data": [{"range": f"{TREE}!{c}", "values": [[f]]} for c, f in cells.items()],
     }).execute()
-    api.batchUpdate(spreadsheetId=SHEET_ID, body={"requests": format_requests()}).execute()
-    print(f"Rebuilt {TREE}: {len(cells)} cells, boxes @ {BOX_W}px, font {FONT}, codes + legend.")
+    api.batchUpdate(spreadsheetId=SHEET_ID, body={
+        "requests": format_requests() + border_requests()}).execute()
+    print(f"Rebuilt {TREE}: {len(cells)} cells, boxes @ {BOX_W}px, font {FONT}, codes + legend + match borders.")
 
 
 if __name__ == "__main__":
