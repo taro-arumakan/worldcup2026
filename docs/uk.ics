@@ -1207,9 +1207,10 @@ UID:wc2026-uk-ko-92@worldcup-2026-calendar
 DTSTAMP:20260706T000000Z
 DTSTART:20260706T000000Z
 DTEND:20260706T023000Z
-SUMMARY:Round of 16: Mexico v W80
+SUMMARY:Round of 16: Mexico v England - BBC
 LOCATION:Estadio Azteca\, Mexico City
-DESCRIPTION:Round of 16 / Estadio Azteca\, Mexico City\nBroadcasters: TBC
+DESCRIPTION:Round of 16 / Estadio Azteca\, Mexico City\nUK: BBC One / iPl
+ ayer - live in 4K UHD
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1232,7 +1233,7 @@ UID:wc2026-uk-ko-94@worldcup-2026-calendar
 DTSTAMP:20260707T000000Z
 DTSTART:20260707T000000Z
 DTEND:20260707T023000Z
-SUMMARY:Round of 16: W81 v W82
+SUMMARY:Round of 16: USA v Belgium
 LOCATION:Lumen Field\, Seattle
 DESCRIPTION:Round of 16 / Lumen Field\, Seattle\nBroadcasters: TBC
 CATEGORIES:World Cup 2026,Football
