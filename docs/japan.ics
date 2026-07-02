@@ -1058,7 +1058,8 @@ DTSTART:20260701T200000Z
 DTEND:20260701T223000Z
 SUMMARY:Round of 32: Belgium v Senegal - NHK
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Round of 32 / Lumen Field\, Seattle\nJapan: NHK総合 / DAZN
+DESCRIPTION:Round of 32 / Lumen Field\, Seattle\nJapan: NHK総合 / DAZN\
+ nResult: Belgium 3-2 Senegal
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
