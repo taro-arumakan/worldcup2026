@@ -94,6 +94,14 @@
     "86": { "uk": "ITV", "jp": "NTV" },
     "87": { "uk": "ITV", "jp": "BS4K" },
     "88": { "uk": "BBC", "jp": "NHK" },
+    "89": { "uk": "BBC", "jp": "NTV" },
+    "90": { "uk": "ITV", "jp": "NHK" },
+    "91": { "uk": "ITV", "jp": "NHK" },
+    "92": { "uk": "BBC" },
+    "93": { "uk": "BBC", "jp": "NTV" },
+    "94": { "uk": "BBC", "jp": "Fuji" },
+    "95": { "uk": "ITV" },
+    "96": { "uk": "ITV", "jp": "NHK" },
     "104": { "jp": "NHK" }
   }
 }

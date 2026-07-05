@@ -1223,10 +1223,10 @@ UID:wc2026-hybrid-ko-90@worldcup-2026-calendar
 DTSTAMP:20260704T170000Z
 DTSTART:20260704T170000Z
 DTEND:20260704T193000Z
-SUMMARY:Round of 16: Canada v Morocco
+SUMMARY:Round of 16: Canada v Morocco - ITV | 🇯🇵
 LOCATION:NRG Stadium\, Houston
-DESCRIPTION:Round of 16 / NRG Stadium\, Houston\nBroadcasters: TBC\nResul
- t: Canada 0-3 Morocco
+DESCRIPTION:Round of 16 / NRG Stadium\, Houston\nUK: ITV1 / ITVX - HD onl
+ y (STV in Scotland)\nJapan: NHK総合 / DAZN\nResult: Canada 0-3 Morocco
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1236,10 +1236,11 @@ UID:wc2026-hybrid-ko-89@worldcup-2026-calendar
 DTSTAMP:20260704T210000Z
 DTSTART:20260704T210000Z
 DTEND:20260704T233000Z
-SUMMARY:Round of 16: Paraguay v France
+SUMMARY:Round of 16: Paraguay v France - BBC | 🇯🇵
 LOCATION:Lincoln Financial Field\, Philadelphia
-DESCRIPTION:Round of 16 / Lincoln Financial Field\, Philadelphia\nBroadca
- sters: TBC\nResult: Paraguay 0-1 France
+DESCRIPTION:Round of 16 / Lincoln Financial Field\, Philadelphia\nUK: BBC
+  One / iPlayer - live in 4K UHD\nJapan: 日本テレビ / DAZN\nResult: 
+ Paraguay 0-1 France
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1249,10 +1250,11 @@ UID:wc2026-hybrid-ko-91@worldcup-2026-calendar
 DTSTAMP:20260705T200000Z
 DTSTART:20260705T200000Z
 DTEND:20260705T223000Z
-SUMMARY:Round of 16: Brazil v Norway
+SUMMARY:Round of 16: Brazil v Norway - ITV | 🇯🇵
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
 DESCRIPTION:Round of 16 / MetLife Stadium\, New York/New Jersey (East Rut
- herford)\nBroadcasters: TBC
+ herford)\nUK: ITV1 / ITVX - HD only (STV in Scotland)\nJapan: NHK総合 
+ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1275,10 +1277,10 @@ UID:wc2026-hybrid-ko-93@worldcup-2026-calendar
 DTSTAMP:20260706T190000Z
 DTSTART:20260706T190000Z
 DTEND:20260706T213000Z
-SUMMARY:Round of 16: Portugal v Spain
+SUMMARY:Round of 16: Portugal v Spain - BBC | 🇯🇵
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Round of 16 / AT&T Stadium\, Dallas (Arlington)\nBroadcasters
- : TBC
+DESCRIPTION:Round of 16 / AT&T Stadium\, Dallas (Arlington)\nUK: BBC One 
+ / iPlayer - live in 4K UHD\nJapan: 日本テレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1288,9 +1290,10 @@ UID:wc2026-hybrid-ko-94@worldcup-2026-calendar
 DTSTAMP:20260707T000000Z
 DTSTART:20260707T000000Z
 DTEND:20260707T023000Z
-SUMMARY:Round of 16: USA v Belgium
+SUMMARY:Round of 16: USA v Belgium - BBC | 🇯🇵
 LOCATION:Lumen Field\, Seattle
-DESCRIPTION:Round of 16 / Lumen Field\, Seattle\nBroadcasters: TBC
+DESCRIPTION:Round of 16 / Lumen Field\, Seattle\nUK: BBC One / iPlayer - 
+ live in 4K UHD\nJapan: フジテレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1300,10 +1303,10 @@ UID:wc2026-hybrid-ko-95@worldcup-2026-calendar
 DTSTAMP:20260707T160000Z
 DTSTART:20260707T160000Z
 DTEND:20260707T183000Z
-SUMMARY:Round of 16: Argentina v Egypt
+SUMMARY:Round of 16: Argentina v Egypt - ITV
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Round of 16 / Mercedes-Benz Stadium\, Atlanta\nBroadcasters: 
- TBC
+DESCRIPTION:Round of 16 / Mercedes-Benz Stadium\, Atlanta\nUK: ITV1 / ITV
+ X - HD only (STV in Scotland)\nJapan: TBC
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1313,9 +1316,10 @@ UID:wc2026-hybrid-ko-96@worldcup-2026-calendar
 DTSTAMP:20260707T200000Z
 DTSTART:20260707T200000Z
 DTEND:20260707T223000Z
-SUMMARY:Round of 16: Switzerland v Colombia
+SUMMARY:Round of 16: Switzerland v Colombia - ITV | 🇯🇵
 LOCATION:BC Place\, Vancouver
-DESCRIPTION:Round of 16 / BC Place\, Vancouver\nBroadcasters: TBC
+DESCRIPTION:Round of 16 / BC Place\, Vancouver\nUK: ITV1 / ITVX - HD only
+  (STV in Scotland)\nJapan: NHK総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
