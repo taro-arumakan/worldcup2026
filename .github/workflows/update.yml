@@ -38,7 +38,7 @@ jobs:
         run: |
           base="https://raw.githubusercontent.com/openfootball/world-cup/master/2026--usa"
           for f in cup.txt cup_finals.txt cup_stadiums.csv; do
-            curl -fsSL "$base/$f" -o "data/$f"
+            curl -fsSL --retry 5 --retry-delay 3 --retry-all-errors "$base/$f" -o "data/$f"
           done
 
       - name: Regenerate calendars

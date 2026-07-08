@@ -1266,8 +1266,8 @@ DTSTART:20260709T200000Z
 DTEND:20260709T223000Z
 SUMMARY:Quarter-final: France v Morocco
 LOCATION:Gillette Stadium\, Boston (Foxborough)
-DESCRIPTION:Quarter-final / Gillette Stadium\, Boston (Foxborough)\nBroad
- casters: TBC
+DESCRIPTION:Quarter-final / Gillette Stadium\, Boston (Foxborough)\nJapan
+ : TBC
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1277,10 +1277,10 @@ UID:wc2026-jp-ko-98@worldcup-2026-calendar
 DTSTAMP:20260710T190000Z
 DTSTART:20260710T190000Z
 DTEND:20260710T213000Z
-SUMMARY:Quarter-final: Spain v Belgium
+SUMMARY:Quarter-final: Spain v Belgium - Fuji
 LOCATION:SoFi Stadium\, Los Angeles (Inglewood)
-DESCRIPTION:Quarter-final / SoFi Stadium\, Los Angeles (Inglewood)\nBroad
- casters: TBC
+DESCRIPTION:Quarter-final / SoFi Stadium\, Los Angeles (Inglewood)\nJapan
+ : フジテレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1290,10 +1290,10 @@ UID:wc2026-jp-ko-99@worldcup-2026-calendar
 DTSTAMP:20260711T210000Z
 DTSTART:20260711T210000Z
 DTEND:20260711T233000Z
-SUMMARY:Quarter-final: Norway v England
+SUMMARY:Quarter-final: Norway v England - NHK
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
 DESCRIPTION:Quarter-final / Hard Rock Stadium\, Miami (Miami Gardens)\nJa
- pan: TBC
+ pan: NHK総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1305,8 +1305,7 @@ DTSTART:20260712T010000Z
 DTEND:20260712T033000Z
 SUMMARY:Quarter-final: Argentina v Switzerland
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Quarter-final / Arrowhead Stadium\, Kansas City\nBroadcasters
- : TBC
+DESCRIPTION:Quarter-final / Arrowhead Stadium\, Kansas City\nJapan: TBC
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
