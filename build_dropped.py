@@ -21,6 +21,13 @@ from pathlib import Path
 SHEET_ID = os.environ.get("BRACKET_SHEET_ID", "191IR0O6kja_mULoNnneVS7Tj1FKbwk31BtcIThMOJlc")
 TAB = "Dropped"
 TREE = "トーナメント表"        # its AE2:AF49 is the JA -> ISO2 flag map we reuse for flags
+PLAYERS = "Players"
+
+# A pick is struck through on the Players tab when its team (col C) turns up in
+# the Dropped tab (Team = col D). Formula-driven, so it re-evaluates live as
+# teams go out. INDIRECT is needed because conditional-format formulas can't
+# reference another sheet directly.
+STRIKE_FORMULA = '=AND($C3<>"", COUNTIF(INDIRECT("Dropped!$D$4:$D$400"), $C3)>0)'
 
 # Knockout matches whose loser is eliminated, by Bracket row -> round label.
 # Semi-finals (rows 42-43) are excluded — their losers go to the 3rd-place match.
@@ -78,6 +85,38 @@ def flag_formula(team_a1):
             f"VLOOKUP({team_a1},'{TREE}'!$AE$2:$AF$49,2,FALSE)&\".png\"),\"\")")
 
 
+def ensure_players_strikethrough(api, sheets):
+    """Add — once — a conditional-format rule that strikes through and greys any
+    Players pick whose team has been dropped. Idempotent: if an equivalent rule
+    (custom formula mentioning Dropped, with strikethrough) is already there we
+    leave it, and we never touch anyone else's rules."""
+    players = next((s for s in sheets if s["properties"]["title"] == PLAYERS), None)
+    if not players:
+        print(f"No {PLAYERS} tab — skipping strikethrough rule.")
+        return
+    for rule in players.get("conditionalFormats", []):
+        boolean = rule.get("booleanRule", {})
+        cond = boolean.get("condition", {})
+        text = boolean.get("format", {}).get("textFormat", {})
+        formula = (cond.get("values") or [{}])[0].get("userEnteredValue", "")
+        if cond.get("type") == "CUSTOM_FORMULA" and text.get("strikethrough") and "Dropped" in formula:
+            print("Players strikethrough rule already present — leaving as is.")
+            return
+    api.batchUpdate(spreadsheetId=SHEET_ID, body={"requests": [{"addConditionalFormatRule": {
+        "index": 0,
+        "rule": {
+            "ranges": [{"sheetId": players["properties"]["sheetId"], "startRowIndex": 2,
+                        "endRowIndex": 300, "startColumnIndex": 2, "endColumnIndex": 3}],
+            "booleanRule": {
+                "condition": {"type": "CUSTOM_FORMULA",
+                              "values": [{"userEnteredValue": STRIKE_FORMULA}]},
+                "format": {"textFormat": {
+                    "strikethrough": True,
+                    "foregroundColor": {"red": 0.6, "green": 0.6, "blue": 0.6}}}}}}}]
+    }).execute()
+    print("Added Players strikethrough rule for dropped-team picks.")
+
+
 def main():
     key = os.environ.get("GOOGLE_SHEETS_SA_KEY")
     if not key:
@@ -102,8 +141,10 @@ def main():
           f"{len(dropped)} teams out; {len(rows)} dead nomination(s) "
           f"across {len({r[1] for r in rows})} picked team(s).")
 
-    # ensure the tab exists; get its sheetId
-    meta = api.get(spreadsheetId=SHEET_ID, fields="sheets.properties").execute()["sheets"]
+    # ensure the tab exists; get its sheetId (grab conditionalFormats too, for the
+    # Players strikethrough rule below)
+    meta = api.get(spreadsheetId=SHEET_ID,
+                   fields="sheets(properties(sheetId,title),conditionalFormats)").execute()["sheets"]
     sheet_id = next((s["properties"]["sheetId"] for s in meta
                      if s["properties"]["title"] == TAB), None)
     if sheet_id is None:
@@ -139,6 +180,7 @@ def main():
             "properties": {"pixelSize": w}, "fields": "pixelSize"}}
          for c, w in enumerate((132, 46, 30, 96, 78))]}).execute()  # Player, Rank, flag, Team, Out
     print(f"Wrote {len(rows)} rows to the {TAB} tab.")
+    ensure_players_strikethrough(api, meta)
 
 
 if __name__ == "__main__":
