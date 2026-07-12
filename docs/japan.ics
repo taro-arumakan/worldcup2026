@@ -1305,7 +1305,8 @@ DTSTART:20260712T010000Z
 DTEND:20260712T033000Z
 SUMMARY:Quarter-final: Argentina v Switzerland
 LOCATION:Arrowhead Stadium\, Kansas City
-DESCRIPTION:Quarter-final / Arrowhead Stadium\, Kansas City\nJapan: TBC
+DESCRIPTION:Quarter-final / Arrowhead Stadium\, Kansas City\nJapan: TBC\n
+ Result: Argentina 3-1 Switzerland
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
