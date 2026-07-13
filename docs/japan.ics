@@ -1316,10 +1316,10 @@ UID:wc2026-jp-ko-101@worldcup-2026-calendar
 DTSTAMP:20260714T190000Z
 DTSTART:20260714T190000Z
 DTEND:20260714T213000Z
-SUMMARY:Semi-final: France v Spain
+SUMMARY:Semi-final: France v Spain - NTV
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Semi-final / AT&T Stadium\, Dallas (Arlington)\nBroadcasters:
-  TBC
+DESCRIPTION:Semi-final / AT&T Stadium\, Dallas (Arlington)\nJapan: 日本
+ テレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1329,9 +1329,10 @@ UID:wc2026-jp-ko-102@worldcup-2026-calendar
 DTSTAMP:20260715T190000Z
 DTSTART:20260715T190000Z
 DTEND:20260715T213000Z
-SUMMARY:Semi-final: England v Argentina
+SUMMARY:Semi-final: England v Argentina - NHK
 LOCATION:Mercedes-Benz Stadium\, Atlanta
-DESCRIPTION:Semi-final / Mercedes-Benz Stadium\, Atlanta\nJapan: TBC
+DESCRIPTION:Semi-final / Mercedes-Benz Stadium\, Atlanta\nJapan: NHK総
+ 合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

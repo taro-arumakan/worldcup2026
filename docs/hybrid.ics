@@ -1387,10 +1387,10 @@ UID:wc2026-hybrid-ko-101@worldcup-2026-calendar
 DTSTAMP:20260714T190000Z
 DTSTART:20260714T190000Z
 DTEND:20260714T213000Z
-SUMMARY:Semi-final: France v Spain
+SUMMARY:Semi-final: France v Spain - ITV | 🇯🇵
 LOCATION:AT&T Stadium\, Dallas (Arlington)
-DESCRIPTION:Semi-final / AT&T Stadium\, Dallas (Arlington)\nBroadcasters:
-  TBC
+DESCRIPTION:Semi-final / AT&T Stadium\, Dallas (Arlington)\nUK: ITV1 / IT
+ VX - HD only (STV in Scotland)\nJapan: 日本テレビ / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1400,10 +1400,10 @@ UID:wc2026-hybrid-ko-102@worldcup-2026-calendar
 DTSTAMP:20260715T190000Z
 DTSTART:20260715T190000Z
 DTEND:20260715T213000Z
-SUMMARY:Semi-final: England v Argentina - BBC
+SUMMARY:Semi-final: England v Argentina - BBC | 🇯🇵
 LOCATION:Mercedes-Benz Stadium\, Atlanta
 DESCRIPTION:Semi-final / Mercedes-Benz Stadium\, Atlanta\nUK: BBC One / i
- Player - live in 4K UHD\nJapan: TBC
+ Player - live in 4K UHD\nJapan: NHK総合 / DAZN
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
