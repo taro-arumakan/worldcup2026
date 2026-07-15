@@ -1332,7 +1332,7 @@ DTEND:20260715T213000Z
 SUMMARY:Semi-final: England v Argentina - NHK
 LOCATION:Mercedes-Benz Stadium\, Atlanta
 DESCRIPTION:Semi-final / Mercedes-Benz Stadium\, Atlanta\nJapan: NHK総
- 合 / DAZN
+ 合 / DAZN\nResult: England 1-2 Argentina
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1342,10 +1342,10 @@ UID:wc2026-jp-ko-103@worldcup-2026-calendar
 DTSTAMP:20260718T210000Z
 DTSTART:20260718T210000Z
 DTEND:20260718T233000Z
-SUMMARY:Third-place play-off: France v L102
+SUMMARY:Third-place play-off: France v England
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
 DESCRIPTION:Third-place play-off / Hard Rock Stadium\, Miami (Miami Garde
- ns)\nBroadcasters: TBC
+ ns)\nJapan: TBC
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1355,7 +1355,7 @@ UID:wc2026-jp-ko-104@worldcup-2026-calendar
 DTSTAMP:20260719T190000Z
 DTSTART:20260719T190000Z
 DTEND:20260719T213000Z
-SUMMARY:Final: Spain v W102 - NHK
+SUMMARY:Final: Spain v Argentina - NHK
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
 DESCRIPTION:Final / MetLife Stadium\, New York/New Jersey (East Rutherfor
  d)\nJapan: NHK総合 / DAZN

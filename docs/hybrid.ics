@@ -1404,7 +1404,8 @@ DTEND:20260715T213000Z
 SUMMARY:Semi-final: England v Argentina - BBC | 🇯🇵
 LOCATION:Mercedes-Benz Stadium\, Atlanta
 DESCRIPTION:Semi-final / Mercedes-Benz Stadium\, Atlanta\nUK: BBC One / i
- Player - live in 4K UHD\nJapan: NHK総合 / DAZN
+ Player - live in 4K UHD\nJapan: NHK総合 / DAZN\nResult: England 1-2 Ar
+ gentina
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1414,10 +1415,10 @@ UID:wc2026-hybrid-ko-103@worldcup-2026-calendar
 DTSTAMP:20260718T210000Z
 DTSTART:20260718T210000Z
 DTEND:20260718T233000Z
-SUMMARY:Third-place play-off: France v L102
+SUMMARY:Third-place play-off: France v England - BBC
 LOCATION:Hard Rock Stadium\, Miami (Miami Gardens)
 DESCRIPTION:Third-place play-off / Hard Rock Stadium\, Miami (Miami Garde
- ns)\nBroadcasters: TBC
+ ns)\nUK: BBC One / iPlayer - live in 4K UHD\nJapan: TBC
 CATEGORIES:World Cup 2026,Football
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1427,7 +1428,7 @@ UID:wc2026-hybrid-ko-104@worldcup-2026-calendar
 DTSTAMP:20260719T190000Z
 DTSTART:20260719T190000Z
 DTEND:20260719T213000Z
-SUMMARY:Final: Spain v W102 - BBC/ITV | 🇯🇵
+SUMMARY:Final: Spain v Argentina - BBC/ITV | 🇯🇵
 LOCATION:MetLife Stadium\, New York/New Jersey (East Rutherford)
 DESCRIPTION:Final / MetLife Stadium\, New York/New Jersey (East Rutherfor
  d)\nUK: BBC One + ITV1 - shown on both channels\nJapan: NHK総合 / DAZN
